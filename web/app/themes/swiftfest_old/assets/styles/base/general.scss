@@ -1,0 +1,95 @@
+html {
+  overflow-x: hidden;
+}
+
+html, body {
+  height: inherit;
+}
+
+body {
+  @include current-text($darkest);
+  background-color: $lightest;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+  //padding-top: 50px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-backface-visibility: hidden;
+  @include cover;
+}
+
+
+::selection {
+  background-color: $dark;
+  color: $light;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background-color: $dark;
+  color: $light;
+  text-shadow: none;
+}
+
+a {
+  text-decoration: none;
+  @include transition(.2s)
+  &:hover {
+  
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.top20 {
+  margin-top: 20px;
+}
+
+.bottom20 {
+  margin-bottom: 20px;
+}
+
+.rel {
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.page-container {
+  min-height: 100vh;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: $primary;
+  z-index: 9999999999999;
+}
+
+#bitnami-banner {
+  display: none !important;
+}
+
+// large
+@media screen and (max-width: 79.938em) {
+}
+
+// medium
+@media screen and (max-width: 63.938em) {
+}
+
+// small
+@media screen and (max-width: 39.938em) {
+}

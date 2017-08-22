@@ -1,0 +1,27 @@
+// Sans Serif
+@mixin general-ui($color) {
+  font-size: $fs2;
+  font-weight: $fw2;
+  line-height: $lh1;
+  letter-spacing: $ls1;
+  color: $color;
+  font-family: $sans;
+}
+
+.general-ui {
+  @include general-ui($darkest);
+  text-transform: uppercase;
+}
+
+@mixin current-text($color) {
+  font-size: $fs3;
+  font-weight: $fw1;
+  line-height: $lh1;
+  letter-spacing: $ls2;
+  color: $color;
+  font-family: $sans;
+}
+
+.current-text {
+  @include current-text($lightest);
+}

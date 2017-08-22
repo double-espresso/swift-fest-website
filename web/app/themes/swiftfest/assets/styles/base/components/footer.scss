@@ -1,0 +1,21 @@
+footer {
+  background-color: $darkest;
+  padding: 30px 0;
+  .credits {
+    text-align: center;
+    font-weight: $fw3;
+    opacity: 0.3;
+    span {
+      color: $secondary;
+    }
+    a {
+      color: $secondary;
+      border-bottom: 1px solid transparent;
+      @include transition(.2s);
+      &:hover {
+        border-bottom: 1px solid $secondary;
+        @include transition(.2s);
+      }
+    }
+  }
+}

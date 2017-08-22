@@ -1,0 +1,59 @@
+.hero {
+	padding-top: 80px;
+	height: 100vh;
+	position: relative;
+	@include gradient;
+
+	.hero_info {
+		@include vertical_align_absolute;
+		.hero-suptitle {
+			display: inline-block;
+		}
+		.hero-title {
+			display: inline-block;
+			max-width: 900px;
+		}
+	}
+}
+
+
+.animation-container {
+  position: absolute;
+  top: 0;
+  right: -600px;
+  opacity: 0.3;
+}
+
+.animation-container span {
+  color: $lightest;
+  display: block;
+  font-size: 18px;
+  font-family: $sans;
+  font-weight: bold;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+  cursor: default;
+  animation-timing-function: ease-out;
+  animation-name: move;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: none;
+  }
+}

@@ -1,0 +1,32 @@
+.rounded-button {
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 100px;
+  padding: 5px 45px;
+  background-color: transparent;
+  &.white {
+    @include general-ui($lightest);
+    border: 1px solid $lightest;
+    @include transition(.2s);
+    &:hover {
+      color: $primary;
+      background-color: $lightest;
+      @include transition(.2s);
+    }
+  }
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 100px;
+  border: 1px solid $primary;
+  padding: 5px 45px;
+  background: linear-gradient(237deg, rgba(255,255,255,0) 37%, rgba(255,255,255,0) 100%);
+  @include general-ui($primary);
+  &:hover {
+    @include gradient;
+    @include general-ui($lightest);
+    border: 1px solid transparent;
+  }
+}

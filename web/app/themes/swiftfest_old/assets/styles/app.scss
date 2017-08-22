@@ -1,0 +1,20 @@
+/* base and style guide */
+@import "base/foundation";
+@import "base/icon";
+@import "base/slick";
+@import "base/variables";
+@import "base/mixin";
+@import "base/typography";
+@import "base/general";
+@import "base/ui";
+
+/* components */
+@import "base/components";
+
+/* partials */
+@import "../../partials/partial-hero/partial-hero.scss";
+@import "../../partials/partial-info/partial-info.scss";
+@import "../../partials/partial-form/partial-form.scss";
+
+/* template */ 
+@import "base/template";

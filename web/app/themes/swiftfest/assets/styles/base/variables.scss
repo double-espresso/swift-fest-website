@@ -1,0 +1,49 @@
+// Color
+$darkest: #2F2F2F;
+$dark: #666;
+$medium: #999;
+$light: #EEE;
+$lightest: #FFF;
+$primary: #FF422A;
+$secondary: #FBAC3F;
+
+@mixin gradient {
+  background: linear-gradient(237deg, $primary 37%, $secondary 100%);
+}
+
+// Typography
+$sf: 'SF UI Text', sans-serif;
+$menlo: 'Menlo';
+$sans: $sf;
+$mono: $menlo;
+
+// Font Size
+$fs1: 10px;
+$fs2: 12px;
+$fs3: 16px;
+$fs4: 20px;
+$fs5: 60px;
+$fs6: 80px;
+
+// Line Height
+$lh1: 30px;
+$lh2: 90px;
+
+// Font Weight
+$fw1: 300;
+$fw2: 400;
+$fw3: 700;
+
+// Letter Spacing
+$ls1: 1px;
+$ls2: 2px;
+$ls3: 3px;
+$ls4: 10px;
+
+// z-index
+$zi1: 100;
+$zi2: 200;
+$zi3: 300;
+$zi4: 400;
+$zi5: 500;
+$zi6: 10000000;

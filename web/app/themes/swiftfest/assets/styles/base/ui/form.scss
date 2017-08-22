@@ -1,0 +1,128 @@
+::-webkit-input-placeholder { color: $darkest; opacity: 1; }
+::-moz-placeholder { color: $darkest; opacity: 1; }
+:-ms-input-placeholder { color: $darkest; opacity: 1; }
+input:-moz-placeholder { color: $darkest; opacity: 1; }
+
+.container-input {
+  position: relative;
+  label {
+    @include current-text($dark);
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    padding: 0 5px;
+    background-color: $dark;
+  }
+  input:focus {
+    outline: none;
+  }
+  &.no-label {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="file"] {
+      border: none;
+      border-bottom: 2px solid $dark;
+      background-color: $dark;
+    }
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+textarea {
+  @include general-ui($darkest);
+  line-height: $lh1;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid #E3E3E3;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-color: transparent;
+  text-indent: 0;
+  padding: 0;
+  margin-bottom: 50px;
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid $dark;
+  }
+}
+
+input[type="file"] {
+  line-height: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  text-indent: -20px;
+}
+
+input[type="submit"] {
+  margin: 0 auto;
+  
+}
+
+textarea {
+  min-height: 100px;
+}
+
+// Contact Form 
+.wpcf7-form-control-wrap {
+  display: block;
+}
+
+div.wpcf7 img.ajax-loader {
+  margin-left: 0px;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  padding: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: -40px;
+}
+
+span.wpcf7-not-valid-tip {
+  display: block;
+  position: absolute;
+  font-size: 0;
+  text-indent: -99999px;
+  width: 100%;
+  height: 1px;
+  background-color: red;
+  bottom: 0;
+}
+
+div.wpcf7-response-output {
+  margin: 0;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: $light;
+  @include general-ui($dark);
+  border-radius: 20px;
+  float: left;
+  width: 100%;
+}
+
+div.wpcf7-validation-errors {
+  border: none;
+  background-color: #f7e700;
+}
+
+div.wpcf7-mail-sent-ok {
+  border: none;
+  background-color: $light;
+}
+
+div.wpcf7-mail-sent-ng {
+  border: none;
+  background-color: red;
+  color: $light;
+}
+
+
+/* MailChimp Form */

@@ -1,0 +1,118 @@
+.button, button, input[type="submit"] {
+  @include general-ui($dark);
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  background-color: $medium;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 0 40px;
+  -webkit-appearance: none;
+  @include transition(.2s);
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background-color: $medium;
+  }
+  &.line {
+    background-color: transparent;
+    border: 2px solid $dark;
+    line-height: 38px;
+    &:hover {
+      background-color: $light;
+    }
+  }
+  &.arrow {
+    border: none;
+    height: 28px;
+    line-height: 28px;
+    position: relative;
+    background-color: transparent;
+    padding-left: 80px;
+    padding-right: 0;
+    text-transform: none;
+    color: $dark;
+    /* Small only */
+    @media screen and (max-width: 39.9375em) {
+      text-align: left;
+    }
+    /* Medium and up */
+    @media screen and (min-width:40em) and  (max-width: 63.938em) {
+      text-align: left;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 60px;
+      height: 1px;
+      background-color: $medium;
+      top: 13px;
+      left: 0;
+      @include transition(.2s);
+    }
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      border-right: 1px solid $medium;
+      border-bottom: 1px solid $medium;
+      top: 10px;
+      left: 52px;
+      @include rotate(-45deg);
+      @include transition(.2s);
+    }
+    &.vertical {
+      padding-left: 0;
+      height: 38px;
+      line-height: 38px;
+      padding-bottom: 20px;
+      &:before {
+        top: 33px;
+        width: 80%;
+      }
+      &:after {
+        top: 30px;
+        left: 80%;
+        margin-left: -7px;
+      }
+    }
+    &:hover {
+      &:before {
+        width: 70px;
+      }
+      &:after {
+        left: 62px;
+      }
+      &.vertical {
+        &:before {
+          width: 100%;
+        }
+        &:after {
+          left: 100%;
+        }
+      }
+    }
+  }
+}
+
+input[type="submit"] {
+  border: none;
+  line-height: 40px;
+  &.line {
+    line-height: 36px;
+  }
+}
+
+.add_to_cart {
+  background-color: $darkest !important;
+  width: 100%;
+  border-radius: 0px !important;
+  margin: 20px 0 !important;
+}
