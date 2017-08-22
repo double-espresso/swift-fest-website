@@ -5,6 +5,7 @@
 		z-index: $zi6;
 	}
 	.info_container {
+		opacity: 0;
 		padding: 80px;
 		position: relative;
 		background-color: $lightest;
@@ -19,6 +20,15 @@
 			position: absolute;
 			right: -300px;
 			bottom: -90px;
+			opacity: 0;
+			@include transition(.5s);
+		}
+		&.show {
+			opacity: 1;
+			&:after {
+				opacity: 1;
+				@include transition(.5s);
+			}
 		}
 		&.right_position {
 			&:after {

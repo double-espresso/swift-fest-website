@@ -5,7 +5,7 @@
 	$info_type = wave_get_post_meta($sectionMeta, "type", $sectionCounter, TRUE);
 ?>
 
-<section class="info <?php echo $info_position; ?>">
+<section class="info <?php echo $info_position; ?>" id="trigger">
 	<div class="row">
 		<div class="medium-9 <?php echo ($info_type == 'right_text') ? 'medium-offset-3' : ''; ?> columns" id="rev-1">
 			<div class="info_container <?php echo ($info_type == 'right_text') ? 'right_position' : ''; ?>">

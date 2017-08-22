@@ -12,6 +12,23 @@ $secondary: #FBAC3F;
 }
 
 // Typography
+@font-face {
+    font-family: "SF UI Text";
+    src: url("../fonts/SF-UI-Text-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "SF UI Text";
+    src: url("../fonts/SF-UI-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Menlo";
+    src: url("../fonts/Menlo-Regular.ttf") format("truetype");
+}
+
 $sf: 'SF UI Text', sans-serif;
 $menlo: 'Menlo';
 $sans: $sf;

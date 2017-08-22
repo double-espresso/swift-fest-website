@@ -6,18 +6,11 @@ $(window).load(function() {
   // Block reveal
 
 
-  var rev1 = new RevealFx(document.querySelector('#rev-1'), {
-    revealSettings : {
-      bgcolor: '#2F2F2F',
-      delay: 550,
-      onCover: function(contentEl, revealerEl) {
-        contentEl.style.opacity = 1;
-      }
-    }
-  }); 
-  rev1.reveal();
-  
 });
+
+
+/*------------------*/
+
 
 $(document).ready(function() {
   
@@ -61,20 +54,36 @@ $(document).ready(function() {
   $(".title_animate").lettering();
   animation();
 
+  //Block Reveal on scroll
+  var controller = new ScrollMagic.Controller();
+  var scene = new ScrollMagic.Scene({
+    triggerElement: '#trigger',
+    offset: -200,
+    reverse: false,
+    duration: 0
+  })
+
+  scene.on("enter", function (event) {
+    var rev1 = new RevealFx(document.querySelector('#rev-1'), {
+      revealSettings : {
+        bgcolor: '#2F2F2F',
+        delay: 50,
+        onCover: function(contentEl, revealerEl) {
+          contentEl.style.opacity = 1;
+          $(".info_container").toggleClass("show");
+        }
+      }
+    }); 
+    rev1.reveal();
+  });
+  scene.addTo(controller);
+
+
 });
 
-// Import font
-WebFontConfig = {
-  google: { families: [ 'Montserrat:300,400,700' ] }
-};
-(function() {
-  var wf = document.createElement('script');
-  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-  wf.type = 'text/javascript';
-  wf.async = 'true';
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(wf, s);
-})();
+
+/*------------------*/
+
 
 //floating letters
 var app = {
@@ -113,10 +122,35 @@ var app = {
 document.addEventListener('DOMContentLoaded', app.init);
 
 
+/*------------------*/
+
+
 function animation() {
   var title1 = new TimelineMax();
-  title1.staggerFromTo(".title_animate span", 1, 
+  title1.staggerFromTo(".title_animate span", .3, 
   {ease: Back.easeOut.config(1), opacity: 0, bottom: -50},
   {ease: Back.easeOut.config(0), opacity: 1, bottom: 0}, 0.05);
   
 }
+
+
+/*------------------*/
+
+
+
+
+/*------------------*/
+
+
+// Import font
+WebFontConfig = {
+  google: { families: [ 'Montserrat:300,400,700' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();
