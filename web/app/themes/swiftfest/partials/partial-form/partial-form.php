@@ -5,7 +5,7 @@
   $form_input = wave_get_post_meta($sectionMeta, "form", $sectionCounter, TRUE);
 ?>
 
-<section class="form">
+<section class="form" id="trigger_form">
 	<div class="row">
 		<div class="medium-6 columns">
 			<?php if(!empty($form_title)): ?>
@@ -19,7 +19,7 @@
 		</div>
 		<div class="medium-5 medium-offset-1 columns">
       <?php if(!empty($form_input)): ?>
-        <div class="form_input">
+        <div class="form_input" id="rev-2">
           <?php echo do_shortcode($form_input); ?>
         </div>
       <?php endif; ?>

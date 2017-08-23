@@ -1,7 +1,7 @@
 .info {
 	padding-bottom: 200px;
 	&.after-hero {
-		@include translate(0,-70px);
+		margin-top: -110px;
 		z-index: $zi6;
 	}
 	.info_container {
@@ -22,13 +22,6 @@
 			bottom: -90px;
 			opacity: 0;
 			@include transition(.5s);
-		}
-		&.show {
-			opacity: 1;
-			&:after {
-				opacity: 1;
-				@include transition(.5s);
-			}
 		}
 		&.right_position {
 			&:after {

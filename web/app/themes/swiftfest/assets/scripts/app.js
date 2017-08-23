@@ -1,11 +1,6 @@
 $(window).load(function() {
-
   // Animate loader off screen
   $(".loading").fadeOut(50);
-
-  // Block reveal
-
-
 });
 
 
@@ -56,14 +51,22 @@ $(document).ready(function() {
 
   //Block Reveal on scroll
   var controller = new ScrollMagic.Controller();
-  var scene = new ScrollMagic.Scene({
+
+  var scene1 = new ScrollMagic.Scene({
     triggerElement: '#trigger',
     offset: -200,
     reverse: false,
     duration: 0
   })
 
-  scene.on("enter", function (event) {
+  var scene2 = new ScrollMagic.Scene({
+    triggerElement: '#trigger_form',
+    offset: -200,
+    reverse: false,
+    duration: 0
+  })
+
+  scene1.on("enter", function (event) {
     var rev1 = new RevealFx(document.querySelector('#rev-1'), {
       revealSettings : {
         bgcolor: '#2F2F2F',
@@ -76,7 +79,29 @@ $(document).ready(function() {
     }); 
     rev1.reveal();
   });
-  scene.addTo(controller);
+  scene1.addTo(controller);
+
+
+  scene2.on("enter", function (event) {
+    var rev2 = new RevealFx(document.querySelector('#rev-2'), {
+      revealSettings : {
+        bgcolor: '#2F2F2F',
+        delay: 50,
+        onCover: function(contentEl, revealerEl) {
+          contentEl.style.opacity = 1;
+          $(".form_input").toggleClass("show");
+        }
+      }
+    }); 
+    rev2.reveal();
+  });
+  scene2.addTo(controller);
+
+
+
+  //Parallax
+  var rellax_info = new Rellax('.info');
+  var rellax_form = new Rellax('.form_input');
 
 
 });
