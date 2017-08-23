@@ -53,7 +53,7 @@ $(document).ready(function() {
   var controller = new ScrollMagic.Controller();
 
   var scene1 = new ScrollMagic.Scene({
-    triggerElement: '#trigger',
+    triggerElement: '#info_section',
     offset: -200,
     reverse: false,
     duration: 0
@@ -93,7 +93,7 @@ var app = {
     app.container = document.createElement('div');
     app.container.className = 'animation-container';
     //document.body.appendChild(app.container);
-    document.getElementById('animated_hero').appendChild(app.container);
+    document.getElementById('hero_section').appendChild(app.container);
     window.setInterval(app.add, 100);
   },
 
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', app.init);
 
 function animation() {
   var title1 = new TimelineMax();
-  title1.staggerFromTo(".title_animate span", .3, 
+  title1.staggerFromTo(".title_animate span", .75, 
   {ease: Back.easeOut.config(1), opacity: 0, bottom: -50},
   {ease: Back.easeOut.config(0), opacity: 1, bottom: 0}, 0.05);
 }
@@ -135,6 +135,21 @@ function animation() {
 /*------------------*/
 
 
+// Smooth scroll animation
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 
 
 /*------------------*/
@@ -142,7 +157,7 @@ function animation() {
 
 // Import font
 WebFontConfig = {
-  google: { families: [ 'Montserrat:300,400,700' ] }
+  google: { families: [ 'Space+Mono:400,700' ] }
 };
 (function() {
   var wf = document.createElement('script');

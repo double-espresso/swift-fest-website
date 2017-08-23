@@ -5,7 +5,7 @@
   $form_input = wave_get_post_meta($sectionMeta, "form", $sectionCounter, TRUE);
 ?>
 
-<section class="form">
+<section class="form" id="form_section">
 	<div class="row">
 		<div class="medium-6 columns">
 			<div class="form_info">			

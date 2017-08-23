@@ -12,27 +12,11 @@ $secondary: #FBAC3F;
 }
 
 // Typography
-@font-face {
-    font-family: "SF UI Text";
-    src: url("../fonts/SF-UI-Text-Light.ttf") format("truetype");
-    font-weight: 300;
-}
 
-@font-face {
-    font-family: "SF UI Text";
-    src: url("../fonts/SF-UI-Text-Bold.ttf") format("truetype");
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: "Menlo";
-    src: url("../fonts/Menlo-Regular.ttf") format("truetype");
-}
-
-$sf: 'SF UI Text', sans-serif;
-$menlo: 'Menlo';
-$sans: $sf;
-$mono: $menlo;
+$SpaceMono: 'Space Mono', sans-serif;
+$SourceCodePro: 'Source Code Pro';
+$PrimaryFont: $SpaceMono;
+$SecondaryFont: $SourceCodePro;
 
 // Font Size
 $fs1: 10px;
@@ -41,10 +25,12 @@ $fs3: 16px;
 $fs4: 20px;
 $fs5: 60px;
 $fs6: 80px;
+$fs7: 110px;
 
 // Line Height
 $lh1: 30px;
 $lh2: 90px;
+$lh3: 100px;
 
 // Font Weight
 $fw1: 300;
@@ -55,7 +41,9 @@ $fw3: 700;
 $ls1: 1px;
 $ls2: 2px;
 $ls3: 3px;
-$ls4: 10px;
+$ls4: 4px;
+$ls5: 5px;
+$ls10: 10px;
 
 // z-index
 $zi1: 100;

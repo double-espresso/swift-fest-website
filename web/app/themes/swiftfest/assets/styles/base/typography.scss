@@ -1,6 +1,6 @@
 // Sans Serif
 @mixin general-ui($color) {
-  font-family: $sans;
+  font-family: $PrimaryFont;
   font-size: $fs2;
   font-weight: $fw3;
   line-height: $lh1;
@@ -14,7 +14,7 @@
 }
 
 @mixin current-text($color) {
-  font-family: $sans;
+  font-family: $PrimaryFont;
   font-size: $fs3;
   font-weight: $fw1;
   line-height: $lh1;
@@ -27,11 +27,11 @@
 }
 
 @mixin title-huge($color) {
-  font-family: $sans;
-  font-size: $fs6;
+  font-family: $PrimaryFont;
+  font-size: $fs7;
   font-weight: $fw3;
-  line-height: $lh2;
-  letter-spacing: $ls3;
+  line-height: $lh3;
+  letter-spacing: $ls5;
   color: $color;
 }
 
@@ -41,10 +41,10 @@
 }
 
 @mixin title-small($color) {
-  font-family: $sans;
+  font-family: $PrimaryFont;
   font-size: $fs4;
   font-weight: $fw1;
-  letter-spacing: $ls4;
+  letter-spacing: $ls10;
   color: $color;
 }
 
@@ -54,7 +54,7 @@
 }
 
 @mixin title($color) {
-  font-family: $sans;
+  font-family: $PrimaryFont;
   font-size: $fs5;
   font-weight: $fw3;
   color: $color;
