@@ -31,6 +31,7 @@ nav {
           @include transition(.2s);
           padding-bottom: 3px;
           position: relative;
+          outline: none;
           &:after {
             content: "";
             position: absolute;
