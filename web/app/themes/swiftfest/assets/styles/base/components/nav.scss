@@ -51,6 +51,9 @@ nav {
             }
           }
         }
+        &:focus {
+          border: none;
+        }
       }
     }
     .container-search {

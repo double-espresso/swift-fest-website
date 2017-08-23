@@ -1,6 +1,9 @@
 $(window).load(function() {
   // Animate loader off screen
-  $(".loading").fadeOut(50);
+   function showloader(){
+      $("body").addClass("page-loaded");
+   };
+   window.setTimeout( showloader, 1200 ); // 5 seconds
 });
 
 
@@ -47,7 +50,9 @@ $(document).ready(function() {
   });
 
   $(".title_animate").lettering();
-  animation();
+
+  window.setTimeout( animation, 2600 ); // 5 seconds
+
 
   //Block Reveal on scroll
   var controller = new ScrollMagic.Controller();

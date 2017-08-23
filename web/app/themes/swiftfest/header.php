@@ -26,9 +26,24 @@
 
   </head>
 
-  <div class="loading"></div>
-
 	<body <?php body_class(); ?>>
+
+    <div class="preloader">
+        <div class="loader-inner">
+            <div class="bg-2"></div>
+            <div class="middle-div">
+                <div class="inner"> <img class="loaderGif" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/swiftloader.gif" alt="Image"> </div>
+            </div>
+        </div>
+        <!-- end inner --> 
+    </div>
+    
+    <!-- end preloader -->
+    <div class="page-transition">
+        <div class="inner"></div>
+    </div>
+    <!-- end page-transition -->
+
     <header class="hide-for-tablet-down">
       <div class="row">
         <div class="medium-2 columns">
