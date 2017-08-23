@@ -1,7 +1,6 @@
 .form {
 	position: relative;
-	padding: 300px 0;
-	padding-bottom: 400px;
+	padding: 300px 0 500px 0;
 	&:before {
 		content: 'print("swiftfest")';
 		position: absolute;
@@ -14,24 +13,24 @@
 		opacity: 0.05;
 		font-family: $mono;
 		@include vertical_align_absolute;
-		margin-top: -180px;
 	}
-	.form_title {
+	.form_info {
+		margin-top: -200px;
+		.form_title {
 
-	}
-	.form_text {
-		padding-left: 2px;
-		margin-top: 60px;
+		}
+		.form_text {
+			padding-left: 2px;
+			margin-top: 60px;
+		}
 	}
 	.form_input {
-		opacity: 0;
 		position: absolute;
 		padding: 30px;
 		background-color: $lightest;
 		box-shadow: 0 30px 60px 0 rgba(0,0,0,0.10);
 		@include super_width(360px);
 		@include super_height(530px);
-		margin-top: -200px;
-		@include transition(.5s);
+		margin-top: -80px;
 	}
 }

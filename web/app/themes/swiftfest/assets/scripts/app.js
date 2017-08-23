@@ -59,13 +59,6 @@ $(document).ready(function() {
     duration: 0
   })
 
-  var scene2 = new ScrollMagic.Scene({
-    triggerElement: '#trigger_form',
-    offset: -200,
-    reverse: false,
-    duration: 0
-  })
-
   scene1.on("enter", function (event) {
     var rev1 = new RevealFx(document.querySelector('#rev-1'), {
       revealSettings : {
@@ -81,28 +74,9 @@ $(document).ready(function() {
   });
   scene1.addTo(controller);
 
-
-  scene2.on("enter", function (event) {
-    var rev2 = new RevealFx(document.querySelector('#rev-2'), {
-      revealSettings : {
-        bgcolor: '#2F2F2F',
-        delay: 50,
-        onCover: function(contentEl, revealerEl) {
-          contentEl.style.opacity = 1;
-          $(".form_input").toggleClass("show");
-        }
-      }
-    }); 
-    rev2.reveal();
-  });
-  scene2.addTo(controller);
-
-
-
   //Parallax
   var rellax_info = new Rellax('.info');
-  var rellax_form = new Rellax('.form_input');
-
+  var rellax_form = new Rellax('.form_info');
 
 });
 
@@ -155,7 +129,6 @@ function animation() {
   title1.staggerFromTo(".title_animate span", .3, 
   {ease: Back.easeOut.config(1), opacity: 0, bottom: -50},
   {ease: Back.easeOut.config(0), opacity: 1, bottom: 0}, 0.05);
-  
 }
 
 

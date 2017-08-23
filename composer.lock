@@ -193,16 +193,16 @@
         },
         {
             "name": "oscarotero/env",
-            "version": "v1.0.2",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarotero/env.git",
-                "reference": "0819fd764ca19ab880b8d9ed7a95ae4910f98f20"
+                "reference": "0f676e41d758fa984806c32e27f0cf7afa63d8db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/env/zipball/0819fd764ca19ab880b8d9ed7a95ae4910f98f20",
-                "reference": "0819fd764ca19ab880b8d9ed7a95ae4910f98f20",
+                "url": "https://api.github.com/repos/oscarotero/env/zipball/0f676e41d758fa984806c32e27f0cf7afa63d8db",
+                "reference": "0f676e41d758fa984806c32e27f0cf7afa63d8db",
                 "shasum": ""
             },
             "require": {
@@ -231,7 +231,7 @@
             "keywords": [
                 "env"
             ],
-            "time": "2016-05-08T17:14:32+00:00"
+            "time": "2017-07-17T20:41:59+00:00"
         },
         {
             "name": "roots/bedrock-capistrano",
@@ -245,16 +245,16 @@
         },
         {
             "name": "roots/soil",
-            "version": "3.7.1",
+            "version": "3.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/soil.git",
-                "reference": "5b9b9d8a878b295f44b35cba826c462b20cc1d9c"
+                "reference": "d0e409e70dafff4ceeaa8ef941ee319e350317dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/5b9b9d8a878b295f44b35cba826c462b20cc1d9c",
-                "reference": "5b9b9d8a878b295f44b35cba826c462b20cc1d9c",
+                "url": "https://api.github.com/repos/roots/soil/zipball/d0e409e70dafff4ceeaa8ef941ee319e350317dd",
+                "reference": "d0e409e70dafff4ceeaa8ef941ee319e350317dd",
                 "shasum": ""
             },
             "require": {
@@ -286,7 +286,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-08-30T18:15:45+00:00"
+            "time": "2017-08-14T01:36:41+00:00"
         },
         {
             "name": "roots/wp-password-bcrypt",
@@ -397,7 +397,7 @@
         },
         {
             "name": "wpackagist-plugin/ajax-load-more",
-            "version": "2.14.0",
+            "version": "3.2.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ajax-load-more/",
@@ -405,7 +405,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ajax-load-more.zip",
+                "url": "https://downloads.wordpress.org/plugin/ajax-load-more.zip?timestamp=1502828046",
                 "reference": null,
                 "shasum": null
             },
@@ -417,15 +417,15 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7",
-            "version": "4.7",
+            "version": "4.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/contact-form-7/",
-                "reference": "tags/4.7"
+                "reference": "tags/4.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.9.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -457,15 +457,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.5.2",
+            "version": "1.5.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.5.2"
+                "reference": "tags/1.5.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.5.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.5.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -497,15 +497,15 @@
         },
         {
             "name": "wpackagist-plugin/responsive-lightbox",
-            "version": "1.6.12",
+            "version": "1.7.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/responsive-lightbox/",
-                "reference": "tags/1.6.12"
+                "reference": "tags/1.7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/responsive-lightbox.1.6.12.zip",
+                "url": "https://downloads.wordpress.org/plugin/responsive-lightbox.1.7.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -537,15 +537,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "4.4",
+            "version": "5.3.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/4.4"
+                "reference": "tags/5.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.5.3.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -579,16 +579,16 @@
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.8.1",
+            "version": "2.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d"
+                "reference": "dcbed1074f8244661eecddfc2a675430d8d33f62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d",
-                "reference": "d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/dcbed1074f8244661eecddfc2a675430d8d33f62",
+                "reference": "dcbed1074f8244661eecddfc2a675430d8d33f62",
                 "shasum": ""
             },
             "require": {
@@ -653,7 +653,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2017-03-01T22:17:45+00:00"
+            "time": "2017-05-22T02:43:20+00:00"
         }
     ],
     "aliases": [],
