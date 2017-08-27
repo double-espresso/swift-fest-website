@@ -8,21 +8,46 @@
 		@include vertical_align_absolute;
 		.hero-suptitle {
 			display: inline-block;
-      padding-left: 10px;
       margin-bottom: 30px;
 		}
+    .hero_title_container_desktop {
+      // small
+      @media screen and (max-width: 39.938em) {
+        display: none;
+      }
+    }
+    .hero_title_container_mobile {
+      display: none;
+      // small
+      @media screen and (max-width: 39.938em) {
+        display: block;
+      }
+    }
 		.hero-title {
 			display: inline-block;
       float: left;
-      left: 50%;
       position: relative;
       margin: 0 0 0 -10px;
       text-align: left;
       &.hero_title_line_1 {
-        left: 45%;
+        left: 47%;
         margin-bottom: 5px;
+        // medium
+        @media screen and (max-width: 63.938em) {
+          left: 40%;
+          margin-bottom: -20px;
+        }
       }
       &.hero_title_line_2{
+        left: 52%;
+        // medium
+        @media screen and (max-width: 63.938em) {
+          left: 44%;
+        }
+        // small
+        @media screen and (max-width: 39.938em) {
+          display: none;
+        }
       }
 		}
     .hero_subtitle {
@@ -52,6 +77,10 @@
   top: 0;
   right: -600px;
   opacity: 0.3;
+  // medium
+  @media screen and (max-width: 63.938em) {
+    right: -60px;
+  }
   span {
     color: $lightest;
     display: block;

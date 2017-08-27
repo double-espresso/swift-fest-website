@@ -69,21 +69,22 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 20px;
 }
 
-.loading {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: $primary;
-  z-index: 9999999999999;
-}
-
 .show {
   opacity: 1 !important;
   &:after {
     opacity: 1 !important;
     @include transition(.5s);
+  }
+}
+
+.row {
+  // medium
+  @media screen and (max-width: 63.938em) {
+    padding: 0 20px;
+  }
+  // small
+  @media screen and (max-width: 39.938em) {
+    padding: 0 10px;
   }
 }
 

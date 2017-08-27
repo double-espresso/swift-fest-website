@@ -111,7 +111,7 @@ var app = {
   animate: function (element) {
     var character = app.chars[Math.floor(Math.random() * app.chars.length)];
     var duration = Math.floor(Math.random() * 40) + 1;
-    var offset = Math.floor(Math.random() * (100 - duration * 2)) + 3;
+    var offset = Math.floor(Math.random() * (1000 - duration * 2)) + 3;
     var size = 100 + (15 - duration);
     element.style.cssText = 'right:'+offset+'vw; font-size:'+size+'px;animation-duration:'+duration+'s';
     element.innerHTML = character;
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', app.init);
 
 function animation() {
   var title1 = new TimelineMax();
-  title1.staggerFromTo(".title_animate span", .75, 
+  title1.staggerFromTo(".title_animate span", 1, 
   {ease: Back.easeOut.config(1), opacity: 0, bottom: -50},
   {ease: Back.easeOut.config(0), opacity: 1, bottom: 0}, 0.05);
 }

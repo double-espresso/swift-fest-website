@@ -1,6 +1,10 @@
 .form {
 	position: relative;
 	padding: 300px 0 500px 0;
+	// small
+	@media screen and (max-width: 39.938em) {
+		padding: 50px 0 500px 0;
+	}
 	&:before {
 		content: 'print("swiftfest")';
 		position: absolute;
@@ -32,5 +36,11 @@
 		@include super_width(360px);
 		@include super_height(530px);
 		margin-top: -80px;
+		// small
+		@media screen and (max-width: 39.938em) {
+			margin: 200px auto 0 auto;
+			@include super_width(100%);
+			position: static;
+		}
 	}
 }

@@ -1,0 +1,1170 @@
+# Logfile created on 2016-11-14 13:16:26 +0100 by logger.rb/53141
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-14 13:16:26 +0100 cap staging deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [cb456d81] Running /usr/bin/env mkdir -p /tmp as deploy@stage.nois3.net
+ DEBUG [cb456d81] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /tmp )
+  INFO [cb456d81] Finished in 3.089 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 100.0%
+  INFO [b58b35b6] Running /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh as deploy@stage.nois3.net
+ DEBUG [b58b35b6] Command: ( export WP_ENV="staging" ; /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh )
+  INFO [b58b35b6] Finished in 0.255 seconds with exit status 0 (successful).
+  INFO [6f4a3481] Running /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git as deploy@stage.nois3.net
+ DEBUG [6f4a3481] Command: ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git )
+ DEBUG [6f4a3481] 	11c36652a3781123361569c7864a83c9e36a3918	refs/heads/develop
+3653725077be827157438fc4a5ebba5f2f1868f4	refs/heads/issues/1-with-blade
+80f2fdcebd9ddd10c9d60b50ccd6eee915646b99	refs/heads/master
+  INFO [6f4a3481] Finished in 2.455 seconds with exit status 0 (successful).
+  INFO [c5a82b7d] Running /usr/bin/env mkdir -p /home/www/bhtlab.nois3.net/shared /home/www/bhtlab.nois3.net/releases as deploy@stage.nois3.net
+ DEBUG [c5a82b7d] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bhtlab.nois3.net/shared /home/www/bhtlab.nois3.net/releases )
+  INFO [c5a82b7d] Finished in 0.598 seconds with exit status 0 (successful).
+  INFO [76d9ab91] Running /usr/bin/env mkdir -p /home/www/bhtlab.nois3.net/shared/web/app/uploads /home/www/bhtlab.nois3.net/shared/web/2015 /home/www/bhtlab.nois3.net/shared/web/2014 /home/www/bhtlab.nois3.net/shared/web/app/cache /home/www/bhtlab.nois3.net/shared/web/app/wp-rocket-config as deploy@stage.nois3.net
+ DEBUG [76d9ab91] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bhtlab.nois3.net/shared/web/app/uploads /home/www/bhtlab.nois3.net/shared/web/2015 /home/www/bhtlab.nois3.net/shared/web/2014 /home/www/bhtlab.nois3.net/shared/web/app/cache /home/www/bhtlab.nois3.net/shared/web/app/wp-rocket-config )
+  INFO [76d9ab91] Finished in 0.130 seconds with exit status 0 (successful).
+  INFO [397e475d] Running /usr/bin/env mkdir -p /home/www/bhtlab.nois3.net/shared /home/www/bhtlab.nois3.net/shared/web /home/www/bhtlab.nois3.net/shared/web/app as deploy@stage.nois3.net
+ DEBUG [397e475d] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bhtlab.nois3.net/shared /home/www/bhtlab.nois3.net/shared/web /home/www/bhtlab.nois3.net/shared/web/app )
+  INFO [397e475d] Finished in 0.187 seconds with exit status 0 (successful).
+ DEBUG [1f675ede] Running [ -f /home/www/bhtlab.nois3.net/shared/.env ] as deploy@stage.nois3.net
+ DEBUG [1f675ede] Command: [ -f /home/www/bhtlab.nois3.net/shared/.env ]
+ DEBUG [1f675ede] Finished in 0.193 seconds with exit status 1 (failed).
+ ERROR linked file /home/www/bhtlab.nois3.net/shared/.env does not exist on stage.nois3.net
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-14 13:16:55 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c769344b] Running /usr/bin/env mkdir -p /tmp as deploy@stage.nois3.net
+ DEBUG [c769344b] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /tmp )
+  INFO [c769344b] Finished in 3.159 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 100.0%
+  INFO [9bb1d7f7] Running /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh as deploy@stage.nois3.net
+ DEBUG [9bb1d7f7] Command: ( export WP_ENV="staging" ; /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh )
+  INFO [9bb1d7f7] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [a310acb9] Running /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git as deploy@stage.nois3.net
+ DEBUG [a310acb9] Command: ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git )
+ DEBUG [a310acb9] 	11c36652a3781123361569c7864a83c9e36a3918	refs/heads/develop
+3653725077be827157438fc4a5ebba5f2f1868f4	refs/heads/issues/1-with-blade
+80f2fdcebd9ddd10c9d60b50ccd6eee915646b99	refs/heads/master
+  INFO [a310acb9] Finished in 1.542 seconds with exit status 0 (successful).
+  INFO [45ce033c] Running /usr/bin/env mkdir -p /home/www/bhtlab.nois3.net/shared /home/www/bhtlab.nois3.net/releases as deploy@stage.nois3.net
+ DEBUG [45ce033c] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bhtlab.nois3.net/shared /home/www/bhtlab.nois3.net/releases )
+  INFO [45ce033c] Finished in 0.540 seconds with exit status 0 (successful).
+  INFO [01036959] Running /usr/bin/env mkdir -p /home/www/bhtlab.nois3.net/shared/web/app/uploads /home/www/bhtlab.nois3.net/shared/web/2015 /home/www/bhtlab.nois3.net/shared/web/2014 /home/www/bhtlab.nois3.net/shared/web/app/cache /home/www/bhtlab.nois3.net/shared/web/app/wp-rocket-config as deploy@stage.nois3.net
+ DEBUG [01036959] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bhtlab.nois3.net/shared/web/app/uploads /home/www/bhtlab.nois3.net/shared/web/2015 /home/www/bhtlab.nois3.net/shared/web/2014 /home/www/bhtlab.nois3.net/shared/web/app/cache /home/www/bhtlab.nois3.net/shared/web/app/wp-rocket-config )
+  INFO [01036959] Finished in 0.535 seconds with exit status 0 (successful).
+  INFO [07026e5f] Running /usr/bin/env mkdir -p /home/www/bhtlab.nois3.net/shared /home/www/bhtlab.nois3.net/shared/web /home/www/bhtlab.nois3.net/shared/web/app as deploy@stage.nois3.net
+ DEBUG [07026e5f] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bhtlab.nois3.net/shared /home/www/bhtlab.nois3.net/shared/web /home/www/bhtlab.nois3.net/shared/web/app )
+  INFO [07026e5f] Finished in 0.546 seconds with exit status 0 (successful).
+ DEBUG [9b038de2] Running [ -f /home/www/bhtlab.nois3.net/shared/.env ] as deploy@stage.nois3.net
+ DEBUG [9b038de2] Command: [ -f /home/www/bhtlab.nois3.net/shared/.env ]
+ DEBUG [9b038de2] Finished in 0.606 seconds with exit status 1 (failed).
+ ERROR linked file /home/www/bhtlab.nois3.net/shared/.env does not exist on stage.nois3.net
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-14 13:17:48 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [618534f1] Running /usr/bin/env mkdir -p /tmp as deploy@stage.nois3.net
+ DEBUG [618534f1] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /tmp )
+  INFO [618534f1] Finished in 2.906 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 100.0%
+  INFO [7600ebbf] Running /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh as deploy@stage.nois3.net
+ DEBUG [7600ebbf] Command: ( export WP_ENV="staging" ; /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh )
+  INFO [7600ebbf] Finished in 0.617 seconds with exit status 0 (successful).
+  INFO [aa7f0bec] Running /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git as deploy@stage.nois3.net
+ DEBUG [aa7f0bec] Command: ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git )
+ DEBUG [aa7f0bec] 	11c36652a3781123361569c7864a83c9e36a3918	refs/heads/develop
+3653725077be827157438fc4a5ebba5f2f1868f4	refs/heads/issues/1-with-blade
+5a8db38b36443d2bb536ec388a5ff2ba2d9c4421	refs/heads/master
+  INFO [aa7f0bec] Finished in 2.607 seconds with exit status 0 (successful).
+  INFO [a335cc60] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/releases as deploy@stage.nois3.net
+ DEBUG [a335cc60] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/releases )
+ DEBUG [a335cc60] 	mkdir: 
+ DEBUG [a335cc60] 	cannot create directory '/home/www/bht.nois3.net/shared'
+ DEBUG [a335cc60] 	: Permission denied
+ DEBUG [a335cc60] 	
+ DEBUG [a335cc60] 	mkdir: 
+ DEBUG [a335cc60] 	cannot create directory '/home/www/bht.nois3.net/releases'
+ DEBUG [a335cc60] 	: Permission denied
+ DEBUG [a335cc60] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-14 13:18:14 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [f32f5da3] Running /usr/bin/env mkdir -p /tmp as deploy@stage.nois3.net
+ DEBUG [f32f5da3] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /tmp )
+  INFO [f32f5da3] Finished in 2.208 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 100.0%
+  INFO [0908f981] Running /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh as deploy@stage.nois3.net
+ DEBUG [0908f981] Command: ( export WP_ENV="staging" ; /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh )
+  INFO [0908f981] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [abd9990c] Running /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git as deploy@stage.nois3.net
+ DEBUG [abd9990c] Command: ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git )
+ DEBUG [abd9990c] 	11c36652a3781123361569c7864a83c9e36a3918	refs/heads/develop
+3653725077be827157438fc4a5ebba5f2f1868f4	refs/heads/issues/1-with-blade
+5a8db38b36443d2bb536ec388a5ff2ba2d9c4421	refs/heads/master
+  INFO [abd9990c] Finished in 1.471 seconds with exit status 0 (successful).
+  INFO [06cb8fec] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/releases as deploy@stage.nois3.net
+ DEBUG [06cb8fec] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/releases )
+ DEBUG [06cb8fec] 	mkdir: 
+ DEBUG [06cb8fec] 	cannot create directory '/home/www/bht.nois3.net/shared'
+ DEBUG [06cb8fec] 	: Permission denied
+ DEBUG [06cb8fec] 	
+ DEBUG [06cb8fec] 	mkdir: 
+ DEBUG [06cb8fec] 	cannot create directory '/home/www/bht.nois3.net/releases'
+ DEBUG [06cb8fec] 	: Permission denied
+ DEBUG [06cb8fec] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-14 13:19:02 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [9a3302a5] Running /usr/bin/env mkdir -p /tmp as deploy@stage.nois3.net
+ DEBUG [9a3302a5] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /tmp )
+  INFO [9a3302a5] Finished in 3.354 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 100.0%
+  INFO [5f4287ed] Running /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh as deploy@stage.nois3.net
+ DEBUG [5f4287ed] Command: ( export WP_ENV="staging" ; /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh )
+  INFO [5f4287ed] Finished in 0.391 seconds with exit status 0 (successful).
+  INFO [a6d3e322] Running /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git as deploy@stage.nois3.net
+ DEBUG [a6d3e322] Command: ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git )
+ DEBUG [a6d3e322] 	11c36652a3781123361569c7864a83c9e36a3918	refs/heads/develop
+3653725077be827157438fc4a5ebba5f2f1868f4	refs/heads/issues/1-with-blade
+5a8db38b36443d2bb536ec388a5ff2ba2d9c4421	refs/heads/master
+  INFO [a6d3e322] Finished in 2.233 seconds with exit status 0 (successful).
+  INFO [c411d635] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/releases as deploy@stage.nois3.net
+ DEBUG [c411d635] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/releases )
+  INFO [c411d635] Finished in 0.110 seconds with exit status 0 (successful).
+  INFO [4b6f9bb4] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared/web/app/uploads /home/www/bht.nois3.net/shared/web/2015 /home/www/bht.nois3.net/shared/web/2014 /home/www/bht.nois3.net/shared/web/app/cache /home/www/bht.nois3.net/shared/web/app/wp-rocket-config as deploy@stage.nois3.net
+ DEBUG [4b6f9bb4] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared/web/app/uploads /home/www/bht.nois3.net/shared/web/2015 /home/www/bht.nois3.net/shared/web/2014 /home/www/bht.nois3.net/shared/web/app/cache /home/www/bht.nois3.net/shared/web/app/wp-rocket-config )
+  INFO [4b6f9bb4] Finished in 0.175 seconds with exit status 0 (successful).
+  INFO [4aa842a5] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/shared/web /home/www/bht.nois3.net/shared/web/app as deploy@stage.nois3.net
+ DEBUG [4aa842a5] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/shared/web /home/www/bht.nois3.net/shared/web/app )
+  INFO [4aa842a5] Finished in 0.165 seconds with exit status 0 (successful).
+ DEBUG [1466db30] Running [ -f /home/www/bht.nois3.net/shared/.env ] as deploy@stage.nois3.net
+ DEBUG [1466db30] Command: [ -f /home/www/bht.nois3.net/shared/.env ]
+ DEBUG [1466db30] Finished in 0.298 seconds with exit status 1 (failed).
+ ERROR linked file /home/www/bht.nois3.net/shared/.env does not exist on stage.nois3.net
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-14 13:21:46 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [9e23bf1b] Running /usr/bin/env mkdir -p /tmp as deploy@stage.nois3.net
+ DEBUG [9e23bf1b] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /tmp )
+  INFO [9e23bf1b] Finished in 2.977 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 100.0%
+  INFO [133f994b] Running /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh as deploy@stage.nois3.net
+ DEBUG [133f994b] Command: ( export WP_ENV="staging" ; /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh )
+  INFO [133f994b] Finished in 0.713 seconds with exit status 0 (successful).
+  INFO [fcadea30] Running /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git as deploy@stage.nois3.net
+ DEBUG [fcadea30] Command: ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git )
+ DEBUG [fcadea30] 	11c36652a3781123361569c7864a83c9e36a3918	refs/heads/develop
+3653725077be827157438fc4a5ebba5f2f1868f4	refs/heads/issues/1-with-blade
+5a8db38b36443d2bb536ec388a5ff2ba2d9c4421	refs/heads/master
+  INFO [fcadea30] Finished in 2.601 seconds with exit status 0 (successful).
+  INFO [9b9387c4] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/releases as deploy@stage.nois3.net
+ DEBUG [9b9387c4] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/releases )
+  INFO [9b9387c4] Finished in 0.571 seconds with exit status 0 (successful).
+  INFO [e83b61bd] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared/web/app/uploads /home/www/bht.nois3.net/shared/web/2015 /home/www/bht.nois3.net/shared/web/2014 /home/www/bht.nois3.net/shared/web/app/cache /home/www/bht.nois3.net/shared/web/app/wp-rocket-config as deploy@stage.nois3.net
+ DEBUG [e83b61bd] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared/web/app/uploads /home/www/bht.nois3.net/shared/web/2015 /home/www/bht.nois3.net/shared/web/2014 /home/www/bht.nois3.net/shared/web/app/cache /home/www/bht.nois3.net/shared/web/app/wp-rocket-config )
+  INFO [e83b61bd] Finished in 0.517 seconds with exit status 0 (successful).
+  INFO [109a9cfe] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/shared/web /home/www/bht.nois3.net/shared/web/app as deploy@stage.nois3.net
+ DEBUG [109a9cfe] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/shared/web /home/www/bht.nois3.net/shared/web/app )
+  INFO [109a9cfe] Finished in 0.417 seconds with exit status 0 (successful).
+ DEBUG [9fe0f63b] Running [ -f /home/www/bht.nois3.net/shared/.env ] as deploy@stage.nois3.net
+ DEBUG [9fe0f63b] Command: [ -f /home/www/bht.nois3.net/shared/.env ]
+ DEBUG [9fe0f63b] Finished in 0.490 seconds with exit status 0 (successful).
+ DEBUG [d9eb4d86] Running [ -f /home/www/bht.nois3.net/shared/web/.htaccess ] as deploy@stage.nois3.net
+ DEBUG [d9eb4d86] Command: [ -f /home/www/bht.nois3.net/shared/web/.htaccess ]
+ DEBUG [d9eb4d86] Finished in 0.446 seconds with exit status 1 (failed).
+ ERROR linked file /home/www/bht.nois3.net/shared/web/.htaccess does not exist on stage.nois3.net
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-14 13:22:34 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [663b87a7] Running /usr/bin/env mkdir -p /tmp as deploy@stage.nois3.net
+ DEBUG [663b87a7] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /tmp )
+  INFO [663b87a7] Finished in 4.002 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 100.0%
+  INFO [971333e3] Running /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh as deploy@stage.nois3.net
+ DEBUG [971333e3] Command: ( export WP_ENV="staging" ; /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh )
+  INFO [971333e3] Finished in 0.700 seconds with exit status 0 (successful).
+  INFO [a2958f23] Running /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git as deploy@stage.nois3.net
+ DEBUG [a2958f23] Command: ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git )
+ DEBUG [a2958f23] 	11c36652a3781123361569c7864a83c9e36a3918	refs/heads/develop
+3653725077be827157438fc4a5ebba5f2f1868f4	refs/heads/issues/1-with-blade
+5a8db38b36443d2bb536ec388a5ff2ba2d9c4421	refs/heads/master
+  INFO [a2958f23] Finished in 3.593 seconds with exit status 0 (successful).
+  INFO [6ceeba1b] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/releases as deploy@stage.nois3.net
+ DEBUG [6ceeba1b] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/releases )
+  INFO [6ceeba1b] Finished in 0.749 seconds with exit status 0 (successful).
+  INFO [16813073] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared/web/app/uploads /home/www/bht.nois3.net/shared/web/2015 /home/www/bht.nois3.net/shared/web/2014 /home/www/bht.nois3.net/shared/web/app/cache /home/www/bht.nois3.net/shared/web/app/wp-rocket-config as deploy@stage.nois3.net
+ DEBUG [16813073] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared/web/app/uploads /home/www/bht.nois3.net/shared/web/2015 /home/www/bht.nois3.net/shared/web/2014 /home/www/bht.nois3.net/shared/web/app/cache /home/www/bht.nois3.net/shared/web/app/wp-rocket-config )
+  INFO [16813073] Finished in 1.548 seconds with exit status 0 (successful).
+  INFO [8a8c2a06] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/shared/web /home/www/bht.nois3.net/shared/web/app as deploy@stage.nois3.net
+ DEBUG [8a8c2a06] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/shared/web /home/www/bht.nois3.net/shared/web/app )
+  INFO [8a8c2a06] Finished in 0.573 seconds with exit status 0 (successful).
+ DEBUG [4875050e] Running [ -f /home/www/bht.nois3.net/shared/.env ] as deploy@stage.nois3.net
+ DEBUG [4875050e] Command: [ -f /home/www/bht.nois3.net/shared/.env ]
+ DEBUG [4875050e] Finished in 0.232 seconds with exit status 0 (successful).
+ DEBUG [6f3e8ded] Running [ -f /home/www/bht.nois3.net/shared/web/.htaccess ] as deploy@stage.nois3.net
+ DEBUG [6f3e8ded] Command: [ -f /home/www/bht.nois3.net/shared/web/.htaccess ]
+ DEBUG [6f3e8ded] Finished in 0.248 seconds with exit status 0 (successful).
+ DEBUG [517f3731] Running [ -f /home/www/bht.nois3.net/shared/web/app/advanced-cache.php ] as deploy@stage.nois3.net
+ DEBUG [517f3731] Command: [ -f /home/www/bht.nois3.net/shared/web/app/advanced-cache.php ]
+ DEBUG [517f3731] Finished in 0.405 seconds with exit status 1 (failed).
+ ERROR linked file /home/www/bht.nois3.net/shared/web/app/advanced-cache.php does not exist on stage.nois3.net
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-14 13:23:44 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [383f18f3] Running /usr/bin/env mkdir -p /tmp as deploy@stage.nois3.net
+ DEBUG [383f18f3] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /tmp )
+  INFO [383f18f3] Finished in 3.260 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 100.0%
+  INFO [6cbd8633] Running /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh as deploy@stage.nois3.net
+ DEBUG [6cbd8633] Command: ( export WP_ENV="staging" ; /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh )
+  INFO [6cbd8633] Finished in 0.684 seconds with exit status 0 (successful).
+  INFO [efa91705] Running /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git as deploy@stage.nois3.net
+ DEBUG [efa91705] Command: ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git )
+ DEBUG [efa91705] 	11c36652a3781123361569c7864a83c9e36a3918	refs/heads/develop
+3653725077be827157438fc4a5ebba5f2f1868f4	refs/heads/issues/1-with-blade
+9939ff7da898cbd4f6bce81024e602458b6b47fe	refs/heads/master
+  INFO [efa91705] Finished in 2.111 seconds with exit status 0 (successful).
+  INFO [95fe267d] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/releases as deploy@stage.nois3.net
+ DEBUG [95fe267d] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/releases )
+  INFO [95fe267d] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO [df7c153f] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared/web/app/uploads as deploy@stage.nois3.net
+ DEBUG [df7c153f] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared/web/app/uploads )
+  INFO [df7c153f] Finished in 1.228 seconds with exit status 0 (successful).
+  INFO [11e0b68c] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/shared/web as deploy@stage.nois3.net
+ DEBUG [11e0b68c] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/shared/web )
+  INFO [11e0b68c] Finished in 0.560 seconds with exit status 0 (successful).
+ DEBUG [a8e91456] Running [ -f /home/www/bht.nois3.net/shared/.env ] as deploy@stage.nois3.net
+ DEBUG [a8e91456] Command: [ -f /home/www/bht.nois3.net/shared/.env ]
+ DEBUG [a8e91456] Finished in 0.393 seconds with exit status 0 (successful).
+ DEBUG [1d0c19fe] Running [ -f /home/www/bht.nois3.net/shared/web/.htaccess ] as deploy@stage.nois3.net
+ DEBUG [1d0c19fe] Command: [ -f /home/www/bht.nois3.net/shared/web/.htaccess ]
+ DEBUG [1d0c19fe] Finished in 0.477 seconds with exit status 0 (successful).
+ DEBUG [6fa6db77] Running [ -f /home/www/bht.nois3.net/current/REVISION ] as deploy@stage.nois3.net
+ DEBUG [6fa6db77] Command: [ -f /home/www/bht.nois3.net/current/REVISION ]
+ DEBUG [6fa6db77] Finished in 0.609 seconds with exit status 1 (failed).
+ DEBUG [d0c539e9] Running [ -f /home/www/bht.nois3.net/repo/HEAD ] as deploy@stage.nois3.net
+ DEBUG [d0c539e9] Command: [ -f /home/www/bht.nois3.net/repo/HEAD ]
+ DEBUG [d0c539e9] Finished in 0.672 seconds with exit status 1 (failed).
+ DEBUG [0a424246] Running if test ! -d /home/www/bht.nois3.net; then echo "Directory does not exist '/home/www/bht.nois3.net'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [0a424246] Command: if test ! -d /home/www/bht.nois3.net; then echo "Directory does not exist '/home/www/bht.nois3.net'" 1>&2; false; fi
+ DEBUG [0a424246] Finished in 0.661 seconds with exit status 0 (successful).
+  INFO [1dedcbb4] Running /usr/bin/env git clone --mirror git@git.nois3.it:nois3/bht.git /home/www/bht.nois3.net/repo as deploy@stage.nois3.net
+ DEBUG [1dedcbb4] Command: cd /home/www/bht.nois3.net && ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git clone --mirror git@git.nois3.it:nois3/bht.git /home/www/bht.nois3.net/repo )
+ DEBUG [1dedcbb4] 	Cloning into bare repository '/home/www/bht.nois3.net/repo'...
+  INFO [1dedcbb4] Finished in 3.228 seconds with exit status 0 (successful).
+ DEBUG [34ce8917] Running if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [34ce8917] Command: if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi
+ DEBUG [34ce8917] Finished in 0.207 seconds with exit status 0 (successful).
+  INFO [122f1af8] Running /usr/bin/env git remote update --prune as deploy@stage.nois3.net
+ DEBUG [122f1af8] Command: cd /home/www/bht.nois3.net/repo && ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [122f1af8] 	Fetching origin
+  INFO [122f1af8] Finished in 1.788 seconds with exit status 0 (successful).
+ DEBUG [b6dd6ea6] Running if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [b6dd6ea6] Command: if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi
+ DEBUG [b6dd6ea6] Finished in 0.865 seconds with exit status 0 (successful).
+  INFO [11d1b4cb] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114122359 as deploy@stage.nois3.net
+ DEBUG [11d1b4cb] Command: cd /home/www/bht.nois3.net/repo && ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114122359 )
+  INFO [11d1b4cb] Finished in 0.974 seconds with exit status 0 (successful).
+  INFO [ae988e27] Running /usr/bin/env git archive develop | tar -x -f - -C /home/www/bht.nois3.net/releases/20161114122359 as deploy@stage.nois3.net
+ DEBUG [ae988e27] Command: cd /home/www/bht.nois3.net/repo && ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git archive develop | tar -x -f - -C /home/www/bht.nois3.net/releases/20161114122359 )
+  INFO [ae988e27] Finished in 0.223 seconds with exit status 0 (successful).
+ DEBUG [c18de6a1] Running if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [c18de6a1] Command: if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi
+ DEBUG [c18de6a1] Finished in 0.297 seconds with exit status 0 (successful).
+ DEBUG [67947b31] Running /usr/bin/env git rev-list --max-count=1 develop as deploy@stage.nois3.net
+ DEBUG [67947b31] Command: cd /home/www/bht.nois3.net/repo && ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git rev-list --max-count=1 develop )
+ DEBUG [67947b31] 	11c36652a3781123361569c7864a83c9e36a3918
+ DEBUG [67947b31] Finished in 0.369 seconds with exit status 0 (successful).
+ DEBUG [c1cc8d15] Running if test ! -d /home/www/bht.nois3.net/releases/20161114122359; then echo "Directory does not exist '/home/www/bht.nois3.net/releases/20161114122359'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [c1cc8d15] Command: if test ! -d /home/www/bht.nois3.net/releases/20161114122359; then echo "Directory does not exist '/home/www/bht.nois3.net/releases/20161114122359'" 1>&2; false; fi
+ DEBUG [c1cc8d15] Finished in 0.469 seconds with exit status 0 (successful).
+  INFO [363e2c74] Running /usr/bin/env echo "11c36652a3781123361569c7864a83c9e36a3918" >> REVISION as deploy@stage.nois3.net
+ DEBUG [363e2c74] Command: cd /home/www/bht.nois3.net/releases/20161114122359 && ( export WP_ENV="staging" ; /usr/bin/env echo "11c36652a3781123361569c7864a83c9e36a3918" >> REVISION )
+  INFO [363e2c74] Finished in 0.517 seconds with exit status 0 (successful).
+  INFO [839533eb] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114122359 /home/www/bht.nois3.net/releases/20161114122359/web as deploy@stage.nois3.net
+ DEBUG [839533eb] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114122359 /home/www/bht.nois3.net/releases/20161114122359/web )
+  INFO [839533eb] Finished in 0.574 seconds with exit status 0 (successful).
+ DEBUG [47bc08d0] Running [ -L /home/www/bht.nois3.net/releases/20161114122359/.env ] as deploy@stage.nois3.net
+ DEBUG [47bc08d0] Command: [ -L /home/www/bht.nois3.net/releases/20161114122359/.env ]
+ DEBUG [47bc08d0] Finished in 0.613 seconds with exit status 1 (failed).
+ DEBUG [087efb47] Running [ -f /home/www/bht.nois3.net/releases/20161114122359/.env ] as deploy@stage.nois3.net
+ DEBUG [087efb47] Command: [ -f /home/www/bht.nois3.net/releases/20161114122359/.env ]
+ DEBUG [087efb47] Finished in 0.960 seconds with exit status 1 (failed).
+  INFO [ffebd2ee] Running /usr/bin/env ln -s /home/www/bht.nois3.net/shared/.env /home/www/bht.nois3.net/releases/20161114122359/.env as deploy@stage.nois3.net
+ DEBUG [ffebd2ee] Command: ( export WP_ENV="staging" ; /usr/bin/env ln -s /home/www/bht.nois3.net/shared/.env /home/www/bht.nois3.net/releases/20161114122359/.env )
+  INFO [ffebd2ee] Finished in 0.576 seconds with exit status 0 (successful).
+ DEBUG [865f87d8] Running [ -L /home/www/bht.nois3.net/releases/20161114122359/web/.htaccess ] as deploy@stage.nois3.net
+ DEBUG [865f87d8] Command: [ -L /home/www/bht.nois3.net/releases/20161114122359/web/.htaccess ]
+ DEBUG [865f87d8] Finished in 1.173 seconds with exit status 1 (failed).
+ DEBUG [9f683407] Running [ -f /home/www/bht.nois3.net/releases/20161114122359/web/.htaccess ] as deploy@stage.nois3.net
+ DEBUG [9f683407] Command: [ -f /home/www/bht.nois3.net/releases/20161114122359/web/.htaccess ]
+ DEBUG [9f683407] Finished in 0.124 seconds with exit status 1 (failed).
+  INFO [4bc5e1a0] Running /usr/bin/env ln -s /home/www/bht.nois3.net/shared/web/.htaccess /home/www/bht.nois3.net/releases/20161114122359/web/.htaccess as deploy@stage.nois3.net
+ DEBUG [4bc5e1a0] Command: ( export WP_ENV="staging" ; /usr/bin/env ln -s /home/www/bht.nois3.net/shared/web/.htaccess /home/www/bht.nois3.net/releases/20161114122359/web/.htaccess )
+  INFO [4bc5e1a0] Finished in 0.219 seconds with exit status 0 (successful).
+  INFO [e8714537] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114122359/web/app as deploy@stage.nois3.net
+ DEBUG [e8714537] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114122359/web/app )
+  INFO [e8714537] Finished in 0.628 seconds with exit status 0 (successful).
+ DEBUG [51a9936d] Running [ -L /home/www/bht.nois3.net/releases/20161114122359/web/app/uploads ] as deploy@stage.nois3.net
+ DEBUG [51a9936d] Command: [ -L /home/www/bht.nois3.net/releases/20161114122359/web/app/uploads ]
+ DEBUG [51a9936d] Finished in 1.231 seconds with exit status 1 (failed).
+ DEBUG [4a634585] Running [ -d /home/www/bht.nois3.net/releases/20161114122359/web/app/uploads ] as deploy@stage.nois3.net
+ DEBUG [4a634585] Command: [ -d /home/www/bht.nois3.net/releases/20161114122359/web/app/uploads ]
+ DEBUG [4a634585] Finished in 2.089 seconds with exit status 0 (successful).
+  INFO [63d2c1a5] Running /usr/bin/env rm -rf /home/www/bht.nois3.net/releases/20161114122359/web/app/uploads as deploy@stage.nois3.net
+ DEBUG [63d2c1a5] Command: ( export WP_ENV="staging" ; /usr/bin/env rm -rf /home/www/bht.nois3.net/releases/20161114122359/web/app/uploads )
+  INFO [63d2c1a5] Finished in 0.655 seconds with exit status 0 (successful).
+  INFO [fad9283f] Running /usr/bin/env ln -s /home/www/bht.nois3.net/shared/web/app/uploads /home/www/bht.nois3.net/releases/20161114122359/web/app/uploads as deploy@stage.nois3.net
+ DEBUG [fad9283f] Command: ( export WP_ENV="staging" ; /usr/bin/env ln -s /home/www/bht.nois3.net/shared/web/app/uploads /home/www/bht.nois3.net/releases/20161114122359/web/app/uploads )
+  INFO [fad9283f] Finished in 0.571 seconds with exit status 0 (successful).
+ DEBUG [3bed2d5a] Running if test ! -d /home/www/bht.nois3.net/releases/20161114122359; then echo "Directory does not exist '/home/www/bht.nois3.net/releases/20161114122359'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [3bed2d5a] Command: if test ! -d /home/www/bht.nois3.net/releases/20161114122359; then echo "Directory does not exist '/home/www/bht.nois3.net/releases/20161114122359'" 1>&2; false; fi
+ DEBUG [3bed2d5a] Finished in 0.432 seconds with exit status 0 (successful).
+  INFO [10b6b36f] Running /usr/bin/env composer install --no-dev --no-interaction --optimize-autoloader as deploy@stage.nois3.net
+ DEBUG [10b6b36f] Command: cd /home/www/bht.nois3.net/releases/20161114122359 && ( export WP_ENV="staging" ; /usr/bin/env composer install --no-dev --no-interaction --optimize-autoloader )
+ DEBUG [10b6b36f] 	PHP Warning:  Module 'mcrypt' already loaded in Unknown on line 0
+ DEBUG [10b6b36f] 	Warning: This development build of composer is over 60 days old. It is recommended to update it by running "/usr/local/bin/composer self-update" to get the latest version.
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	Loading composer repositories with package information
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	Installing dependencies from lock file
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing johnpbloch/wordpress-core-installer (0.2.1)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Loading from cache
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing composer/installers (v1.0.25)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Loading from cache
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing johnpbloch/wordpress (4.6.1)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Loading from cache
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing nois3/advanced-custom-fields-pro (5.4.2)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Cloning release/5.4.2
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing nois3/bsa-pro-scripteo (3.2.34)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Cloning master
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing oscarotero/env (v1.0.2)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Loading from cache
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing roots/bedrock-capistrano (1.0)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Cloning master
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing roots/soil (3.7.1)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Loading from cache
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing roots/wp-password-bcrypt (1.0.0)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Loading from cache
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing vlucas/phpdotenv (v2.4.0)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Loading from cache
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing wpackagist-plugin/ajax-load-more (2.12.0)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Loading from cache
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing wpackagist-plugin/contact-form-7 (4.5.1)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Loading from cache
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing wpackagist-plugin/cookie-notice (1.2.36.1)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Loading from cache
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing wpackagist-plugin/custom-post-type-ui (1.4.3)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Loading from cache
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing wpackagist-plugin/regenerate-thumbnails (2.2.6)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Loading from cache
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing wpackagist-plugin/responsive-lightbox (1.6.9)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Loading from cache
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing wpackagist-plugin/simple-301-redirects (1.07)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Loading from cache
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing wpackagist-plugin/wordpress-seo (3.7.1)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Loading from cache
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing wpackagist-plugin/wp-mail-smtp (0.9.6)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Loading from cache
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	  - Installing wpackagist-plugin/wysija-newsletters (2.7.5)
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	    Loading from cache
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	
+ DEBUG [10b6b36f] 	Generating optimized autoload files
+ DEBUG [10b6b36f] 	
+  INFO [10b6b36f] Finished in 15.785 seconds with exit status 0 (successful).
+  INFO [e9d982b9] Running /usr/bin/env ln -s /home/www/bht.nois3.net/releases/20161114122359 /home/www/bht.nois3.net/releases/current as deploy@stage.nois3.net
+ DEBUG [e9d982b9] Command: ( export WP_ENV="staging" ; /usr/bin/env ln -s /home/www/bht.nois3.net/releases/20161114122359 /home/www/bht.nois3.net/releases/current )
+  INFO [e9d982b9] Finished in 0.300 seconds with exit status 0 (successful).
+  INFO [377599df] Running /usr/bin/env mv /home/www/bht.nois3.net/releases/current /home/www/bht.nois3.net as deploy@stage.nois3.net
+ DEBUG [377599df] Command: ( export WP_ENV="staging" ; /usr/bin/env mv /home/www/bht.nois3.net/releases/current /home/www/bht.nois3.net )
+  INFO [377599df] Finished in 0.304 seconds with exit status 0 (successful).
+ DEBUG [6e441f6c] Running /usr/bin/env ls -xtr /home/www/bht.nois3.net/releases as deploy@stage.nois3.net
+ DEBUG [6e441f6c] Command: ( export WP_ENV="staging" ; /usr/bin/env ls -xtr /home/www/bht.nois3.net/releases )
+ DEBUG [6e441f6c] 	20161114122359
+ DEBUG [6e441f6c] Finished in 0.354 seconds with exit status 0 (successful).
+ DEBUG [6c232367] Running if test ! -d /home/www/bht.nois3.net/releases; then echo "Directory does not exist '/home/www/bht.nois3.net/releases'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [6c232367] Command: if test ! -d /home/www/bht.nois3.net/releases; then echo "Directory does not exist '/home/www/bht.nois3.net/releases'" 1>&2; false; fi
+ DEBUG [6c232367] Finished in 0.484 seconds with exit status 0 (successful).
+  INFO [a2ebc380] Running /usr/bin/env echo "Branch develop (at 11c36652a3781123361569c7864a83c9e36a3918) deployed as release 20161114122359 by c" >> /home/www/bht.nois3.net/revisions.log as deploy@stage.nois3.net
+ DEBUG [a2ebc380] Command: cd /home/www/bht.nois3.net/releases && ( export WP_ENV="staging" ; /usr/bin/env echo "Branch develop (at 11c36652a3781123361569c7864a83c9e36a3918) deployed as release 20161114122359 by c" >> /home/www/bht.nois3.net/revisions.log )
+  INFO [a2ebc380] Finished in 0.440 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-14 13:39:43 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8d35c878] Running /usr/bin/env mkdir -p /tmp as deploy@stage.nois3.net
+ DEBUG [8d35c878] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /tmp )
+  INFO [8d35c878] Finished in 2.612 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 100.0%
+  INFO [e44e4bab] Running /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh as deploy@stage.nois3.net
+ DEBUG [e44e4bab] Command: ( export WP_ENV="staging" ; /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh )
+  INFO [e44e4bab] Finished in 0.113 seconds with exit status 0 (successful).
+  INFO [966cb80d] Running /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git as deploy@stage.nois3.net
+ DEBUG [966cb80d] Command: ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git )
+ DEBUG [966cb80d] 	4038b96d4742bad20637cf167c160608668d0093	refs/heads/develop
+3653725077be827157438fc4a5ebba5f2f1868f4	refs/heads/issues/1-with-blade
+9939ff7da898cbd4f6bce81024e602458b6b47fe	refs/heads/master
+  INFO [966cb80d] Finished in 1.959 seconds with exit status 0 (successful).
+  INFO [6c8c43bc] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/releases as deploy@stage.nois3.net
+ DEBUG [6c8c43bc] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/releases )
+  INFO [6c8c43bc] Finished in 0.630 seconds with exit status 0 (successful).
+  INFO [7ae1ac53] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared/web/app/uploads as deploy@stage.nois3.net
+ DEBUG [7ae1ac53] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared/web/app/uploads )
+  INFO [7ae1ac53] Finished in 0.926 seconds with exit status 0 (successful).
+  INFO [6f56ad3f] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/shared/web as deploy@stage.nois3.net
+ DEBUG [6f56ad3f] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/shared/web )
+  INFO [6f56ad3f] Finished in 0.654 seconds with exit status 0 (successful).
+ DEBUG [db72abcd] Running [ -f /home/www/bht.nois3.net/shared/.env ] as deploy@stage.nois3.net
+ DEBUG [db72abcd] Command: [ -f /home/www/bht.nois3.net/shared/.env ]
+ DEBUG [db72abcd] Finished in 0.134 seconds with exit status 0 (successful).
+ DEBUG [6c5393ab] Running [ -f /home/www/bht.nois3.net/shared/web/.htaccess ] as deploy@stage.nois3.net
+ DEBUG [6c5393ab] Command: [ -f /home/www/bht.nois3.net/shared/web/.htaccess ]
+ DEBUG [6c5393ab] Finished in 0.241 seconds with exit status 0 (successful).
+ DEBUG [70c5afe0] Running [ -f /home/www/bht.nois3.net/current/REVISION ] as deploy@stage.nois3.net
+ DEBUG [70c5afe0] Command: [ -f /home/www/bht.nois3.net/current/REVISION ]
+ DEBUG [70c5afe0] Finished in 0.480 seconds with exit status 0 (successful).
+ DEBUG [98ef8573] Running /usr/bin/env cat /home/www/bht.nois3.net/current/REVISION 2>/dev/null as deploy@stage.nois3.net
+ DEBUG [98ef8573] Command: ( export WP_ENV="staging" ; /usr/bin/env cat /home/www/bht.nois3.net/current/REVISION 2>/dev/null )
+ DEBUG [98ef8573] 	11c36652a3781123361569c7864a83c9e36a3918
+ DEBUG [98ef8573] Finished in 0.500 seconds with exit status 0 (successful).
+ DEBUG [33c6d0ce] Running [ -f /home/www/bht.nois3.net/repo/HEAD ] as deploy@stage.nois3.net
+ DEBUG [33c6d0ce] Command: [ -f /home/www/bht.nois3.net/repo/HEAD ]
+ DEBUG [33c6d0ce] Finished in 0.415 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/www/bht.nois3.net/repo
+ DEBUG [1f2318e2] Running if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [1f2318e2] Command: if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi
+ DEBUG [1f2318e2] Finished in 0.440 seconds with exit status 0 (successful).
+  INFO [0a31a60e] Running /usr/bin/env git remote update --prune as deploy@stage.nois3.net
+ DEBUG [0a31a60e] Command: cd /home/www/bht.nois3.net/repo && ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [0a31a60e] 	Fetching origin
+ DEBUG [0a31a60e] 	From git.nois3.it:nois3/bht
+ DEBUG [0a31a60e] 	   11c3665..4038b96  develop    -> develop
+  INFO [0a31a60e] Finished in 2.165 seconds with exit status 0 (successful).
+ DEBUG [304abdf7] Running if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [304abdf7] Command: if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi
+ DEBUG [304abdf7] Finished in 0.316 seconds with exit status 0 (successful).
+  INFO [954d6359] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114123958 as deploy@stage.nois3.net
+ DEBUG [954d6359] Command: cd /home/www/bht.nois3.net/repo && ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114123958 )
+  INFO [954d6359] Finished in 0.422 seconds with exit status 0 (successful).
+  INFO [d88df177] Running /usr/bin/env git archive develop | tar -x -f - -C /home/www/bht.nois3.net/releases/20161114123958 as deploy@stage.nois3.net
+ DEBUG [d88df177] Command: cd /home/www/bht.nois3.net/repo && ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git archive develop | tar -x -f - -C /home/www/bht.nois3.net/releases/20161114123958 )
+  INFO [d88df177] Finished in 0.555 seconds with exit status 0 (successful).
+ DEBUG [2acb6cde] Running if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [2acb6cde] Command: if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi
+ DEBUG [2acb6cde] Finished in 0.492 seconds with exit status 0 (successful).
+ DEBUG [a8921bd9] Running /usr/bin/env git rev-list --max-count=1 develop as deploy@stage.nois3.net
+ DEBUG [a8921bd9] Command: cd /home/www/bht.nois3.net/repo && ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git rev-list --max-count=1 develop )
+ DEBUG [a8921bd9] 	4038b96d4742bad20637cf167c160608668d0093
+ DEBUG [a8921bd9] Finished in 0.508 seconds with exit status 0 (successful).
+ DEBUG [8429743a] Running if test ! -d /home/www/bht.nois3.net/releases/20161114123958; then echo "Directory does not exist '/home/www/bht.nois3.net/releases/20161114123958'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [8429743a] Command: if test ! -d /home/www/bht.nois3.net/releases/20161114123958; then echo "Directory does not exist '/home/www/bht.nois3.net/releases/20161114123958'" 1>&2; false; fi
+ DEBUG [8429743a] Finished in 0.446 seconds with exit status 0 (successful).
+  INFO [ed1b5edb] Running /usr/bin/env echo "4038b96d4742bad20637cf167c160608668d0093" >> REVISION as deploy@stage.nois3.net
+ DEBUG [ed1b5edb] Command: cd /home/www/bht.nois3.net/releases/20161114123958 && ( export WP_ENV="staging" ; /usr/bin/env echo "4038b96d4742bad20637cf167c160608668d0093" >> REVISION )
+  INFO [ed1b5edb] Finished in 0.304 seconds with exit status 0 (successful).
+  INFO [dbdb23a8] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114123958 /home/www/bht.nois3.net/releases/20161114123958/web as deploy@stage.nois3.net
+ DEBUG [dbdb23a8] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114123958 /home/www/bht.nois3.net/releases/20161114123958/web )
+  INFO [dbdb23a8] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG [bceb3047] Running [ -L /home/www/bht.nois3.net/releases/20161114123958/.env ] as deploy@stage.nois3.net
+ DEBUG [bceb3047] Command: [ -L /home/www/bht.nois3.net/releases/20161114123958/.env ]
+ DEBUG [bceb3047] Finished in 0.086 seconds with exit status 1 (failed).
+ DEBUG [8d66a1e7] Running [ -f /home/www/bht.nois3.net/releases/20161114123958/.env ] as deploy@stage.nois3.net
+ DEBUG [8d66a1e7] Command: [ -f /home/www/bht.nois3.net/releases/20161114123958/.env ]
+ DEBUG [8d66a1e7] Finished in 0.093 seconds with exit status 1 (failed).
+  INFO [b0cf4abb] Running /usr/bin/env ln -s /home/www/bht.nois3.net/shared/.env /home/www/bht.nois3.net/releases/20161114123958/.env as deploy@stage.nois3.net
+ DEBUG [b0cf4abb] Command: ( export WP_ENV="staging" ; /usr/bin/env ln -s /home/www/bht.nois3.net/shared/.env /home/www/bht.nois3.net/releases/20161114123958/.env )
+  INFO [b0cf4abb] Finished in 0.092 seconds with exit status 0 (successful).
+ DEBUG [7b5ef6b4] Running [ -L /home/www/bht.nois3.net/releases/20161114123958/web/.htaccess ] as deploy@stage.nois3.net
+ DEBUG [7b5ef6b4] Command: [ -L /home/www/bht.nois3.net/releases/20161114123958/web/.htaccess ]
+ DEBUG [7b5ef6b4] Finished in 0.086 seconds with exit status 1 (failed).
+ DEBUG [7bb5f0d8] Running [ -f /home/www/bht.nois3.net/releases/20161114123958/web/.htaccess ] as deploy@stage.nois3.net
+ DEBUG [7bb5f0d8] Command: [ -f /home/www/bht.nois3.net/releases/20161114123958/web/.htaccess ]
+ DEBUG [7bb5f0d8] Finished in 0.088 seconds with exit status 1 (failed).
+  INFO [a3db580a] Running /usr/bin/env ln -s /home/www/bht.nois3.net/shared/web/.htaccess /home/www/bht.nois3.net/releases/20161114123958/web/.htaccess as deploy@stage.nois3.net
+ DEBUG [a3db580a] Command: ( export WP_ENV="staging" ; /usr/bin/env ln -s /home/www/bht.nois3.net/shared/web/.htaccess /home/www/bht.nois3.net/releases/20161114123958/web/.htaccess )
+  INFO [a3db580a] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [70cf74dd] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114123958/web/app as deploy@stage.nois3.net
+ DEBUG [70cf74dd] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114123958/web/app )
+  INFO [70cf74dd] Finished in 0.093 seconds with exit status 0 (successful).
+ DEBUG [485c608f] Running [ -L /home/www/bht.nois3.net/releases/20161114123958/web/app/uploads ] as deploy@stage.nois3.net
+ DEBUG [485c608f] Command: [ -L /home/www/bht.nois3.net/releases/20161114123958/web/app/uploads ]
+ DEBUG [485c608f] Finished in 0.088 seconds with exit status 1 (failed).
+ DEBUG [dfb759ab] Running [ -d /home/www/bht.nois3.net/releases/20161114123958/web/app/uploads ] as deploy@stage.nois3.net
+ DEBUG [dfb759ab] Command: [ -d /home/www/bht.nois3.net/releases/20161114123958/web/app/uploads ]
+ DEBUG [dfb759ab] Finished in 0.202 seconds with exit status 0 (successful).
+  INFO [ee73d146] Running /usr/bin/env rm -rf /home/www/bht.nois3.net/releases/20161114123958/web/app/uploads as deploy@stage.nois3.net
+ DEBUG [ee73d146] Command: ( export WP_ENV="staging" ; /usr/bin/env rm -rf /home/www/bht.nois3.net/releases/20161114123958/web/app/uploads )
+  INFO [ee73d146] Finished in 0.190 seconds with exit status 0 (successful).
+  INFO [590c6871] Running /usr/bin/env ln -s /home/www/bht.nois3.net/shared/web/app/uploads /home/www/bht.nois3.net/releases/20161114123958/web/app/uploads as deploy@stage.nois3.net
+ DEBUG [590c6871] Command: ( export WP_ENV="staging" ; /usr/bin/env ln -s /home/www/bht.nois3.net/shared/web/app/uploads /home/www/bht.nois3.net/releases/20161114123958/web/app/uploads )
+  INFO [590c6871] Finished in 0.272 seconds with exit status 0 (successful).
+ DEBUG [86b78784] Running if test ! -d /home/www/bht.nois3.net/releases/20161114123958; then echo "Directory does not exist '/home/www/bht.nois3.net/releases/20161114123958'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [86b78784] Command: if test ! -d /home/www/bht.nois3.net/releases/20161114123958; then echo "Directory does not exist '/home/www/bht.nois3.net/releases/20161114123958'" 1>&2; false; fi
+ DEBUG [86b78784] Finished in 0.390 seconds with exit status 0 (successful).
+  INFO [2303e766] Running /usr/bin/env composer install --no-dev --no-interaction --optimize-autoloader as deploy@stage.nois3.net
+ DEBUG [2303e766] Command: cd /home/www/bht.nois3.net/releases/20161114123958 && ( export WP_ENV="staging" ; /usr/bin/env composer install --no-dev --no-interaction --optimize-autoloader )
+ DEBUG [2303e766] 	PHP Warning:  Module 'mcrypt' already loaded in Unknown on line 0
+ DEBUG [2303e766] 	Warning: This development build of composer is over 60 days old. It is recommended to update it by running "/usr/local/bin/composer self-update" to get the latest version.
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	Loading composer repositories with package information
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	Installing dependencies from lock file
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing johnpbloch/wordpress-core-installer (0.2.1)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Loading from cache
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing composer/installers (v1.0.25)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Loading from cache
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing johnpbloch/wordpress (4.6.1)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Loading from cache
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing nois3/advanced-custom-fields-pro (5.4.2)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Cloning release/5.4.2
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing nois3/bsa-pro-scripteo (3.2.34)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Cloning master
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing oscarotero/env (v1.0.2)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Loading from cache
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing roots/bedrock-capistrano (1.0)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Cloning master
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing roots/soil (3.7.1)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Loading from cache
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing roots/wp-password-bcrypt (1.0.0)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Loading from cache
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing vlucas/phpdotenv (v2.4.0)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Loading from cache
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing wpackagist-plugin/ajax-load-more (2.12.0)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Loading from cache
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing wpackagist-plugin/contact-form-7 (4.5.1)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Loading from cache
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing wpackagist-plugin/cookie-notice (1.2.36.1)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Loading from cache
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing wpackagist-plugin/custom-post-type-ui (1.4.3)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Loading from cache
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing wpackagist-plugin/regenerate-thumbnails (2.2.6)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Loading from cache
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing wpackagist-plugin/responsive-lightbox (1.6.9)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Loading from cache
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing wpackagist-plugin/simple-301-redirects (1.07)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Loading from cache
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing wpackagist-plugin/wordpress-seo (3.7.1)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Loading from cache
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing wpackagist-plugin/wp-mail-smtp (0.9.6)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Loading from cache
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	  - Installing wpackagist-plugin/wysija-newsletters (2.7.5)
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	    Loading from cache
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	
+ DEBUG [2303e766] 	Generating optimized autoload files
+ DEBUG [2303e766] 	
+  INFO [2303e766] Finished in 14.648 seconds with exit status 0 (successful).
+  INFO [60a2e680] Running /usr/bin/env ln -s /home/www/bht.nois3.net/releases/20161114123958 /home/www/bht.nois3.net/releases/current as deploy@stage.nois3.net
+ DEBUG [60a2e680] Command: ( export WP_ENV="staging" ; /usr/bin/env ln -s /home/www/bht.nois3.net/releases/20161114123958 /home/www/bht.nois3.net/releases/current )
+  INFO [60a2e680] Finished in 0.918 seconds with exit status 0 (successful).
+  INFO [b824a28c] Running /usr/bin/env mv /home/www/bht.nois3.net/releases/current /home/www/bht.nois3.net as deploy@stage.nois3.net
+ DEBUG [b824a28c] Command: ( export WP_ENV="staging" ; /usr/bin/env mv /home/www/bht.nois3.net/releases/current /home/www/bht.nois3.net )
+  INFO [b824a28c] Finished in 0.799 seconds with exit status 0 (successful).
+ DEBUG [5f626aa7] Running /usr/bin/env ls -xtr /home/www/bht.nois3.net/releases as deploy@stage.nois3.net
+ DEBUG [5f626aa7] Command: ( export WP_ENV="staging" ; /usr/bin/env ls -xtr /home/www/bht.nois3.net/releases )
+ DEBUG [5f626aa7] 	20161114122359	20161114123958
+ DEBUG [5f626aa7] Finished in 0.721 seconds with exit status 0 (successful).
+ DEBUG [9b0274eb] Running if test ! -d /home/www/bht.nois3.net/releases; then echo "Directory does not exist '/home/www/bht.nois3.net/releases'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [9b0274eb] Command: if test ! -d /home/www/bht.nois3.net/releases; then echo "Directory does not exist '/home/www/bht.nois3.net/releases'" 1>&2; false; fi
+ DEBUG [9b0274eb] Finished in 0.668 seconds with exit status 0 (successful).
+  INFO [ec82314e] Running /usr/bin/env echo "Branch develop (at 4038b96d4742bad20637cf167c160608668d0093) deployed as release 20161114123958 by c" >> /home/www/bht.nois3.net/revisions.log as deploy@stage.nois3.net
+ DEBUG [ec82314e] Command: cd /home/www/bht.nois3.net/releases && ( export WP_ENV="staging" ; /usr/bin/env echo "Branch develop (at 4038b96d4742bad20637cf167c160608668d0093) deployed as release 20161114123958 by c" >> /home/www/bht.nois3.net/revisions.log )
+  INFO [ec82314e] Finished in 0.427 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-14 13:43:19 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [51c5df84] Running /usr/bin/env mkdir -p /tmp as deploy@stage.nois3.net
+ DEBUG [51c5df84] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /tmp )
+  INFO [51c5df84] Finished in 3.428 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 100.0%
+  INFO [94af0587] Running /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh as deploy@stage.nois3.net
+ DEBUG [94af0587] Command: ( export WP_ENV="staging" ; /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh )
+  INFO [94af0587] Finished in 0.845 seconds with exit status 0 (successful).
+  INFO [91b64b17] Running /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git as deploy@stage.nois3.net
+ DEBUG [91b64b17] Command: ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git )
+ DEBUG [91b64b17] 	4038b96d4742bad20637cf167c160608668d0093	refs/heads/develop
+3653725077be827157438fc4a5ebba5f2f1868f4	refs/heads/issues/1-with-blade
+9939ff7da898cbd4f6bce81024e602458b6b47fe	refs/heads/master
+  INFO [91b64b17] Finished in 3.106 seconds with exit status 0 (successful).
+  INFO [01e693ac] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/releases as deploy@stage.nois3.net
+ DEBUG [01e693ac] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/releases )
+  INFO [01e693ac] Finished in 0.616 seconds with exit status 0 (successful).
+  INFO [984f4c87] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared/web/app/uploads as deploy@stage.nois3.net
+ DEBUG [984f4c87] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared/web/app/uploads )
+  INFO [984f4c87] Finished in 0.472 seconds with exit status 0 (successful).
+  INFO [c2f96b7a] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/shared/web as deploy@stage.nois3.net
+ DEBUG [c2f96b7a] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/shared/web )
+  INFO [c2f96b7a] Finished in 0.540 seconds with exit status 0 (successful).
+ DEBUG [8e488062] Running [ -f /home/www/bht.nois3.net/shared/.env ] as deploy@stage.nois3.net
+ DEBUG [8e488062] Command: [ -f /home/www/bht.nois3.net/shared/.env ]
+ DEBUG [8e488062] Finished in 0.461 seconds with exit status 0 (successful).
+ DEBUG [26b9649e] Running [ -f /home/www/bht.nois3.net/shared/web/.htaccess ] as deploy@stage.nois3.net
+ DEBUG [26b9649e] Command: [ -f /home/www/bht.nois3.net/shared/web/.htaccess ]
+ DEBUG [26b9649e] Finished in 0.267 seconds with exit status 0 (successful).
+ DEBUG [d616a396] Running [ -f /home/www/bht.nois3.net/current/REVISION ] as deploy@stage.nois3.net
+ DEBUG [d616a396] Command: [ -f /home/www/bht.nois3.net/current/REVISION ]
+ DEBUG [d616a396] Finished in 0.266 seconds with exit status 0 (successful).
+ DEBUG [5124e79b] Running /usr/bin/env cat /home/www/bht.nois3.net/current/REVISION 2>/dev/null as deploy@stage.nois3.net
+ DEBUG [5124e79b] Command: ( export WP_ENV="staging" ; /usr/bin/env cat /home/www/bht.nois3.net/current/REVISION 2>/dev/null )
+ DEBUG [5124e79b] 	4038b96d4742bad20637cf167c160608668d0093
+ DEBUG [5124e79b] Finished in 0.278 seconds with exit status 0 (successful).
+ DEBUG [dec1e013] Running [ -f /home/www/bht.nois3.net/repo/HEAD ] as deploy@stage.nois3.net
+ DEBUG [dec1e013] Command: [ -f /home/www/bht.nois3.net/repo/HEAD ]
+ DEBUG [dec1e013] Finished in 0.276 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/www/bht.nois3.net/repo
+ DEBUG [3dc0bf92] Running if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [3dc0bf92] Command: if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi
+ DEBUG [3dc0bf92] Finished in 0.735 seconds with exit status 0 (successful).
+  INFO [98d5a48c] Running /usr/bin/env git remote update --prune as deploy@stage.nois3.net
+ DEBUG [98d5a48c] Command: cd /home/www/bht.nois3.net/repo && ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [98d5a48c] 	Fetching origin
+  INFO [98d5a48c] Finished in 2.375 seconds with exit status 0 (successful).
+ DEBUG [a4f235a3] Running if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [a4f235a3] Command: if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi
+ DEBUG [a4f235a3] Finished in 0.506 seconds with exit status 0 (successful).
+  INFO [3b4a83bf] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114124334 as deploy@stage.nois3.net
+ DEBUG [3b4a83bf] Command: cd /home/www/bht.nois3.net/repo && ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114124334 )
+  INFO [3b4a83bf] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [5efa91bb] Running /usr/bin/env git archive develop | tar -x -f - -C /home/www/bht.nois3.net/releases/20161114124334 as deploy@stage.nois3.net
+ DEBUG [5efa91bb] Command: cd /home/www/bht.nois3.net/repo && ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git archive develop | tar -x -f - -C /home/www/bht.nois3.net/releases/20161114124334 )
+  INFO [5efa91bb] Finished in 0.437 seconds with exit status 0 (successful).
+ DEBUG [0139b54d] Running if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [0139b54d] Command: if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi
+ DEBUG [0139b54d] Finished in 0.908 seconds with exit status 0 (successful).
+ DEBUG [61973104] Running /usr/bin/env git rev-list --max-count=1 develop as deploy@stage.nois3.net
+ DEBUG [61973104] Command: cd /home/www/bht.nois3.net/repo && ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git rev-list --max-count=1 develop )
+ DEBUG [61973104] 	4038b96d4742bad20637cf167c160608668d0093
+ DEBUG [61973104] Finished in 1.220 seconds with exit status 0 (successful).
+ DEBUG [8c7ae60c] Running if test ! -d /home/www/bht.nois3.net/releases/20161114124334; then echo "Directory does not exist '/home/www/bht.nois3.net/releases/20161114124334'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [8c7ae60c] Command: if test ! -d /home/www/bht.nois3.net/releases/20161114124334; then echo "Directory does not exist '/home/www/bht.nois3.net/releases/20161114124334'" 1>&2; false; fi
+ DEBUG [8c7ae60c] Finished in 0.287 seconds with exit status 0 (successful).
+  INFO [b208c556] Running /usr/bin/env echo "4038b96d4742bad20637cf167c160608668d0093" >> REVISION as deploy@stage.nois3.net
+ DEBUG [b208c556] Command: cd /home/www/bht.nois3.net/releases/20161114124334 && ( export WP_ENV="staging" ; /usr/bin/env echo "4038b96d4742bad20637cf167c160608668d0093" >> REVISION )
+  INFO [b208c556] Finished in 0.528 seconds with exit status 0 (successful).
+  INFO [6b787081] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114124334 /home/www/bht.nois3.net/releases/20161114124334/web as deploy@stage.nois3.net
+ DEBUG [6b787081] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114124334 /home/www/bht.nois3.net/releases/20161114124334/web )
+  INFO [6b787081] Finished in 0.724 seconds with exit status 0 (successful).
+ DEBUG [1742bc2a] Running [ -L /home/www/bht.nois3.net/releases/20161114124334/.env ] as deploy@stage.nois3.net
+ DEBUG [1742bc2a] Command: [ -L /home/www/bht.nois3.net/releases/20161114124334/.env ]
+ DEBUG [1742bc2a] Finished in 1.233 seconds with exit status 1 (failed).
+ DEBUG [2682ae68] Running [ -f /home/www/bht.nois3.net/releases/20161114124334/.env ] as deploy@stage.nois3.net
+ DEBUG [2682ae68] Command: [ -f /home/www/bht.nois3.net/releases/20161114124334/.env ]
+ DEBUG [2682ae68] Finished in 2.149 seconds with exit status 1 (failed).
+  INFO [b3a7185d] Running /usr/bin/env ln -s /home/www/bht.nois3.net/shared/.env /home/www/bht.nois3.net/releases/20161114124334/.env as deploy@stage.nois3.net
+ DEBUG [b3a7185d] Command: ( export WP_ENV="staging" ; /usr/bin/env ln -s /home/www/bht.nois3.net/shared/.env /home/www/bht.nois3.net/releases/20161114124334/.env )
+  INFO [b3a7185d] Finished in 0.650 seconds with exit status 0 (successful).
+ DEBUG [11c913d8] Running [ -L /home/www/bht.nois3.net/releases/20161114124334/web/.htaccess ] as deploy@stage.nois3.net
+ DEBUG [11c913d8] Command: [ -L /home/www/bht.nois3.net/releases/20161114124334/web/.htaccess ]
+ DEBUG [11c913d8] Finished in 1.190 seconds with exit status 1 (failed).
+ DEBUG [8e6ddc0e] Running [ -f /home/www/bht.nois3.net/releases/20161114124334/web/.htaccess ] as deploy@stage.nois3.net
+ DEBUG [8e6ddc0e] Command: [ -f /home/www/bht.nois3.net/releases/20161114124334/web/.htaccess ]
+ DEBUG [8e6ddc0e] Finished in 0.347 seconds with exit status 1 (failed).
+  INFO [2e55577a] Running /usr/bin/env ln -s /home/www/bht.nois3.net/shared/web/.htaccess /home/www/bht.nois3.net/releases/20161114124334/web/.htaccess as deploy@stage.nois3.net
+ DEBUG [2e55577a] Command: ( export WP_ENV="staging" ; /usr/bin/env ln -s /home/www/bht.nois3.net/shared/web/.htaccess /home/www/bht.nois3.net/releases/20161114124334/web/.htaccess )
+  INFO [2e55577a] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO [05a148c6] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114124334/web/app as deploy@stage.nois3.net
+ DEBUG [05a148c6] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114124334/web/app )
+  INFO [05a148c6] Finished in 0.312 seconds with exit status 0 (successful).
+ DEBUG [f9408975] Running [ -L /home/www/bht.nois3.net/releases/20161114124334/web/app/uploads ] as deploy@stage.nois3.net
+ DEBUG [f9408975] Command: [ -L /home/www/bht.nois3.net/releases/20161114124334/web/app/uploads ]
+ DEBUG [f9408975] Finished in 0.515 seconds with exit status 1 (failed).
+ DEBUG [3f5738c8] Running [ -d /home/www/bht.nois3.net/releases/20161114124334/web/app/uploads ] as deploy@stage.nois3.net
+ DEBUG [3f5738c8] Command: [ -d /home/www/bht.nois3.net/releases/20161114124334/web/app/uploads ]
+ DEBUG [3f5738c8] Finished in 0.382 seconds with exit status 0 (successful).
+  INFO [b9d65597] Running /usr/bin/env rm -rf /home/www/bht.nois3.net/releases/20161114124334/web/app/uploads as deploy@stage.nois3.net
+ DEBUG [b9d65597] Command: ( export WP_ENV="staging" ; /usr/bin/env rm -rf /home/www/bht.nois3.net/releases/20161114124334/web/app/uploads )
+  INFO [b9d65597] Finished in 0.480 seconds with exit status 0 (successful).
+  INFO [49326586] Running /usr/bin/env ln -s /home/www/bht.nois3.net/shared/web/app/uploads /home/www/bht.nois3.net/releases/20161114124334/web/app/uploads as deploy@stage.nois3.net
+ DEBUG [49326586] Command: ( export WP_ENV="staging" ; /usr/bin/env ln -s /home/www/bht.nois3.net/shared/web/app/uploads /home/www/bht.nois3.net/releases/20161114124334/web/app/uploads )
+  INFO [49326586] Finished in 0.514 seconds with exit status 0 (successful).
+ DEBUG [3476a7a1] Running if test ! -d /home/www/bht.nois3.net/releases/20161114124334; then echo "Directory does not exist '/home/www/bht.nois3.net/releases/20161114124334'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [3476a7a1] Command: if test ! -d /home/www/bht.nois3.net/releases/20161114124334; then echo "Directory does not exist '/home/www/bht.nois3.net/releases/20161114124334'" 1>&2; false; fi
+ DEBUG [3476a7a1] Finished in 0.685 seconds with exit status 0 (successful).
+  INFO [1a10a4b5] Running /usr/bin/env composer install --no-dev --no-interaction --optimize-autoloader as deploy@stage.nois3.net
+ DEBUG [1a10a4b5] Command: cd /home/www/bht.nois3.net/releases/20161114124334 && ( export WP_ENV="staging" ; /usr/bin/env composer install --no-dev --no-interaction --optimize-autoloader )
+ DEBUG [1a10a4b5] 	PHP Warning:  Module 'mcrypt' already loaded in Unknown on line 0
+ DEBUG [1a10a4b5] 	Warning: This development build of composer is over 60 days old. It is recommended to update it by running "/usr/local/bin/composer self-update" to get the latest version.
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	Loading composer repositories with package information
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	Installing dependencies from lock file
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing johnpbloch/wordpress-core-installer (0.2.1)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Loading from cache
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing composer/installers (v1.0.25)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Loading from cache
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing johnpbloch/wordpress (4.6.1)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Loading from cache
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing nois3/advanced-custom-fields-pro (5.4.2)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Cloning release/5.4.2
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing nois3/bsa-pro-scripteo (3.2.34)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Cloning master
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing oscarotero/env (v1.0.2)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Loading from cache
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing roots/bedrock-capistrano (1.0)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Cloning master
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing roots/soil (3.7.1)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Loading from cache
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing roots/wp-password-bcrypt (1.0.0)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Loading from cache
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing vlucas/phpdotenv (v2.4.0)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Loading from cache
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing wpackagist-plugin/ajax-load-more (2.12.0)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Loading from cache
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing wpackagist-plugin/contact-form-7 (4.5.1)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Loading from cache
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing wpackagist-plugin/cookie-notice (1.2.36.1)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Loading from cache
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing wpackagist-plugin/custom-post-type-ui (1.4.3)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Loading from cache
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing wpackagist-plugin/regenerate-thumbnails (2.2.6)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Loading from cache
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing wpackagist-plugin/responsive-lightbox (1.6.9)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Loading from cache
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing wpackagist-plugin/simple-301-redirects (1.07)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Loading from cache
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing wpackagist-plugin/wordpress-seo (3.7.1)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Loading from cache
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing wpackagist-plugin/wp-mail-smtp (0.9.6)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Loading from cache
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	  - Installing wpackagist-plugin/wysija-newsletters (2.7.5)
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	    Loading from cache
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	
+ DEBUG [1a10a4b5] 	Generating optimized autoload files
+ DEBUG [1a10a4b5] 	
+  INFO [1a10a4b5] Finished in 16.323 seconds with exit status 0 (successful).
+  INFO [3bfa9e6b] Running /usr/bin/env ln -s /home/www/bht.nois3.net/releases/20161114124334 /home/www/bht.nois3.net/releases/current as deploy@stage.nois3.net
+ DEBUG [3bfa9e6b] Command: ( export WP_ENV="staging" ; /usr/bin/env ln -s /home/www/bht.nois3.net/releases/20161114124334 /home/www/bht.nois3.net/releases/current )
+  INFO [3bfa9e6b] Finished in 0.805 seconds with exit status 0 (successful).
+  INFO [7b42f3b1] Running /usr/bin/env mv /home/www/bht.nois3.net/releases/current /home/www/bht.nois3.net as deploy@stage.nois3.net
+ DEBUG [7b42f3b1] Command: ( export WP_ENV="staging" ; /usr/bin/env mv /home/www/bht.nois3.net/releases/current /home/www/bht.nois3.net )
+  INFO [7b42f3b1] Finished in 0.173 seconds with exit status 0 (successful).
+ DEBUG [225c5f3a] Running /usr/bin/env ls -xtr /home/www/bht.nois3.net/releases as deploy@stage.nois3.net
+ DEBUG [225c5f3a] Command: ( export WP_ENV="staging" ; /usr/bin/env ls -xtr /home/www/bht.nois3.net/releases )
+ DEBUG [225c5f3a] 	20161114122359	20161114123958	20161114124334
+ DEBUG [225c5f3a] Finished in 0.201 seconds with exit status 0 (successful).
+ DEBUG [5edc93e1] Running if test ! -d /home/www/bht.nois3.net/releases; then echo "Directory does not exist '/home/www/bht.nois3.net/releases'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [5edc93e1] Command: if test ! -d /home/www/bht.nois3.net/releases; then echo "Directory does not exist '/home/www/bht.nois3.net/releases'" 1>&2; false; fi
+ DEBUG [5edc93e1] Finished in 0.372 seconds with exit status 0 (successful).
+  INFO [d2a903df] Running /usr/bin/env echo "Branch develop (at 4038b96d4742bad20637cf167c160608668d0093) deployed as release 20161114124334 by c" >> /home/www/bht.nois3.net/revisions.log as deploy@stage.nois3.net
+ DEBUG [d2a903df] Command: cd /home/www/bht.nois3.net/releases && ( export WP_ENV="staging" ; /usr/bin/env echo "Branch develop (at 4038b96d4742bad20637cf167c160608668d0093) deployed as release 20161114124334 by c" >> /home/www/bht.nois3.net/revisions.log )
+  INFO [d2a903df] Finished in 0.568 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-14 13:46:01 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [d97a5a4e] Running /usr/bin/env mkdir -p /tmp as deploy@stage.nois3.net
+ DEBUG [d97a5a4e] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /tmp )
+  INFO [d97a5a4e] Finished in 3.995 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-bht.nois3.net-staging-c.sh 100.0%
+  INFO [d53407a8] Running /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh as deploy@stage.nois3.net
+ DEBUG [d53407a8] Command: ( export WP_ENV="staging" ; /usr/bin/env chmod 700 /tmp/git-ssh-bht.nois3.net-staging-c.sh )
+  INFO [d53407a8] Finished in 0.545 seconds with exit status 0 (successful).
+  INFO [06a2035f] Running /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git as deploy@stage.nois3.net
+ DEBUG [06a2035f] Command: ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git ls-remote --heads git@git.nois3.it:nois3/bht.git )
+ DEBUG [06a2035f] 	4038b96d4742bad20637cf167c160608668d0093	refs/heads/develop
+3653725077be827157438fc4a5ebba5f2f1868f4	refs/heads/issues/1-with-blade
+9939ff7da898cbd4f6bce81024e602458b6b47fe	refs/heads/master
+  INFO [06a2035f] Finished in 2.110 seconds with exit status 0 (successful).
+  INFO [1fe49229] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/releases as deploy@stage.nois3.net
+ DEBUG [1fe49229] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/releases )
+  INFO [1fe49229] Finished in 1.223 seconds with exit status 0 (successful).
+  INFO [b768cf9f] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared/web/app/uploads as deploy@stage.nois3.net
+ DEBUG [b768cf9f] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared/web/app/uploads )
+  INFO [b768cf9f] Finished in 1.224 seconds with exit status 0 (successful).
+  INFO [34d276e0] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/shared/web as deploy@stage.nois3.net
+ DEBUG [34d276e0] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/shared /home/www/bht.nois3.net/shared/web )
+  INFO [34d276e0] Finished in 0.919 seconds with exit status 0 (successful).
+ DEBUG [2544f1fd] Running [ -f /home/www/bht.nois3.net/shared/.env ] as deploy@stage.nois3.net
+ DEBUG [2544f1fd] Command: [ -f /home/www/bht.nois3.net/shared/.env ]
+ DEBUG [2544f1fd] Finished in 0.622 seconds with exit status 0 (successful).
+ DEBUG [a382f2b0] Running [ -f /home/www/bht.nois3.net/shared/web/.htaccess ] as deploy@stage.nois3.net
+ DEBUG [a382f2b0] Command: [ -f /home/www/bht.nois3.net/shared/web/.htaccess ]
+ DEBUG [a382f2b0] Finished in 0.915 seconds with exit status 0 (successful).
+ DEBUG [f8164e0a] Running [ -f /home/www/bht.nois3.net/current/REVISION ] as deploy@stage.nois3.net
+ DEBUG [f8164e0a] Command: [ -f /home/www/bht.nois3.net/current/REVISION ]
+ DEBUG [f8164e0a] Finished in 0.480 seconds with exit status 1 (failed).
+ DEBUG [7fe39838] Running [ -f /home/www/bht.nois3.net/repo/HEAD ] as deploy@stage.nois3.net
+ DEBUG [7fe39838] Command: [ -f /home/www/bht.nois3.net/repo/HEAD ]
+ DEBUG [7fe39838] Finished in 0.249 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/www/bht.nois3.net/repo
+ DEBUG [b2714f96] Running if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [b2714f96] Command: if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi
+ DEBUG [b2714f96] Finished in 0.493 seconds with exit status 0 (successful).
+  INFO [f51d26f6] Running /usr/bin/env git remote update --prune as deploy@stage.nois3.net
+ DEBUG [f51d26f6] Command: cd /home/www/bht.nois3.net/repo && ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [f51d26f6] 	Fetching origin
+  INFO [f51d26f6] Finished in 2.615 seconds with exit status 0 (successful).
+ DEBUG [5e7354e1] Running if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [5e7354e1] Command: if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi
+ DEBUG [5e7354e1] Finished in 0.457 seconds with exit status 0 (successful).
+  INFO [c9bdfe78] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114124617 as deploy@stage.nois3.net
+ DEBUG [c9bdfe78] Command: cd /home/www/bht.nois3.net/repo && ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114124617 )
+  INFO [c9bdfe78] Finished in 0.325 seconds with exit status 0 (successful).
+  INFO [fe595298] Running /usr/bin/env git archive develop | tar -x -f - -C /home/www/bht.nois3.net/releases/20161114124617 as deploy@stage.nois3.net
+ DEBUG [fe595298] Command: cd /home/www/bht.nois3.net/repo && ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git archive develop | tar -x -f - -C /home/www/bht.nois3.net/releases/20161114124617 )
+  INFO [fe595298] Finished in 0.588 seconds with exit status 0 (successful).
+ DEBUG [5cc665ff] Running if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [5cc665ff] Command: if test ! -d /home/www/bht.nois3.net/repo; then echo "Directory does not exist '/home/www/bht.nois3.net/repo'" 1>&2; false; fi
+ DEBUG [5cc665ff] Finished in 0.742 seconds with exit status 0 (successful).
+ DEBUG [9a99c257] Running /usr/bin/env git rev-list --max-count=1 develop as deploy@stage.nois3.net
+ DEBUG [9a99c257] Command: cd /home/www/bht.nois3.net/repo && ( export WP_ENV="staging" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-bht.nois3.net-staging-c.sh" ; /usr/bin/env git rev-list --max-count=1 develop )
+ DEBUG [9a99c257] 	4038b96d4742bad20637cf167c160608668d0093
+ DEBUG [9a99c257] Finished in 0.798 seconds with exit status 0 (successful).
+ DEBUG [2e44a7c8] Running if test ! -d /home/www/bht.nois3.net/releases/20161114124617; then echo "Directory does not exist '/home/www/bht.nois3.net/releases/20161114124617'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [2e44a7c8] Command: if test ! -d /home/www/bht.nois3.net/releases/20161114124617; then echo "Directory does not exist '/home/www/bht.nois3.net/releases/20161114124617'" 1>&2; false; fi
+ DEBUG [2e44a7c8] Finished in 0.416 seconds with exit status 0 (successful).
+  INFO [efe3d0d6] Running /usr/bin/env echo "4038b96d4742bad20637cf167c160608668d0093" >> REVISION as deploy@stage.nois3.net
+ DEBUG [efe3d0d6] Command: cd /home/www/bht.nois3.net/releases/20161114124617 && ( export WP_ENV="staging" ; /usr/bin/env echo "4038b96d4742bad20637cf167c160608668d0093" >> REVISION )
+  INFO [efe3d0d6] Finished in 0.570 seconds with exit status 0 (successful).
+  INFO [93db6835] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114124617 /home/www/bht.nois3.net/releases/20161114124617/web as deploy@stage.nois3.net
+ DEBUG [93db6835] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114124617 /home/www/bht.nois3.net/releases/20161114124617/web )
+  INFO [93db6835] Finished in 0.750 seconds with exit status 0 (successful).
+ DEBUG [f33f7fa8] Running [ -L /home/www/bht.nois3.net/releases/20161114124617/.env ] as deploy@stage.nois3.net
+ DEBUG [f33f7fa8] Command: [ -L /home/www/bht.nois3.net/releases/20161114124617/.env ]
+ DEBUG [f33f7fa8] Finished in 0.553 seconds with exit status 1 (failed).
+ DEBUG [576b12fa] Running [ -f /home/www/bht.nois3.net/releases/20161114124617/.env ] as deploy@stage.nois3.net
+ DEBUG [576b12fa] Command: [ -f /home/www/bht.nois3.net/releases/20161114124617/.env ]
+ DEBUG [576b12fa] Finished in 0.545 seconds with exit status 1 (failed).
+  INFO [f78fb775] Running /usr/bin/env ln -s /home/www/bht.nois3.net/shared/.env /home/www/bht.nois3.net/releases/20161114124617/.env as deploy@stage.nois3.net
+ DEBUG [f78fb775] Command: ( export WP_ENV="staging" ; /usr/bin/env ln -s /home/www/bht.nois3.net/shared/.env /home/www/bht.nois3.net/releases/20161114124617/.env )
+  INFO [f78fb775] Finished in 0.940 seconds with exit status 0 (successful).
+ DEBUG [588f43b9] Running [ -L /home/www/bht.nois3.net/releases/20161114124617/web/.htaccess ] as deploy@stage.nois3.net
+ DEBUG [588f43b9] Command: [ -L /home/www/bht.nois3.net/releases/20161114124617/web/.htaccess ]
+ DEBUG [588f43b9] Finished in 0.424 seconds with exit status 1 (failed).
+ DEBUG [bdd0f1db] Running [ -f /home/www/bht.nois3.net/releases/20161114124617/web/.htaccess ] as deploy@stage.nois3.net
+ DEBUG [bdd0f1db] Command: [ -f /home/www/bht.nois3.net/releases/20161114124617/web/.htaccess ]
+ DEBUG [bdd0f1db] Finished in 0.268 seconds with exit status 1 (failed).
+  INFO [bfdd3775] Running /usr/bin/env ln -s /home/www/bht.nois3.net/shared/web/.htaccess /home/www/bht.nois3.net/releases/20161114124617/web/.htaccess as deploy@stage.nois3.net
+ DEBUG [bfdd3775] Command: ( export WP_ENV="staging" ; /usr/bin/env ln -s /home/www/bht.nois3.net/shared/web/.htaccess /home/www/bht.nois3.net/releases/20161114124617/web/.htaccess )
+  INFO [bfdd3775] Finished in 0.400 seconds with exit status 0 (successful).
+  INFO [dbcc32c2] Running /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114124617/web/app as deploy@stage.nois3.net
+ DEBUG [dbcc32c2] Command: ( export WP_ENV="staging" ; /usr/bin/env mkdir -p /home/www/bht.nois3.net/releases/20161114124617/web/app )
+  INFO [dbcc32c2] Finished in 0.502 seconds with exit status 0 (successful).
+ DEBUG [3e097bb7] Running [ -L /home/www/bht.nois3.net/releases/20161114124617/web/app/uploads ] as deploy@stage.nois3.net
+ DEBUG [3e097bb7] Command: [ -L /home/www/bht.nois3.net/releases/20161114124617/web/app/uploads ]
+ DEBUG [3e097bb7] Finished in 0.540 seconds with exit status 1 (failed).
+ DEBUG [a2d6032f] Running [ -d /home/www/bht.nois3.net/releases/20161114124617/web/app/uploads ] as deploy@stage.nois3.net
+ DEBUG [a2d6032f] Command: [ -d /home/www/bht.nois3.net/releases/20161114124617/web/app/uploads ]
+ DEBUG [a2d6032f] Finished in 0.358 seconds with exit status 0 (successful).
+  INFO [4ae892ec] Running /usr/bin/env rm -rf /home/www/bht.nois3.net/releases/20161114124617/web/app/uploads as deploy@stage.nois3.net
+ DEBUG [4ae892ec] Command: ( export WP_ENV="staging" ; /usr/bin/env rm -rf /home/www/bht.nois3.net/releases/20161114124617/web/app/uploads )
+  INFO [4ae892ec] Finished in 0.362 seconds with exit status 0 (successful).
+  INFO [1b77d1fe] Running /usr/bin/env ln -s /home/www/bht.nois3.net/shared/web/app/uploads /home/www/bht.nois3.net/releases/20161114124617/web/app/uploads as deploy@stage.nois3.net
+ DEBUG [1b77d1fe] Command: ( export WP_ENV="staging" ; /usr/bin/env ln -s /home/www/bht.nois3.net/shared/web/app/uploads /home/www/bht.nois3.net/releases/20161114124617/web/app/uploads )
+  INFO [1b77d1fe] Finished in 0.406 seconds with exit status 0 (successful).
+ DEBUG [cdabc727] Running if test ! -d /home/www/bht.nois3.net/releases/20161114124617; then echo "Directory does not exist '/home/www/bht.nois3.net/releases/20161114124617'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [cdabc727] Command: if test ! -d /home/www/bht.nois3.net/releases/20161114124617; then echo "Directory does not exist '/home/www/bht.nois3.net/releases/20161114124617'" 1>&2; false; fi
+ DEBUG [cdabc727] Finished in 0.642 seconds with exit status 0 (successful).
+  INFO [bd2f622a] Running /usr/bin/env composer install --no-dev --no-interaction --optimize-autoloader as deploy@stage.nois3.net
+ DEBUG [bd2f622a] Command: cd /home/www/bht.nois3.net/releases/20161114124617 && ( export WP_ENV="staging" ; /usr/bin/env composer install --no-dev --no-interaction --optimize-autoloader )
+ DEBUG [bd2f622a] 	PHP Warning:  Module 'mcrypt' already loaded in Unknown on line 0
+ DEBUG [bd2f622a] 	Warning: This development build of composer is over 60 days old. It is recommended to update it by running "/usr/local/bin/composer self-update" to get the latest version.
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	Loading composer repositories with package information
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	Installing dependencies from lock file
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing johnpbloch/wordpress-core-installer (0.2.1)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Loading from cache
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing composer/installers (v1.0.25)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Loading from cache
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing johnpbloch/wordpress (4.6.1)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Loading from cache
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing nois3/advanced-custom-fields-pro (5.4.2)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Cloning release/5.4.2
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing nois3/bsa-pro-scripteo (3.2.34)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Cloning master
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing oscarotero/env (v1.0.2)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Loading from cache
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing roots/bedrock-capistrano (1.0)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Cloning master
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing roots/soil (3.7.1)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Loading from cache
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing roots/wp-password-bcrypt (1.0.0)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Loading from cache
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing vlucas/phpdotenv (v2.4.0)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Loading from cache
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing wpackagist-plugin/ajax-load-more (2.12.0)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Loading from cache
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing wpackagist-plugin/contact-form-7 (4.5.1)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Loading from cache
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing wpackagist-plugin/cookie-notice (1.2.36.1)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Loading from cache
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing wpackagist-plugin/custom-post-type-ui (1.4.3)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Loading from cache
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing wpackagist-plugin/regenerate-thumbnails (2.2.6)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Loading from cache
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing wpackagist-plugin/responsive-lightbox (1.6.9)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Loading from cache
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing wpackagist-plugin/simple-301-redirects (1.07)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Loading from cache
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing wpackagist-plugin/wordpress-seo (3.7.1)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Loading from cache
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing wpackagist-plugin/wp-mail-smtp (0.9.6)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Loading from cache
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	  - Installing wpackagist-plugin/wysija-newsletters (2.7.5)
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	    Loading from cache
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	
+ DEBUG [bd2f622a] 	Generating optimized autoload files
+ DEBUG [bd2f622a] 	
+  INFO [bd2f622a] Finished in 20.422 seconds with exit status 0 (successful).
+  INFO [8ecc5467] Running /usr/bin/env ln -s /home/www/bht.nois3.net/releases/20161114124617 /home/www/bht.nois3.net/releases/current as deploy@stage.nois3.net
+ DEBUG [8ecc5467] Command: ( export WP_ENV="staging" ; /usr/bin/env ln -s /home/www/bht.nois3.net/releases/20161114124617 /home/www/bht.nois3.net/releases/current )
+  INFO [8ecc5467] Finished in 0.110 seconds with exit status 0 (successful).
+  INFO [4d8f50dd] Running /usr/bin/env mv /home/www/bht.nois3.net/releases/current /home/www/bht.nois3.net as deploy@stage.nois3.net
+ DEBUG [4d8f50dd] Command: ( export WP_ENV="staging" ; /usr/bin/env mv /home/www/bht.nois3.net/releases/current /home/www/bht.nois3.net )
+  INFO [4d8f50dd] Finished in 0.151 seconds with exit status 0 (successful).
+ DEBUG [3525874d] Running /usr/bin/env ls -xtr /home/www/bht.nois3.net/releases as deploy@stage.nois3.net
+ DEBUG [3525874d] Command: ( export WP_ENV="staging" ; /usr/bin/env ls -xtr /home/www/bht.nois3.net/releases )
+ DEBUG [3525874d] 	20161114124617
+ DEBUG [3525874d] Finished in 0.156 seconds with exit status 0 (successful).
+ DEBUG [12bf4785] Running if test ! -d /home/www/bht.nois3.net/releases; then echo "Directory does not exist '/home/www/bht.nois3.net/releases'" 1>&2; false; fi as deploy@stage.nois3.net
+ DEBUG [12bf4785] Command: if test ! -d /home/www/bht.nois3.net/releases; then echo "Directory does not exist '/home/www/bht.nois3.net/releases'" 1>&2; false; fi
+ DEBUG [12bf4785] Finished in 0.349 seconds with exit status 0 (successful).
+  INFO [86c143ee] Running /usr/bin/env echo "Branch develop (at 4038b96d4742bad20637cf167c160608668d0093) deployed as release 20161114124617 by c" >> /home/www/bht.nois3.net/revisions.log as deploy@stage.nois3.net
+ DEBUG [86c143ee] Command: cd /home/www/bht.nois3.net/releases && ( export WP_ENV="staging" ; /usr/bin/env echo "Branch develop (at 4038b96d4742bad20637cf167c160608668d0093) deployed as release 20161114124617 by c" >> /home/www/bht.nois3.net/revisions.log )
+  INFO [86c143ee] Finished in 0.446 seconds with exit status 0 (successful).

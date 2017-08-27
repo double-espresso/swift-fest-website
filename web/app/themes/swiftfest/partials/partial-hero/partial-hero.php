@@ -17,16 +17,26 @@
 						<h2 class="title-small hero-suptitle"><?php echo $hero_suptitle; ?></h2>
 					</div>
 				<?php endif; ?>
-				<?php if(!empty($hero_title_line_1)): ?>
+				<div class="hero_title_container_desktop">				
+					<?php if(!empty($hero_title_line_1)): ?>
+						<div>
+							<h1 class="title-huge hero-title title_animate hero_title_line_1"><span class="title_animate"><?php echo $hero_title_line_1; ?></span></h1>
+						</div>
+					<?php endif; ?>
+					<?php if(!empty($hero_title_line_2)): ?>
+						<div>
+							<h1 class="title-huge hero-title title_animate hero_title_line_2"><span class="title_animate"><?php echo $hero_title_line_2; ?></span></h1>
+						</div>
+					<?php endif; ?>
+				</div>
+				<div class="hero_title_container_mobile">
 					<div>
-						<h1 class="title-huge hero-title title_animate hero_title_line_1"><span class="title_animate"><?php echo $hero_title_line_1; ?></span></h1>
+						<h1 class="title-huge hero-title"><span>Swift</span></h1>
 					</div>
-				<?php endif; ?>
-				<?php if(!empty($hero_title_line_2)): ?>
 					<div>
-						<h1 class="title-huge hero-title title_animate hero_title_line_2"><span class="title_animate"><?php echo $hero_title_line_2; ?></span></h1>
+						<h1 class="title-huge hero-title"><span>fest</span></h1>
 					</div>
-				<?php endif; ?>
+				</div>
 				<?php if(!empty($hero_subtitle_1)): ?>
 					<div class="title-small hero_subtitle hero_subtitle_1"><?php echo $hero_subtitle_1; ?></div>
 				<?php endif; ?>

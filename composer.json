@@ -34,6 +34,32 @@
     {
       "type": "package",
       "package": {
+        "name": "nois3/advanced-custom-fields-pro",
+        "version": "5.4.2",
+        "type": "wordpress-plugin",
+        "source": {
+          "url": "git@git.nois3.it:nois3/advanced-custom-field-pro.git",
+          "type": "git",
+          "reference": "release/5.4.2"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "nois3/bsa-pro-scripteo",
+        "version": "3.2.34",
+        "type": "wordpress-plugin",
+        "source": {
+          "url": "git@git.nois3.it:nois3/bsa-pro-scripteo.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
         "name": "roots/bedrock-capistrano",
         "version": "1.0",
         "type": "composer",
@@ -52,6 +78,8 @@
     "johnpbloch/wordpress": "4.6.1",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
+    "nois3/advanced-custom-fields-pro":"5.4.2",
+    "nois3/bsa-pro-scripteo":"*",
     "roots/soil":"*",
     "roots/bedrock-capistrano":"*",
     "wpackagist-plugin/cookie-notice":"*",
@@ -61,7 +89,8 @@
     "wpackagist-plugin/ajax-load-more":"*",
     "wpackagist-plugin/custom-post-type-ui":"*",
     "wpackagist-plugin/contact-form-7":"*",
-    "wpackagist-plugin/responsive-lightbox": "*",
+    "wpackagist-plugin/responsive-lightbox": "1.6.9",
+    "wpackagist-plugin/wysija-newsletters":"*",
     "wpackagist-plugin/wp-mail-smtp":"*"
   },
   "require-dev": {
