@@ -3,12 +3,20 @@
 	height: 100vh;
 	position: relative;
 	@include gradient;
-
+  // small
+  @media screen and (max-width: 39.938em) {
+    height: 110vh;
+  }
 	.hero_info {
 		@include vertical_align_absolute;
 		.hero-suptitle {
 			display: inline-block;
       margin-bottom: 30px;
+      // small
+      @media screen and (max-width: 39.938em) {
+        margin-bottom: 0px;
+        @include super_width(160px);
+      }
 		}
     .hero_title_container_desktop {
       position: relative;
@@ -34,6 +42,14 @@
       @media screen and (max-width: 63.938em) {
         left: 375px;
       }
+      // small
+      @media screen and (max-width: 39.938em) {
+        left:0;
+        &.hero_title_line_2 {
+          top: 150px !important;
+          display: block !important;
+        }
+      }
       &.hero_title_line_1 {
         // medium
         @media screen and (max-width: 63.938em) {
@@ -57,6 +73,10 @@
       // medium
       @media screen and (max-width: 63.938em) {
         margin-top: 200px;
+      }
+      // small
+      @media screen and (max-width: 39.938em) {
+        margin-top: 160px;
       }
       .hero_subtitle {
         display: inline-block;
@@ -89,6 +109,10 @@
   // medium
   @media screen and (max-width: 63.938em) {
     right: -60px;
+  }
+  // small
+  @media screen and (max-width: 39.938em) {
+    opacity: 0.2;
   }
   span {
     color: $lightest;

@@ -62,7 +62,7 @@ $(document).ready(function() {
     offset: -200,
     reverse: false,
     duration: 0
-  })
+  });
 
   scene1.on("enter", function (event) {
     var rev1 = new RevealFx(document.querySelector('#animation_1'), {
@@ -84,7 +84,7 @@ $(document).ready(function() {
     offset: -200,
     reverse: false,
     duration: 0
-  })
+  });
 
   scene2.on("enter", function (event) {
     var rev2 = new RevealFx(document.querySelector('#animation_2'), {
@@ -102,9 +102,17 @@ $(document).ready(function() {
   scene2.addTo(controller);
 
   //Parallax
-  var rellax_info = new Rellax('.info');
-  var rellax_form = new Rellax('.form_info');
-  var rellax_info_img= new Rellax('.info_img');
+  
+
+  var screenSize = $( window ).width();
+  console.log(screenSize);
+
+  if ((screenSize>768)) {
+    var rellax_info = new Rellax('.info');
+    var rellax_info_img= new Rellax('.info_img');
+    var rellax_form = new Rellax('.form_info');
+  }
+
 
 });
 

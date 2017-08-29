@@ -62,7 +62,9 @@ input[type="file"] {
 
 input[type="submit"] {
   margin: 0 auto;
-  
+  &:focus {
+    outline: none;
+  }
 }
 
 textarea {
@@ -99,22 +101,22 @@ span.wpcf7-not-valid-tip {
 
 div.wpcf7-response-output {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 60px;
   padding: 10px;
   background-color: $light;
   @include general-ui($dark);
-  border-radius: 20px;
+  line-height: 20px;
   float: left;
   width: 100%;
 }
 
 div.wpcf7-validation-errors {
-  border: none;
-  background-color: #f7e700;
+  border: 2px solid  #f7e700;
+
 }
 
 div.wpcf7-mail-sent-ok {
-  border: none;
+  border: 2px solid  #95C44D;
   background-color: $light;
 }
 

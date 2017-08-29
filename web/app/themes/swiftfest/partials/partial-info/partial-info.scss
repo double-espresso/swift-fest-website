@@ -1,5 +1,9 @@
 .info {
 	padding-bottom: 200px;
+	// small
+	@media screen and (max-width: 39.938em) {
+		padding-bottom: 0;
+	}
 	&.after-hero {
 		margin-top: -110px;
 		z-index: $zi6;
@@ -10,6 +14,10 @@
 	}
 	&.normal {
 		padding: 200px 0 50px 0;
+		// small
+		@media screen and (max-width: 39.938em) {
+			padding: 50px 0;
+		}
 	}
 	.info_container {
 		opacity: 0;
@@ -70,6 +78,10 @@
 			height: 360px;
 			object-fit: cover;
 			@include translate(0, -150%);
+			// small
+			@media screen and (max-width: 39.938em) {
+				@include translate(0, 0);
+			}
 		}
 	}
 }

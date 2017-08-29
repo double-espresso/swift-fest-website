@@ -3,7 +3,7 @@
 	padding: 300px 0 200px 0;
 	// small
 	@media screen and (max-width: 39.938em) {
-		padding: 0 0 50px 0;
+		padding: 50px 0;
 	}
 	&:before {
 		content: 'print("swiftfest")';
@@ -25,12 +25,16 @@
 	}
 	.form_info {
 		margin-top: -300px;
+		// small
+		@media screen and (max-width: 39.938em) {
+			margin-top: 0;
+		}
 		.form_title {
 
 		}
 		.form_text {
 			padding-left: 2px;
-			margin-top: 60px;
+			margin-top: 40px;
 		}
 	}
 	.form_input {
@@ -46,7 +50,14 @@
 			@include super_width(100%);
 			position: static;
 			z-index: 99999999999;
-			margin-top: 500px;
+			margin-top: 40px;
+		}
+		input[type="submit"] {
+			@include super_width(150px);
+			position: relative;
+			left: 50%;
+			margin-top: 20px;
+			margin-left: -75px;
 		}
 	}
 }

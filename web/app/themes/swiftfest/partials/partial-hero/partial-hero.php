@@ -31,10 +31,10 @@
 				</div>
 				<div class="hero_title_container_mobile">
 					<div>
-						<h1 class="title-huge hero-title"><span>Swift</span></h1>
+						<h1 class="title-huge hero-title hero_title_line_1"><span>Swift</span></h1>
 					</div>
 					<div>
-						<h1 class="title-huge hero-title"><span>fest</span></h1>
+						<h1 class="title-huge hero-title hero_title_line_2"><span>fest</span></h1>
 					</div>
 				</div>
 				<div class="subtitle_container">				

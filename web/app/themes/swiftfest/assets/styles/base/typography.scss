@@ -50,6 +50,10 @@
   font-weight: $fw1;
   letter-spacing: $ls10;
   color: $color;
+  // small
+  @media screen and (max-width: 39.938em) {
+    font-size: $fs3;
+  }
 }
 
 .title-small {
