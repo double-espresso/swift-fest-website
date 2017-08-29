@@ -92,7 +92,7 @@ nav {
           font-family: 'sketchapprome_social';
           font-size: 0;
           text-align: center;
-          color: $light;
+          color: $dark;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
           &:before {
@@ -103,7 +103,6 @@ nav {
             display: block;
             font-weight: normal;
             text-indent: 3px;
-            opacity: 0.3;
             @include transition(.3s);
           }
           &[href*="facebook"]:before {
@@ -136,7 +135,7 @@ nav {
 
           &:hover {
             &:before {
-              opacity: 1;
+              color: $primary;
               @include transition(.3s);
             }
           }

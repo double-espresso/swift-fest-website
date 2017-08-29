@@ -93,6 +93,12 @@ function wave_get_post_meta($meta, $key, $counter, $isFromAcf = FALSE, $type = "
   return "";
 }
 
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
 // define the single_product_small_thumbnail_size callback 
 
 function filter_single_product_small_thumbnail_size( $shop_catalog ) { 

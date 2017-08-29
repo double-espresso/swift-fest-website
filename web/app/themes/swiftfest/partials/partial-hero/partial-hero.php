@@ -37,19 +37,21 @@
 						<h1 class="title-huge hero-title"><span>fest</span></h1>
 					</div>
 				</div>
-				<?php if(!empty($hero_subtitle_1)): ?>
-					<div class="title-small hero_subtitle hero_subtitle_1"><?php echo $hero_subtitle_1; ?></div>
-				<?php endif; ?>
-				<?php if(!empty($hero_subtitle_2)): ?>
-					<div class="title-small hero_subtitle hero_subtitle_2"><?php echo $hero_subtitle_2; ?></div>
-				<?php endif; ?>
-	      <?php if($hero_link_button && $hero_text_button): ?>
-	      	<div>
-		        <a href="<?php echo $hero_link_button; ?>" title="<?php echo $hero_text_button; ?>" class="rounded-button white hero_button">
-		          <?php echo $hero_text_button; ?>
-		        </a>
-	        </div>
-	      <?php endif; ?>
+				<div class="subtitle_container">				
+					<?php if(!empty($hero_subtitle_1)): ?>
+						<div class="title-small hero_subtitle hero_subtitle_1"><?php echo $hero_subtitle_1; ?></div>
+					<?php endif; ?>
+					<?php if(!empty($hero_subtitle_2)): ?>
+						<div class="title-small hero_subtitle hero_subtitle_2"><?php echo $hero_subtitle_2; ?></div>
+					<?php endif; ?>
+		      <?php if($hero_link_button && $hero_text_button): ?>
+		      	<div>
+			        <a href="<?php echo $hero_link_button; ?>" title="<?php echo $hero_text_button; ?>" class="rounded-button white hero_button">
+			          <?php echo $hero_text_button; ?>
+			        </a>
+		        </div>
+		      <?php endif; ?>
+				</div>
 			</div>
 		</div>
 	</div>

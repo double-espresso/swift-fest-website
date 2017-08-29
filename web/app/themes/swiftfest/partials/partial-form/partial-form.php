@@ -7,6 +7,15 @@
 
 <section class="form" id="form_section">
 	<div class="row">
+
+    <div class="medium-5 columns">
+      <?php if(!empty($form_input)): ?>
+        <div class="form_input">
+          <?php echo do_shortcode($form_input); ?>
+        </div>
+      <?php endif; ?>
+    </div>
+
 		<div class="medium-6 columns">
 			<div class="form_info">			
 				<?php if(!empty($form_title)): ?>
@@ -19,12 +28,7 @@
 				<?php endif; ?>
 			</div>
 		</div>
-		<div class="medium-5 medium-offset-1 columns">
-      <?php if(!empty($form_input)): ?>
-        <div class="form_input">
-          <?php echo do_shortcode($form_input); ?>
-        </div>
-      <?php endif; ?>
-		</div>
+
+
 	</div>
 </section>

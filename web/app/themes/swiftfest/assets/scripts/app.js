@@ -58,20 +58,20 @@ $(document).ready(function() {
   var controller = new ScrollMagic.Controller();
 
   var scene1 = new ScrollMagic.Scene({
-    triggerElement: '#info_section',
+    triggerElement: '#animation_1',
     offset: -200,
     reverse: false,
     duration: 0
   })
 
   scene1.on("enter", function (event) {
-    var rev1 = new RevealFx(document.querySelector('#rev-1'), {
+    var rev1 = new RevealFx(document.querySelector('#animation_1'), {
       revealSettings : {
         bgcolor: '#2F2F2F',
         delay: 50,
         onCover: function(contentEl, revealerEl) {
           contentEl.style.opacity = 1;
-          $(".info_container").toggleClass("show");
+          $(".animation_1_container").addClass("show");
         }
       }
     }); 
@@ -79,9 +79,32 @@ $(document).ready(function() {
   });
   scene1.addTo(controller);
 
+  var scene2 = new ScrollMagic.Scene({
+    triggerElement: '#animation_2',
+    offset: -200,
+    reverse: false,
+    duration: 0
+  })
+
+  scene2.on("enter", function (event) {
+    var rev2 = new RevealFx(document.querySelector('#animation_2'), {
+      revealSettings : {
+        bgcolor: '#2F2F2F',
+        delay: 50,
+        onCover: function(contentEl, revealerEl) {
+          contentEl.style.opacity = 1;
+          $(".animation_2_container").addClass("show");
+        }
+      }
+    }); 
+    rev2.reveal();
+  });
+  scene2.addTo(controller);
+
   //Parallax
   var rellax_info = new Rellax('.info');
   var rellax_form = new Rellax('.form_info');
+  var rellax_info_img= new Rellax('.info_img');
 
 });
 

@@ -11,6 +11,7 @@
       margin-bottom: 30px;
 		}
     .hero_title_container_desktop {
+      position: relative;
       // small
       @media screen and (max-width: 39.938em) {
         display: none;
@@ -24,25 +25,26 @@
       }
     }
 		.hero-title {
-			display: inline-block;
-      float: left;
-      position: relative;
+      position: absolute;
       margin: 0 0 0 -10px;
       text-align: left;
+      width: 100%;
+      left: 395px;
+      // medium
+      @media screen and (max-width: 63.938em) {
+        left: 375px;
+      }
       &.hero_title_line_1 {
-        left: 47%;
-        margin-bottom: 5px;
         // medium
         @media screen and (max-width: 63.938em) {
-          left: 40%;
-          margin-bottom: -20px;
+          margin-bottom: 0px;
         }
       }
       &.hero_title_line_2{
-        left: 52%;
+        top: 120px;
         // medium
         @media screen and (max-width: 63.938em) {
-          left: 44%;
+          top: 100px;
         }
         // small
         @media screen and (max-width: 39.938em) {
@@ -50,23 +52,30 @@
         }
       }
 		}
-    .hero_subtitle {
-      display: inline-block;
-      margin-top: 30px;
-      font-weight: 700;
-      &.hero_subtitle_1 {
-        &:after {
-          content: "";
-          display: inline-block;
-          width: 100px;
-          height: 1px;
-          background-color: $lightest;
-          margin: 0 10px 7px 10px; 
+    .subtitle_container{
+      margin-top: 220px;
+      // medium
+      @media screen and (max-width: 63.938em) {
+        margin-top: 200px;
+      }
+      .hero_subtitle {
+        display: inline-block;
+        margin-top: 30px;
+        font-weight: 700;
+        &.hero_subtitle_1 {
+          &:after {
+            content: "";
+            display: inline-block;
+            width: 100px;
+            height: 1px;
+            background-color: $lightest;
+            margin: 0 10px 7px 10px; 
+          }
         }
       }
-    }
-    .hero_button {
-      margin-top: 30px;
+      .hero_button {
+        margin-top: 30px;
+      }
     }
 	}
 }
@@ -120,10 +129,8 @@
   transform: translateX(-50%) rotate(0deg);
   span {
     transform: skew(0deg);
-    display: block;
+    display: inline-block;
     float: left;
-    min-width: 10px;
-    min-height: 10px;
     position: relative;
   }
 }

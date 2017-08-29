@@ -1,7 +1,12 @@
     <footer>
       <div class="row">
-        <div class="medium-8 medium-centered columns">
+      <div class="medium-6 columns">
+        <div class="title title_footer footer_contact_title">Contact Us</div>
+        <span><?php the_field('text','options') ?></span>
+      </div>
+        <div class="medium-6 columns">
             <?php if(have_rows('social', 'options')): ?>
+              <div class="title title_footer footer_social_title">Social</div>
               <nav class="social">
                 <ul>
                   <?php while (have_rows('social', 'options')): the_row(); ?>
@@ -14,9 +19,14 @@
             <?php endif; ?>
         </div>
       </div>
-      <div class="row">
-        <div class="medium-8 medium-centered columns">
-          <div class="current-text credits"><?php the_field('text','options') ?></div>
+      <div class="sub_footer">      
+        <div class="row">
+          <div class="medium-6 columns">
+            <div>© 2017 swiftfest </div>
+          </div>
+          <div class="medium-6 columns">
+            <div class="credits">Site by <strong>Double Espresso</strong></div>
+          </div>
         </div>
       </div>
     </footer>

@@ -62,6 +62,8 @@
   font-size: $fs5;
   font-weight: $fw3;
   color: $color;
+  line-height: $lh60;
+  text-transform: uppercase;
   // medium
   @media screen and (max-width: 63.938em) {
     font-size: 40px;
