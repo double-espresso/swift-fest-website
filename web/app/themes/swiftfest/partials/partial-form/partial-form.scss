@@ -30,6 +30,14 @@
 			margin-top: 0;
 		}
 		.form_title {
+			&:after {
+				content: "";
+				width: 100px;
+				height: 5px;
+				background-color: $primary;
+				margin: 40px 0;
+				display: block;
+			}
 
 		}
 		.form_text {

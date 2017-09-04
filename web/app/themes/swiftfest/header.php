@@ -79,7 +79,7 @@
 
     <div class="container-nav-mobile hide-for-large-up">
       <div class="mobile">
-        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'clearfix' ) ); ?>
+        <?php wp_nav_menu( array( 'menu' => '', 'primary' ) ); ?>
       </div>
     </div>
     <!-- END NAVBAR MOBILE -->

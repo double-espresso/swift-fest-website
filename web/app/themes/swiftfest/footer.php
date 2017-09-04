@@ -22,10 +22,12 @@
       <div class="sub_footer">      
         <div class="row">
           <div class="medium-6 columns">
-            <div>© 2017 swiftfest </div>
+            <div>
+              <a href="<?php the_field('link','options') ?>">Code of Conduct</a>
+            </div>
           </div>
           <div class="medium-6 columns">
-            <div class="credits">Crafted by <strong>Double Espresso</strong></div>
+            <div class="credits">Crafted by <strong><a href="http://2xe.io/">Double Espresso</a></strong></div>
           </div>
         </div>
       </div>

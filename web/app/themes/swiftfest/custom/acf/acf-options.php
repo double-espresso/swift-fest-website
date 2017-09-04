@@ -104,6 +104,22 @@
         'toolbar' => 'full',
         'media_upload' => 1,
       ),
+      array (
+        'key' => 'field_58587364fabcd',
+        'label' => 'Link',
+        'name' => 'link',
+        'type' => 'url',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array (
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ),
+        'default_value' => '',
+        'placeholder' => '',
+      ),
     ),
     'location' => array (
       array (
