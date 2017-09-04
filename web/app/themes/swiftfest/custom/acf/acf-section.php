@@ -5,6 +5,8 @@
   include __DIR__ . "/section/section-info.php";
   // Form
   include __DIR__ . "/section/section-form.php";
+  // Supporters
+  include __DIR__ . "/section/section-supporters.php";
 
 
   // SECTION
@@ -35,6 +37,8 @@
           $sectionInfo,
           // Form
           $sectionForm,
+          // Supporters
+          $sectionSupporters,
         ),
       ),
     ),

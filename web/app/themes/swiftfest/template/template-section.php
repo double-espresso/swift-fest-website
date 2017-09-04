@@ -21,6 +21,9 @@
           case 'form':
             include __DIR__ . "/../partials/partial-form/partial-form.php";
             break;
+          case 'supporters':
+            include __DIR__ . "/../partials/partial-supporters/partial-supporters.php";
+            break;
         }
       $sectionCounter++;
     endwhile;

@@ -1,0 +1,51 @@
+section.supporters {
+  background-color: $primary;
+  padding: 80px 0 10px 0;
+  text-align: center;
+  margin-top: 100px;
+  .supporters_suptitle {
+    
+  }
+
+  .supporters_title {
+    color: $lightest;
+  }
+
+  .supporters_subtitle {
+   margin-top: 20px;
+  }
+
+  .supporters_relation {
+    .relation_title {
+      text-align: center;
+    }
+    .relation_single {
+      .single_logo {
+        display: block;
+        height: 0;
+        padding-bottom: 80%;
+        margin-bottom: 20px;
+        @include contain;
+      }
+      .single_title {
+
+      }
+    }
+  }
+
+  &.light {
+    background-color: $light;
+    .supporters_suptitle {
+      color: $primary;
+    }
+
+    .supporters_title {
+      color: $primary;
+    }
+
+    .supporters_subtitle {
+     color: $primary;
+    }
+  }
+
+}
