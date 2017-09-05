@@ -46,7 +46,7 @@
 					<?php endif; ?>
 		      <?php if($hero_link_button && $hero_text_button): ?>
 		      	<div>
-			        <a href="<?php echo $hero_link_button; ?>" title="<?php echo $hero_text_button; ?>" class="rounded-button white hero_button">
+			        <a href="<?php the_sub_field("link_button"); ?>" title="<?php echo $hero_text_button; ?>" class="rounded-button white hero_button">
 			          <?php echo $hero_text_button; ?>
 			        </a>
 		        </div>

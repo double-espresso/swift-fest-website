@@ -132,10 +132,10 @@
         'disabled' => 0,
       ),
       array (
-        'key' => 'field_56wa91c35d0b3',
+        'key' => 'field_58592093fabcd',
         'label' => 'Link Button',
         'name' => 'link_button',
-        'type' => 'page_link',
+        'type' => 'url',
         'instructions' => '',
         'required' => 0,
         'conditional_logic' => 0,
@@ -144,12 +144,8 @@
           'class' => '',
           'id' => '',
         ),
-        'post_type' => array (
-        ),
-        'taxonomy' => array (
-        ),
-        'allow_null' => 0,
-        'multiple' => 0,
+        'default_value' => '',
+        'placeholder' => '',
       ),
     ),
     'min' => '',
