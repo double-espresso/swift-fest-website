@@ -129,7 +129,7 @@ var app = {
     app.container.className = 'animation-container';
     //document.body.appendChild(app.container);
     document.getElementById('numbers_animated').appendChild(app.container);
-    window.setInterval(app.add, 100);
+    window.setInterval(app.add, 90);
   },
 
   add: function () {
@@ -141,7 +141,7 @@ var app = {
   animate: function (element) {
     var character = app.chars[Math.floor(Math.random() * app.chars.length)];
     var duration = Math.floor(Math.random() * 40) + 1;
-    var offset = Math.floor(Math.random() * (1000 - duration * 2)) + 3;
+    var offset = Math.floor(Math.random() * (500 - duration * 2)) + 3;
     var size = 100 + (15 - duration);
     element.style.cssText = 'right:'+offset+'vw; font-size:'+size+'px;animation-duration:'+duration+'s';
     element.innerHTML = character;
