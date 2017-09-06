@@ -6,8 +6,7 @@
 <?php
   get_header();
   wp_reset_postdata();
-  while ( have_posts() ): the_post();
-        
+    while ( have_posts() ): the_post();
       $sectionCounter = 0;
       $sectionMeta = get_post_meta($post->ID);
       while ( have_rows('section') ) : the_row();
@@ -26,7 +25,7 @@
             break;
         }
       $sectionCounter++;
+      endwhile;
     endwhile;
-  endwhile;
   get_footer();
 ?>

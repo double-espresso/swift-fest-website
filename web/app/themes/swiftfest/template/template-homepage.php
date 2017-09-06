@@ -3,21 +3,29 @@
  * Template Name: Homepage
  */
 ?>
-<?php get_header('homepage'); ?>
- <?php wp_reset_postdata();?>
- <section class="homepage">
- 		<div class="container">	
-      <div class="logo"></div>
-      <div class="current-text homepage_text"><?php the_content(); ?></div>
-      <div class="form">
-        <div class="row">
-          <div class="large-8 medium-12 columns medium-centered">
-            <div class="form_content">
-              <?php the_field('newsletter_form'); ?>
-            </div>
-          </div>
-        </div>
-      </div>
- 		</div>
- </section>
-<?php get_footer(); ?>
+<?php
+  get_header('homepage');
+  wp_reset_postdata();
+    while ( have_posts() ): the_post();
+      $sectionCounter = 0;
+      $sectionMeta = get_post_meta($post->ID);
+      while ( have_rows('section') ) : the_row();
+        switch(get_row_layout()) {
+          case 'hero':
+            include __DIR__ . "/../partials/partial-hero/partial-hero.php";
+            break;
+          case 'info':
+            include __DIR__ . "/../partials/partial-info/partial-info.php";
+            break;
+          case 'form':
+            include __DIR__ . "/../partials/partial-form/partial-form.php";
+            break;
+          case 'supporters':
+            include __DIR__ . "/../partials/partial-supporters/partial-supporters.php";
+            break;
+        }
+      $sectionCounter++;
+      endwhile;
+    endwhile;
+  get_footer();
+?>

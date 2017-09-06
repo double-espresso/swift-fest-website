@@ -26,23 +26,62 @@
 
   </head>
 
-  <body <?php body_class(); ?>>
-    <header>
-      <div class="row">
+  <body id="numbers_animated" <?php body_class(); ?>>
 
-        <div class="medium-4 columns medium-offset-9">
-          <?php if(have_rows('social', 'options')): ?>
-            <nav class="social">
-              <ul>
-                <?php while (have_rows('social', 'options')): the_row(); ?>
-                  <li>
-                    <a href="<?php the_sub_field('url'); ?>" title="<?php the_sub_field('name'); ?>" target="_blank" class="avatar_social"><?php the_sub_field('name'); ?></a>
-                  </li>
-                <?php endwhile; ?>
-              </ul>
-            </nav>
-          <?php endif; ?>
+    <div class="preloader">
+        <div class="loader-inner">
+            <div class="bg-2"></div>
+            <div class="middle-div">
+                <div class="inner"> <img class="loaderGif" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/swiftloader.gif" alt="Image"> </div>
+            </div>
         </div>
+        <!-- end inner --> 
+    </div>
+    
+    <!-- end preloader -->
+    <div class="page-transition">
+        <div class="inner"></div>
+    </div>
+    <!-- end page-transition -->
 
+    <header class="hide-for-tablet-down">
+      <div class="row">
+        <div class="medium-2 columns">
+          <a href="<?php echo esc_url(home_url('/')); ?>" class="header_logo"><?php echo get_bloginfo('name') ?></a>
+        </div>
+        <div class="medium-8 columns">
+          <nav class="primary">
+            <?php wp_nav_menu( array( 'menu' => '', 'primary' ) ); ?>
+          </nav>
+        </div>
+      </div>
+
+      <div class="button_nav_mobile">
+        <div class="button_hamburger">
+          <span class="hamburger_line"></span>
+          <span class="hamburger_line"></span>
+          <span class="hamburger_line"></span>
+        </div>
       </div>
     </header>
+
+    <!-- NAVBAR MOBILE -->
+    <header class="mobile row hide-for-large-up">
+      <div class="mobile__toggleMenu">
+        <div class="button-nav">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <a href="<?= esc_url(home_url('/')); ?>" class="header__logo"><?php bloginfo('name'); ?></a>
+    </header>
+
+    <div class="container-nav-mobile hide-for-large-up">
+      <div class="mobile">
+        <?php wp_nav_menu( array( 'menu' => '', 'primary' ) ); ?>
+      </div>
+    </div>
+    <!-- END NAVBAR MOBILE -->
+
+    <?php //get_search_form(); ?>

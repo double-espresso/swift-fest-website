@@ -2,7 +2,10 @@
 	padding-top: 80px;
 	height: 100vh;
 	position: relative;
-	@include gradient;
+  &#numbers_animated {
+    @include gradient;
+  }
+
   // small
   @media screen and (max-width: 39.938em) {
     height: 110vh;
@@ -98,55 +101,6 @@
       }
     }
 	}
-}
-
-
-.animation-container {
-  position: absolute;
-  top: 0;
-  right: -600px;
-  opacity: 0.3;
-  // medium
-  @media screen and (max-width: 63.938em) {
-    right: -60px;
-  }
-  // small
-  @media screen and (max-width: 39.938em) {
-    opacity: 0.2;
-  }
-  span {
-    color: $lightest;
-    display: block;
-    font-size: 18px;
-    font-family: $PrimaryFont;
-    font-weight: bold;
-    position: absolute;
-    user-select: none;
-    pointer-events: none;
-    cursor: default;
-    animation-timing-function: ease-out;
-    animation-name: move;
-  }
-}
-
-@keyframes move {
-  0% {
-    opacity: 0;
-    transform: translateY(100vh);
-  }
-  25% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    transform: none;
-  }
 }
 
 .title_animate{

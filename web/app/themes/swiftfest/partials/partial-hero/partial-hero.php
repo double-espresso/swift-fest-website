@@ -4,11 +4,11 @@
   $hero_title_line_2 = wave_get_post_meta($sectionMeta, "title_line_2", $sectionCounter, TRUE);
   $hero_subtitle_1 = wave_get_post_meta($sectionMeta, "subtitle_1", $sectionCounter, TRUE);
   $hero_subtitle_2 = wave_get_post_meta($sectionMeta, "subtitle_2", $sectionCounter, TRUE);
-  $hero_link_button = wave_get_post_meta($sectionMeta, "link_button", $sectionCounter, TRUE, "link");
   $hero_text_button = wave_get_post_meta($sectionMeta, "text_button", $sectionCounter, TRUE);
+  $hero_type = wave_get_post_meta($sectionMeta, "type", $sectionCounter, TRUE);
 ?>
 
-<section class="hero" id="hero_section">
+<section class="hero" <?php echo ($hero_type == 'animated') ? 'id="numbers_animated"' : ''; ?>>
 	<div class="row">
 		<div class="small-12 column">
 			<div class="hero_info">
@@ -44,7 +44,7 @@
 					<?php if(!empty($hero_subtitle_2)): ?>
 						<div class="title-small hero_subtitle hero_subtitle_2"><?php echo $hero_subtitle_2; ?></div>
 					<?php endif; ?>
-		      <?php if($hero_link_button && $hero_text_button): ?>
+		      <?php if($hero_text_button): ?>
 		      	<div>
 			        <a href="<?php the_sub_field("link_button"); ?>" title="<?php echo $hero_text_button; ?>" class="rounded-button white hero_button">
 			          <?php echo $hero_text_button; ?>

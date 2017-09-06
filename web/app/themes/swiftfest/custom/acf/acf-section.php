@@ -50,6 +50,13 @@
           'value' => 'template/template-section.php',
         ),
       ),
+      array (
+        array (
+          'param' => 'page_template',
+          'operator' => '==',
+          'value' => 'template/template-homepage.php',
+        ),
+      ),
     ),
     'menu_order' => 0,
     'position' => 'normal',

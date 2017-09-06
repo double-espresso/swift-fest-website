@@ -103,7 +103,6 @@ $(document).ready(function() {
 
   //Parallax
   
-
   var screenSize = $( window ).width();
   console.log(screenSize);
 
@@ -129,7 +128,7 @@ var app = {
     app.container = document.createElement('div');
     app.container.className = 'animation-container';
     //document.body.appendChild(app.container);
-    document.getElementById('hero_section').appendChild(app.container);
+    document.getElementById('numbers_animated').appendChild(app.container);
     window.setInterval(app.add, 100);
   },
 
