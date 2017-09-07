@@ -12,6 +12,8 @@ $(window).load(function() {
 
 $(document).ready(function() {
   
+  $("html").easeScroll();
+
   // Button Nav
   $(".button-nav").click(function(){
     $(this).toggleClass("open");
