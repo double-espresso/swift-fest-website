@@ -1,12 +1,11 @@
 .rounded-button {
   text-transform: uppercase;
   display: inline-block;
-  border-radius: 100px;
   padding: 5px 45px;
   background-color: transparent;
   &.white {
     @include general-ui($lightest);
-    border: 1px solid $lightest;
+    border: 2px solid $lightest;
     @include transition(.2s);
     &:hover {
       color: $primary;
@@ -19,14 +18,15 @@
 input[type="submit"] {
   text-transform: uppercase;
   display: inline-block;
-  border-radius: 100px;
-  border: 1px solid $primary;
+  border: 2px solid $primary;
   padding: 5px 45px;
-  background: linear-gradient(237deg, rgba(255,255,255,0) 37%, rgba(255,255,255,0) 100%);
+  background-color: transparent;
+  @include transition(.2s);
   @include general-ui($primary);
   &:hover {
-    @include gradient;
+    background-color: $primary;
+    @include transition(.2s);
     @include general-ui($lightest);
-    border: 1px solid transparent;
+    border: 2px solid transparent;
   }
 }

@@ -179,12 +179,12 @@ $.fn.easeScroll = function(options) {
         var settings = $.extend({
             // These are the defaults.
             frameRate: 60,
-            animationTime: 3000,
+            animationTime: 1000,
             stepSize: 50,
             pulseAlgorithm: !0,
-            pulseScale: 8,
+            pulseScale: 20,
             pulseNormalize: 1,
-            accelerationDelta: 100,
+            accelerationDelta: 20,
             accelerationMax: 1,
             keyboardSupport: !0,
             arrowScroll: 50,
