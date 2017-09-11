@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('siri'); ?>
 <?php wp_reset_postdata(); ?>
 <?php while ( have_posts() ): the_post(); ?>
   <section class="keynote_speaker_hero" <?php if ( has_post_thumbnail() ): ?> style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');" <?php endif; ?> >
@@ -25,6 +25,30 @@
       </div>
       <div class="medium-8 columns">
         <div class="speaker_about_text">
+          <?php the_content(); ?>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="main_media">
+    <div class="row">
+      <div class="mall-12 columns">
+        <img src="<?php echo (get_field('main_media')); ?>" alt="Siri Image">
+      </div>
+    </div>
+  </section>
+  <section class="keynote_speaker_talk">
+    <div class="row">
+      <div class="small-12 columns">
+        <div class="general-ui about_suptitle">conference</div>
+        <div class=" title about_title"><?php echo(get_field('talk_title')); ?></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-4 columns">
+      </div>
+      <div class="medium-8 columns">
+        <div class="talk_text">
           <?php the_content(); ?>
         </div>
       </div>

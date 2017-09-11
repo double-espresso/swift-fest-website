@@ -28,7 +28,7 @@
   }
 }
 
-.keynote_speaker_about {
+.keynote_speaker_about, .keynote_speaker_talk {
   padding: 100px 0;
   .about_suptitle {
     color: $primary;
@@ -44,6 +44,20 @@
       background-color: $primary;
       margin: 40px 0;
       display: block;
+    }
+  }
+  .speaker_about_text {
+    margin: 0;
+  }
+}
+
+.keynote_speaker_talk {
+  .talk_text {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    p {
+      margin: 0;
     }
   }
 }

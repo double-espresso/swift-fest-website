@@ -26,13 +26,15 @@
 
   </head>
 
-  <body id="body_homepage" <?php body_class(); ?>>
+  <body id="body_siri" <?php body_class(); ?>>
 
-    <div class="preloader">
+    <div class="preloader preloader_siri">
         <div class="loader-inner">
             <div class="bg-2"></div>
             <div class="middle-div">
-                <div class="inner"> <img class="loaderGif" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/swiftloader.gif" alt="Image"> </div>
+                <div class="inner">
+                  <div class="siri_wave">cazzo</div>
+                </div>
             </div>
         </div>
         <!-- end inner --> 

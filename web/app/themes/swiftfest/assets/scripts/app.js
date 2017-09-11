@@ -1,9 +1,13 @@
 $(window).load(function() {
   // Animate loader off screen
    function showloader(){
-      $("body").addClass("page-loaded");
+      $("#body_homepage").addClass("page-loaded");
+   };
+  function showloaderSiri(){
+      $("#body_siri").addClass("page-loaded");
    };
    window.setTimeout( showloader, 1200 ); // 5 seconds
+   window.setTimeout( showloaderSiri, 1200 ); // 5 seconds
 });
 
 
@@ -130,7 +134,7 @@ var app = {
     app.container = document.createElement('div');
     app.container.className = 'animation-container';
     //document.body.appendChild(app.container);
-    document.getElementById('numbers_animated').appendChild(app.container);
+    document.getElementById('body_homepage').appendChild(app.container);
     window.setInterval(app.add, 90);
   },
 
