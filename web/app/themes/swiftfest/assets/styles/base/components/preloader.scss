@@ -8,9 +8,17 @@
 	overflow: hidden;
 	&.preloader_siri {
 		.loader-inner{
-			background: red;
+			background: linear-gradient(237deg, $primary 37%, $secondary 100%); z-index:1;
 			.bg-2 {
 				background: #FDFDFD;
+			}
+			.siri_wave {
+				background-image: url("../images/siri_wave.svg");
+				width: 1440px;
+				margin: 0 auto;
+				height: 200px;
+				background-repeat: no-repeat;
+				background-origin: center;
 			}
 		}
 	}

@@ -1,5 +1,5 @@
 .keynote_speaker_hero {
-  padding: 250px 0 20px 0;
+  padding: 200px 0 20px 0;
   @include gradient;
   min-height: 650px;
   @include cover;
@@ -48,6 +48,66 @@
   }
   .speaker_about_text {
     margin: 0;
+  }
+  .speaker_social {
+    ul {
+      li {
+        float: left;
+        margin: 0;
+        display: block;
+        a {
+          display: inline-block;
+          color: $dark;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          &:before {
+            font-family: 'sketchapprome_social';
+            font-size: 20px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            display: inline-block;
+            font-weight: normal;
+            text-indent: 3px;
+            margin-right: 10px;
+            @include transition(.3s);
+          }
+          &[href*="facebook"]:before {
+            content: "\ea90";
+          }
+          &[href*="twitter"]:before {
+            content: "\ea96";
+          }
+          &[href*="instagram"]:before {
+            content: "\ea92";
+          }
+          &[href*="linkedin"]:before {
+            content: "\eaca";
+          }
+          &[href*="google"]:before {
+            content: "\ea8b";
+          }
+          &[href*="youtube"]:before {
+            content: "\ea9d";
+          }
+          &[href*="vimeo"]:before {
+            content: "\eaa0";
+          }
+          &[href*="behance"]:before {
+            content: "\eaa8";
+          }
+          &[href*="dribbble"]:before {
+            content: "\eaa7";
+          }
+          &:hover {
+            &:before {
+              color: $primary;
+              @include transition(.3s);
+            }
+          }
+        }
+      }
+    }
   }
 }
 

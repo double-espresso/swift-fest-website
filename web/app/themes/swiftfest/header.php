@@ -26,7 +26,7 @@
 
   </head>
 
-	<body <?php body_class(); ?>>
+	<body id="body_normal" <?php body_class(); ?>>
 
     <div class="preloader">
         <div class="loader-inner">

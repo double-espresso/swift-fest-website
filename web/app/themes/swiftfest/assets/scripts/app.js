@@ -6,8 +6,12 @@ $(window).load(function() {
   function showloaderSiri(){
       $("#body_siri").addClass("page-loaded");
    };
+  function showloaderNormal(){
+      $("#body_normal").addClass("page-loaded");
+   };
    window.setTimeout( showloader, 1200 ); // 5 seconds
    window.setTimeout( showloaderSiri, 1200 ); // 5 seconds
+   window.setTimeout( showloaderNormal, 1200 ); // 5 seconds
 });
 
 

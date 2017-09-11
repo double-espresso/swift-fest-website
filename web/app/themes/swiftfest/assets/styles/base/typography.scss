@@ -37,6 +37,11 @@
   @media screen and (max-width: 63.938em) {
     font-size: $fs6;
   }
+  // small
+  @media screen and (max-width: 39.938em) {
+    font-size: $fs5;
+    line-height: 60px;
+  }
 }
 
 .title-huge {

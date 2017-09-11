@@ -33,7 +33,7 @@
             <div class="bg-2"></div>
             <div class="middle-div">
                 <div class="inner">
-                  <div class="siri_wave">cazzo</div>
+                  <div class="siri_wave"></div>
                 </div>
             </div>
         </div>

@@ -17,7 +17,7 @@
       margin-bottom: 30px;
       // small
       @media screen and (max-width: 39.938em) {
-        margin-bottom: 0px;
+        margin-bottom: 20px;
         @include super_width(160px);
       }
 		}
@@ -49,7 +49,7 @@
       @media screen and (max-width: 39.938em) {
         left:0;
         &.hero_title_line_2 {
-          top: 120px !important;
+          top: 140px !important;
           display: block !important;
         }
       }

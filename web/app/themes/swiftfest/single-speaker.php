@@ -21,7 +21,15 @@
     </div>
     <div class="row">
       <div class="medium-4 columns">
-        <div class="speaker_social">Social here</div>
+        <nav class="speaker_social">
+          <ul>
+            <?php while (have_rows('social')): the_row(); ?>
+              <li>
+                <a href="<?php the_sub_field('url'); ?>" title="<?php the_sub_field('name'); ?>" target="_blank" class="avatar_social"><span><?php the_sub_field('name'); ?></span></a>
+              </li>
+            <?php endwhile; ?>
+          </ul>
+        </nav>
       </div>
       <div class="medium-8 columns">
         <div class="speaker_about_text">
@@ -33,7 +41,7 @@
   <section class="main_media">
     <div class="row">
       <div class="mall-12 columns">
-        <img src="<?php echo (get_field('main_media')); ?>" alt="Siri Image">
+        <img src="<?php echo (get_field('main_media')); ?>">
       </div>
     </div>
   </section>
