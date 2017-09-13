@@ -12,11 +12,10 @@
 			.bg-2 {
 				background: #FDFDFD;
 			}
-			.siri_wave {
-				background-image: url("../images/siri_wave.svg");
+			#siri_wave {
 				width: 1440px;
 				margin: 0 auto;
-				height: 200px;
+				height: 250px;
 				background-repeat: no-repeat;
 				background-origin: center;
 			}
@@ -130,6 +129,4 @@
 .loaderGif {
   width: 150px;
 }
-
-
 

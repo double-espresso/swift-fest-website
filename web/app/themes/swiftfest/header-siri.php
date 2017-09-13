@@ -23,17 +23,19 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
     <![endif]-->
-
+    <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/scripts/siriwave.js"></script>
+    <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/scripts/siri_custom.js"></script>
   </head>
-
   <body id="body_siri" <?php body_class(); ?>>
-
     <div class="preloader preloader_siri">
         <div class="loader-inner">
             <div class="bg-2"></div>
             <div class="middle-div">
                 <div class="inner">
-                  <div class="siri_wave"></div>
+                  <div id="siri_wave"></div>
+                  <audio autoplay>
+                    <source src="<?php echo get_stylesheet_directory_uri(); ?>/dist/audio/siri.wav">
+                  </audio>
                 </div>
             </div>
         </div>

@@ -31,7 +31,9 @@
 		}
 		&.info_text_only {		
 			&:after {
-				content: "";
+				content: "{*}";
+				@include title(#D7D8D9);
+				padding: 58px 10px 10px 34px;
 				width: 180px;
 				height: 180px;
 				background-color: $light;

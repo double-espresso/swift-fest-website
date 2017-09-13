@@ -2,15 +2,15 @@ $(window).load(function() {
   // Animate loader off screen
    function showloader(){
       $("#body_homepage").addClass("page-loaded");
-   };
+   }
   function showloaderSiri(){
       $("#body_siri").addClass("page-loaded");
-   };
+   }
   function showloaderNormal(){
       $("#body_normal").addClass("page-loaded");
-   };
+   }
    window.setTimeout( showloader, 1200 ); // 5 seconds
-   window.setTimeout( showloaderSiri, 1200 ); // 5 seconds
+   window.setTimeout( showloaderSiri, 10000 ); // 5 seconds
    window.setTimeout( showloaderNormal, 1200 ); // 5 seconds
 });
 
@@ -87,7 +87,9 @@ $(document).ready(function() {
     }); 
     rev1.reveal();
   });
-  scene1.addTo(controller);
+  if ( $( "#animation_1" ).length ) {
+    scene1.addTo(controller);
+  }
 
   var scene2 = new ScrollMagic.Scene({
     triggerElement: '#animation_2',
@@ -109,7 +111,9 @@ $(document).ready(function() {
     }); 
     rev2.reveal();
   });
-  scene2.addTo(controller);
+  if ( $( "#animation_2" ).length ) {
+    scene2.addTo(controller);
+  }
 
   //Parallax
   
@@ -117,12 +121,16 @@ $(document).ready(function() {
   console.log(screenSize);
 
   if ((screenSize>768)) {
-    var rellax_info = new Rellax('.info');
-    var rellax_info_img= new Rellax('.info_img');
-    var rellax_form = new Rellax('.form_info');
+    if ( $( ".info" ).length ) {
+      var rellax_info = new Rellax('.info');
+    }
+    if ( $( ".info_img" ).length ) {
+      var rellax_info_img= new Rellax('.info_img');
+    }
+    if ( $( ".form_info" ).length ) {
+      var rellax_form = new Rellax('.form_info');
+    }
   }
-
-
 });
 
 
@@ -138,7 +146,9 @@ var app = {
     app.container = document.createElement('div');
     app.container.className = 'animation-container';
     //document.body.appendChild(app.container);
-    document.getElementById('body_homepage').appendChild(app.container);
+    if ( $( "#body_homepage" ).length ) {
+      document.getElementById('body_homepage').appendChild(app.container);
+    }
     window.setInterval(app.add, 90);
   },
 
