@@ -19,7 +19,7 @@ $(window).load(function() {
 
 
 $(document).ready(function() {
-  
+  // Smooth scroll
   $("html").easeScroll();
 
   // Button Nav
@@ -59,9 +59,9 @@ $(document).ready(function() {
     return false;
   });
 
+  // Hero title animation
   $(".title_animate").lettering();
-
-  window.setTimeout( animation, 2600 ); // 5 seconds
+  window.setTimeout( animation, 2600 );
 
 
   //Block Reveal on scroll
@@ -190,7 +190,7 @@ function animation() {
 /*------------------*/
 
 
-// Smooth scroll animation
+// Smooth scroll animation on <a href="#"> click
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
