@@ -68,7 +68,7 @@
         <div class="cta_info">        
           <div class="title CTA_title">swiftfest 2017</div>
           <div class="title-small CTA_subtitle">Boston 29 - 30 November</div>
-          <a href="https://www.eventbrite.com/e/swiftfest-2017-tickets-37370599469" title="swiftfest tickets" class="rounded-button white hero_button">
+          <a href="https://www.eventbrite.com/e/swiftfest-2017-tickets-37370599469" title="swiftfest tickets" class="squared-button white hero_button">
           buy tickets
           </a>
         </div>

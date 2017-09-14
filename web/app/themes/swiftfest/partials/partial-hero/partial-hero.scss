@@ -5,7 +5,6 @@
   &#numbers_animated {
     @include gradient;
   }
-
   // small
   @media screen and (max-width: 39.938em) {
     height: 110vh;
@@ -101,6 +100,26 @@
       }
     }
 	}
+  .scroll_hint{
+    @include general-ui($lightest);
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 10px;
+    @include transition(.4s);
+    &:after {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 50px;
+      background-color: $lightest;
+      margin: 0 auto;
+    }
+    span {
+      display: inline-block;
+      padding-bottom: 20px;
+    }
+  }
 }
 
 .title_animate{

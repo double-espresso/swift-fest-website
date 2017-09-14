@@ -1,8 +1,9 @@
-.rounded-button {
+.squared-button {
   text-transform: uppercase;
   display: inline-block;
   padding: 5px 45px;
   background-color: transparent;
+  -webkit-appearance: none;
   &.white {
     @include general-ui($lightest);
     border: 2px solid $lightest;

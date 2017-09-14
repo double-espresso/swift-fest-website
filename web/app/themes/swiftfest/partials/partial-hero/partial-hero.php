@@ -46,12 +46,19 @@
 					<?php endif; ?>
 		      <?php if($hero_text_button): ?>
 		      	<div>
-			        <a href="<?php the_sub_field("link_button"); ?>" title="<?php echo $hero_text_button; ?>" class="rounded-button white hero_button">
+			        <a href="<?php the_sub_field("link_button"); ?>" title="<?php echo $hero_text_button; ?>" class="squared-button white hero_button">
 			          <?php echo $hero_text_button; ?>
 			        </a>
 		        </div>
 		      <?php endif; ?>
 				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-12 columnd">
+			<div class="scroll_hint">
+				<span>Scroll down</span>
 			</div>
 		</div>
 	</div>

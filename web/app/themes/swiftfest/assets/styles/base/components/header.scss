@@ -12,6 +12,14 @@ header {
     padding-top: 10px;
     position: relative;
   }
+  &.top {
+    top: -80px;
+    @include transition(.2s);
+  }
+  &.down {
+    top: 0;
+    @include transition(.2s);
+  }
   &.hide-for-tablet-down {
     @media screen and  (max-width: 63.938em) {
       display: none;
@@ -21,16 +29,23 @@ header {
     width: 45px;
     height: 45px;
     display: block;
-    margin: 0;
+    margin: 15px 0 0 0;
     background-image: url("../images/swiftfest_logo.svg"); 
     @include contain;
     text-indent: -99999px;
     @include transition(.3s);
-    @include vertical_align_absolute;
     // small
     @media screen and (max-width: 39.938em) {
       margin: 15px auto;
     }
+  }
+  .primary {
+    float: right;
+    text-align: right;
+  }
+  .header_button {
+    padding-top: 17px;
+    float: right;
   }
 }
 

@@ -36,6 +36,7 @@
                   <audio autoplay>
                     <source src="<?php echo get_stylesheet_directory_uri(); ?>/dist/audio/siri.wav">
                   </audio>
+                  <div class="skip squared-button white hero_button">Skip intro</div>
                 </div>
             </div>
         </div>
@@ -53,10 +54,15 @@
         <div class="medium-2 columns">
           <a href="<?php echo esc_url(home_url('/')); ?>" class="header_logo"><?php echo get_bloginfo('name') ?></a>
         </div>
-        <div class="medium-8 columns">
+        <div class="medium-7 columns">
           <nav class="primary">
             <?php wp_nav_menu( array( 'menu' => '', 'primary' ) ); ?>
           </nav>
+        </div>
+        <div class="medium-3 columns">          
+          <div class="header_button">
+            <a href="https://www.eventbrite.com/e/swiftfest-2017-tickets-37370599469" title="But Tickets" class="squared-button white hero_button">Buy Tickets</a>
+          </div>
         </div>
       </div>
 
