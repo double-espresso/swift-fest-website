@@ -27,16 +27,17 @@
     <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/scripts/siri_custom.js"></script>
   </head>
   <body id="body_siri" <?php body_class(); ?>>
+
     <div class="preloader preloader_siri">
         <div class="loader-inner">
             <div class="bg-2"></div>
             <div class="middle-div">
                 <div class="inner">
+                  <div class="headphone_hint"></div>
+                  <div class="intro_text first_text">"What can i help you with?"</div>
+                  <div class="intro_text second_text">Do you know who is this?</div>
                   <div id="siri_wave"></div>
-                  <audio autoplay>
-                    <source src="<?php echo get_stylesheet_directory_uri(); ?>/dist/audio/siri.wav">
-                  </audio>
-                  <div class="skip squared-button white hero_button">Skip intro</div>
+                  <div class="skip squared-button white hero_button">Go to the content</div>
                 </div>
             </div>
         </div>
@@ -61,7 +62,7 @@
         </div>
         <div class="medium-3 columns">          
           <div class="header_button">
-            <a href="https://www.eventbrite.com/e/swiftfest-2017-tickets-37370599469" title="But Tickets" class="squared-button white hero_button">Buy Tickets</a>
+            <a href="https://www.eventbrite.com/e/swiftfest-2017-tickets-37370599469" title="Buy Tickets" class="squared-button white hero_button">Buy Tickets</a>
           </div>
         </div>
       </div>

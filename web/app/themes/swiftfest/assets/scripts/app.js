@@ -1,4 +1,13 @@
 $(window).load(function() {
+  var templateUrl = object_name.templateUrl;
+  console.log(templateUrl);
+
+  var audio = new Audio(templateUrl + '/dist/audio/siri.mp3');
+
+  audio.addEventListener('canplaythrough', function() { 
+    $('.inner').addClass('inner_show');
+  }, false);
+
   // Animate loader off screen
   function showloader(){
     $("#body_homepage").addClass("page-loaded");
@@ -11,15 +20,20 @@ $(window).load(function() {
   }
 
   window.setTimeout( showloader, 1200 ); // 5 seconds
-  window.setTimeout( showloaderSiri, 10050 ); // 5 seconds
   window.setTimeout( showloaderNormal, 1200 ); // 5 seconds
 
   $(".skip").click(function(){
     $("#body_siri").addClass("page-loaded");
-    $('audio').each(function(){
-        this.pause(); // Stop playing
-        this.currentTime = 0; // Reset time
-    }); 
+    audio.pause(); // Stop playing
+    audio.currentTime = 0; // Reset time
+  });
+
+  $(".headphone_hint").click(function(){
+    $(this).addClass("hide");
+    $(".intro_text").addClass("animation");
+    $("#siri_wave").addClass("siri_animation");
+    audio.play();
+    window.setTimeout( showloaderSiri, 20000 ); // 5 seconds
   });
 
 });

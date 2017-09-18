@@ -56,7 +56,7 @@
         </div>
         <div class="medium-3 columns">          
           <div class="header_button">
-            <a href="https://www.eventbrite.com/e/swiftfest-2017-tickets-37370599469" title="But Tickets" class="squared-button white hero_button">Buy Tickets</a>
+            <a href="https://www.eventbrite.com/e/swiftfest-2017-tickets-37370599469" title="Buy Tickets" class="squared-button white hero_button">Buy Tickets</a>
           </div>
         </div>
       </div>

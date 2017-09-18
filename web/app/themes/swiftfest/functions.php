@@ -41,6 +41,13 @@ function wave_scripts() {
   wp_enqueue_script( 'Rellax', get_template_directory_uri() . '/assets/scripts/vendor/rellax.min.js', array() );
   wp_enqueue_script( 'EaseScroll', get_template_directory_uri() . '/assets/scripts/vendor/jquery.easeScroll.js', array() );
   //wp_enqueue_script( 'Siriwave', get_template_directory_uri() . '/assets/scripts/vendor/siriwave.js', array() );
+
+  wp_register_script( 'my-script', 'myscript_url' );
+  wp_enqueue_script( 'my-script' );
+  $translation_array = array( 'templateUrl' => get_stylesheet_directory_uri() );
+  //after wp_enqueue_script
+  wp_localize_script( 'my-script', 'object_name', $translation_array );
+
   wp_enqueue_script( 'wave-js', get_template_directory_uri() . '/dist/scripts/app.js', array(), filemtime( get_stylesheet_directory() . '/dist/scripts/app.js' ) );
 }
 add_action( 'wp_enqueue_scripts', 'wave_scripts' );
@@ -111,3 +118,4 @@ return 'full';
 };    // add the filter 
 
 add_filter( 'single_product_small_thumbnail_size', 'filter_single_product_small_thumbnail_size', 99, 1 );
+
