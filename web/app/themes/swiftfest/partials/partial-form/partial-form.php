@@ -9,7 +9,7 @@
 	<div class="row">
 
     <div class="medium-6 medium-push-6 columns">
-      <div class="form_info">     
+      <div class="form_info parallax">     
         <?php if(!empty($form_title)): ?>
           <h2 class="title form_title">Contact Us</h2>
         <?php endif; ?>

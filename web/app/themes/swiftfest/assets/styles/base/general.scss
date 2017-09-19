@@ -106,6 +106,13 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-overflow-scrolling: touch;
 }
 
+.parallax {
+  // small
+  @media screen and (max-width: 39.938em) {
+    transform: translate(0, 0) !important;
+  }
+}
+
 
 .animation-container {
   position: absolute;

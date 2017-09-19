@@ -39,10 +39,10 @@
       margin: 0 0 0 -10px;
       text-align: left;
       width: 100%;
-      left: 395px;
+
       // medium
       @media screen and (max-width: 63.938em) {
-        left: 375px;
+
       }
       // small
       @media screen and (max-width: 39.938em) {
@@ -123,7 +123,6 @@
 }
 
 .title_animate{
-  transform: translateX(-50%) rotate(0deg);
   span {
     transform: skew(0deg);
     display: inline-block;

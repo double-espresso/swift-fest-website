@@ -8,7 +8,7 @@
 	$info_image = get_sub_field('image');
 ?>
 
-<section class="info <?php echo $info_position; ?>" id="info_section">
+<section class="info <?php echo $info_position; ?> parallax" id="info_section">
 	<div class="row">
 
 		<?php if($info_type === 'right_image'): ?>
@@ -25,7 +25,7 @@
 				</div>
 			</div>
 			<div class="medium-6 columns">
-				<div class="info_img">
+				<div class="info_img parallax">
 					<img src="<?php echo $info_image; ?>" alt="<?php echo $info_title; ?>">
 				</div>
 			</div>

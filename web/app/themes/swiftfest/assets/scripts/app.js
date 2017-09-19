@@ -69,20 +69,6 @@ $(document).ready(function() {
     $(".social_container").toggleClass("open");
   });
 
-  // Tab Button
-  $('.tab_button').click(function() {
-    $(this).toggleClass("open");
-    var tab = $(this).parents('div.tab');
-    var tab_id = '#' + tab[0].id;
-    tab.next().toggleClass('open');
-
-    $('html, body').animate({
-      scrollTop: $(tab_id).offset().top - 60
-    }, 500);
-
-    return false;
-  });
-
   // Hide and show scroll hint
   $(window).scroll(function(){
     if ($(window).scrollTop() >= 100) {
@@ -151,21 +137,10 @@ $(document).ready(function() {
   }
 
   //Parallax
-  
-  var screenSize = $( window ).width();
-  console.log(screenSize);
-
-  if ((screenSize>768)) {
-    if ( $( ".info" ).length ) {
-      var rellax_info = new Rellax('.info');
-    }
-    if ( $( ".info_img" ).length ) {
-      var rellax_info_img= new Rellax('.info_img');
-    }
-    if ( $( ".form_info" ).length ) {
-      var rellax_form = new Rellax('.form_info');
-    }
+  if ( $( ".parallax" ).length ) {
+    var parallax = new Rellax('.parallax');
   }
+
 });
 
 
