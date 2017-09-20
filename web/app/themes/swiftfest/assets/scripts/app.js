@@ -51,6 +51,7 @@ $(document).ready(function() {
     $(this).toggleClass("open");
     //console.log(this);
     $(".container-nav-mobile").toggleClass("open");
+    $("header").toggleClass("fixed");
   });
 
   $(".container-nav-mobile nav.mobile ul li a").click(function(){
@@ -171,10 +172,12 @@ $(document).ready(function() {
     if (st > lastScrollTop && st > navbarHeight){
       // Scroll Down
       $('header').removeClass('down').addClass('top');
+      $('header.mobile').removeClass('down').addClass('top');
     } else {
       // Scroll Up
       if(st + $(window).height() < $(document).height()) {
         $('header').removeClass('top').addClass('down');
+        $('header.mobile').removeClass('top').addClass('down');
       }
     }
     lastScrollTop = st;

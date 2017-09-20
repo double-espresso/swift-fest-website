@@ -8,8 +8,8 @@
 <section class="form" id="form_section">
 	<div class="row">
 
-    <div class="medium-6 medium-push-6 columns">
-      <div class="form_info parallax">     
+    <div class="large-6 large-push-6 columns">
+      <div class="form_info parallax" data-rellax-speed="1">     
         <?php if(!empty($form_title)): ?>
           <h2 class="title form_title">Contact Us</h2>
         <?php endif; ?>
@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div class="medium-5 medium-pull-6 columns">
+    <div class="large-5 large-pull-6 columns">
       <?php if(!empty($form_input)): ?>
         <div class="form_input">
           <?php echo do_shortcode($form_input); ?>

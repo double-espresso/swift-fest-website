@@ -12,7 +12,7 @@
 	<div class="row">
 
 		<?php if($info_type === 'right_image'): ?>
-			<div class="medium-10 columns" id="<?php echo $info_animationid; ?>">
+			<div class="large-10 columns" id="<?php echo $info_animationid; ?>">
 				<div class="info_container info_with_image <?php echo $info_animationid; ?>_container">
 					<?php if(!empty($info_title)): ?>
 						<h2 class="title info_title"><?php echo $info_title; ?></h2>	
@@ -24,14 +24,14 @@
 					<?php endif; ?>
 				</div>
 			</div>
-			<div class="medium-6 columns">
-				<div class="info_img parallax">
+			<div class="large-6 columns">
+				<div class="info_img parallax" data-rellax-speed="1">
 					<img src="<?php echo $info_image; ?>" alt="<?php echo $info_title; ?>">
 				</div>
 			</div>
 
 		<?php elseif($info_type === 'left_text' || 'right_text'): ?>		
-			<div class="medium-9 <?php echo ($info_type == 'right_text') ? 'medium-offset-3' : ''; ?> columns" id="<?php echo $info_animationid; ?>">
+			<div class="large-9 <?php echo ($info_type == 'right_text') ? 'large-offset-3' : ''; ?> columns" id="<?php echo $info_animationid; ?>">
 				<div class="info_container info_text_only <?php echo ($info_type == 'right_text') ? 'right_position' : ''; ?> <?php echo $info_animationid; ?>_container">
 					<?php if(!empty($info_title)): ?>
 						<h2 class="title info_title"><?php echo $info_title; ?></h2>	

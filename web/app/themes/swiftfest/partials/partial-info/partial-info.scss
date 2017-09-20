@@ -1,21 +1,21 @@
 .info {
 	padding-bottom: 200px;
+  // medium
+  @media screen and (max-width: 63.938em) {
+  	padding-bottom: 100px;
+  }
 	// small
 	@media screen and (max-width: 39.938em) {
 		padding-bottom: 0;
 	}
 	&.after-hero {
-
 		z-index: $zi6;
-    // medium
-    @media screen and (max-width: 63.938em) {
-    	margin-top: -50px;
-    }
+
 	}
 	&.normal {
 		padding: 150px 0 50px 0;
-		// small
-		@media screen and (max-width: 39.938em) {
+		// medium
+    @media screen and (max-width: 63.938em) {
 			padding: 50px 0;
 		}
 	}
@@ -57,6 +57,11 @@
 			}
 			.info_content {
 				max-width: 400px;
+				// medium
+		    @media screen and (max-width: 63.938em) {
+					max-width: 100%;
+					padding-bottom: 100px;
+				}
 			}
 		}
 
@@ -78,10 +83,16 @@
 		img {				
 			width: 100%;
 			height: 360px;
+			// medium
+		    @media screen and (max-width: 63.938em) {
+				width: 90%;
+				display: block;
+				margin: -140px auto 0 auto;
+			}
 			object-fit: cover;
 			@include translate(0, -160%);
-			// small
-			@media screen and (max-width: 39.938em) {
+			// medium
+		    @media screen and (max-width: 63.938em) {
 				@include translate(0, 0);
 			}
 		}

@@ -2,8 +2,8 @@
 	position: relative;
 	padding: 300px 0 200px 0;
 	background-color: $lightest;
-	// small
-	@media screen and (max-width: 39.938em) {
+	// medium
+  @media screen and (max-width: 63.938em) {
 		padding: 50px 0;
 	}
 	&:before {
@@ -18,16 +18,16 @@
 		font-family: $PrimaryFont;
 		@include vertical_align_absolute;
 		top: 42%;
-		// small
-		@media screen and (max-width: 39.938em) {
+		// medium
+  	@media screen and (max-width: 63.938em) {
 			z-index: -99;
 		}
 	}
 	.form_info {
-		margin-top: -400px;
-		// small
-		@media screen and (max-width: 39.938em) {
-			margin-top: 0;
+		margin-top: 300px;
+		// medium
+  	@media screen and (max-width: 63.938em) {
+			margin-top: 20px;
 		}
 		.form_title {
 			&:after {
@@ -52,8 +52,8 @@
 		@include super_width(360px);
 		@include super_height(530px);
 		margin-top: -80px;
-		// small
-		@media screen and (max-width: 39.938em) {
+		// medium
+  	@media screen and (max-width: 63.938em) {
 			margin: 200px auto 0 auto;
 			@include super_width(100%);
 			position: static;

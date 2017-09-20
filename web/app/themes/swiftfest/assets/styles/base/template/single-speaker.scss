@@ -4,6 +4,10 @@
   min-height: 650px;
   @include cover;
   position: relative;
+  // small
+  @media screen and (max-width: 39.938em) {
+    background-position: -700px 0; 
+  }
   &:after {
     content: "";
     background-image: url("../images/keynote_speaker_hero_symbols.svg");
@@ -116,6 +120,12 @@
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
+    // small
+    @media screen and (max-width: 63.938em) {
+      -webkit-column-count: 1; /* Chrome, Safari, Opera */
+      -moz-column-count: 1; /* Firefox */
+      column-count: 1;
+    }
     p {
       margin: 0;
     }

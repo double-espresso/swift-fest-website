@@ -75,8 +75,13 @@
   text-transform: uppercase;
   // medium
   @media screen and (max-width: 63.938em) {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  // small
+  @media screen and (max-width: 39.938em) {
+    font-size: 35px;
+    line-height: 40px;
   }
 }
 

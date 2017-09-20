@@ -56,7 +56,7 @@
         </div>
         <div class="medium-3 columns">          
           <div class="header_button">
-            <a href="https://www.eventbrite.com/e/swiftfest-2017-tickets-37370599469" title="Buy Tickets" class="squared-button white hero_button">Buy Tickets</a>
+            <a href="https://www.eventbrite.com/e/swiftfest-2017-tickets-37370599469" target="_blank" title="Buy Tickets" class="squared-button white hero_button">Buy Tickets</a>
           </div>
         </div>
       </div>
@@ -80,6 +80,9 @@
         </div>
       </div>
       <a href="<?= esc_url(home_url('/')); ?>" class="header__logo"><?php bloginfo('name'); ?></a>
+      <div class="header_button">
+        <a href="https://www.eventbrite.com/e/swiftfest-2017-tickets-37370599469" target="_blank" title="Buy Tickets" class="squared-button white hero_button">Buy Tickets</a>
+      </div>
     </header>
 
     <div class="container-nav-mobile hide-for-large-up">
