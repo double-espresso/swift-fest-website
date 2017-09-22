@@ -15,7 +15,7 @@
 			<div class="large-10 columns" id="<?php echo $info_animationid; ?>">
 				<div class="info_container info_with_image <?php echo $info_animationid; ?>_container">
 					<?php if(!empty($info_title)): ?>
-						<h2 class="title info_title"><?php echo $info_title; ?></h2>	
+						<h2 class="title info_title animated_text"><?php echo $info_title; ?></h2>	
 					<?php endif; ?>
 					<?php if(!empty($info_content)): ?>
 						<div class="current_text info_content">
@@ -34,7 +34,7 @@
 			<div class="large-9 <?php echo ($info_type == 'right_text') ? 'large-offset-3' : ''; ?> columns" id="<?php echo $info_animationid; ?>">
 				<div class="info_container info_text_only <?php echo ($info_type == 'right_text') ? 'right_position' : ''; ?> <?php echo $info_animationid; ?>_container">
 					<?php if(!empty($info_title)): ?>
-						<h2 class="title info_title"><?php echo $info_title; ?></h2>	
+						<h2 class="title info_title animated_text"><?php echo $info_title; ?></h2>	
 					<?php endif; ?>
 					<?php if(!empty($info_content)): ?>
 						<div class="current_text info_content">

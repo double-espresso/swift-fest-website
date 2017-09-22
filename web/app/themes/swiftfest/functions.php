@@ -40,7 +40,6 @@ function wave_scripts() {
   wp_enqueue_script( 'ScrollMagic', get_template_directory_uri() . '/assets/scripts/vendor/ScrollMagic.min.js', array() );
   wp_enqueue_script( 'Rellax', get_template_directory_uri() . '/assets/scripts/vendor/rellax.min.js', array() );
   wp_enqueue_script( 'EaseScroll', get_template_directory_uri() . '/assets/scripts/vendor/jquery.easeScroll.js', array() );
-  //wp_enqueue_script( 'Siriwave', get_template_directory_uri() . '/assets/scripts/vendor/siriwave.js', array() );
 
   wp_register_script( 'my-script', 'myscript_url' );
   wp_enqueue_script( 'my-script' );

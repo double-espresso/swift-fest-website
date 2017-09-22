@@ -1,0 +1,93 @@
+@keyframes titleAnimation {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  }
+  20% {
+      transform: translateY(0);
+      opacity: 1;
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+  }
+  100% {
+       transform: translateY(0);
+       opacity: 1;
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+  }
+}
+
+  .animated_text{
+    width: 100%;
+    transform: translateY(-50px);
+    opacity: 0;
+    &.go{
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+      animation-name: titleAnimation;
+      animation-timing-function:ease;
+      animation-duration: 4s;
+      -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+      -moz-animation-fill-mode:forwards; /*FF 5+*/
+      -o-animation-fill-mode:forwards; /*Not implemented yet*/
+      -ms-animation-fill-mode:forwards; /*IE 10+*/
+      animation-fill-mode:forwards; /*when the spec is finished*/
+    }
+  }
+
+  @keyframes siri_animation
+ {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animation{
+  animation-name: siri_animation;
+}
+
+@keyframes siri_wave_animation
+ {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.siri_animation {
+  animation-name: siri_wave_animation;
+}
+
+@keyframes header {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.header_animation {
+  animation-delay: 1.3s;
+  animation-name: header;
+  animation-timing-function:ease;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+  animation-fill-mode:forwards; /*when the spec is finished*/
+}

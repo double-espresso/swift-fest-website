@@ -5,13 +5,10 @@
   &#numbers_animated {
     @include gradient;
   }
-  // small
-  @media screen and (max-width: 39.938em) {
-    height: 100vh;
-  }
 	.hero_info {
 		@include vertical_align_absolute;
 		.hero-suptitle {
+      animation-delay: 1.3s;
 			display: inline-block;
       margin-bottom: 30px;
       // small
@@ -21,7 +18,7 @@
       }
 		}
     .hero_title_container_desktop {
-      position: relative;
+      margin-bottom: 50px;
       // small
       @media screen and (max-width: 39.938em) {
         display: none;
@@ -35,70 +32,31 @@
       }
     }
 		.hero-title {
-      position: absolute;
-      margin: 0 0 0 -10px;
       text-align: left;
-      width: 100%;
-
-      // medium
-      @media screen and (max-width: 63.938em) {
-
-      }
-      // small
-      @media screen and (max-width: 39.938em) {
-        left:0;
-        &.hero_title_line_2 {
-          top: 120px !important;
-          display: block !important;
-        }
-      }
-      &.hero_title_line_1 {
-        // medium
-        @media screen and (max-width: 63.938em) {
-          margin-bottom: 0px;
-        }
-      }
-      &.hero_title_line_2{
-        top: 120px;
-        // medium
-        @media screen and (max-width: 63.938em) {
-          top: 100px;
-        }
-        // small
-        @media screen and (max-width: 39.938em) {
-          display: none;
-        }
-      }
+      margin: 10px 0;
+      animation-delay: 1.6s;
 		}
-    .subtitle_container{
-      margin-top: 220px;
-      // medium
-      @media screen and (max-width: 63.938em) {
-        margin-top: 200px;
-      }
-      // small
-      @media screen and (max-width: 39.938em) {
-        margin-top: 120px;
-      }
-      .hero_subtitle {
-        display: inline-block;
-        margin-top: 30px;
-        font-weight: 700;
-        &.hero_subtitle_1 {
-          &:after {
-            content: "";
-            display: inline-block;
-            width: 100px;
-            height: 1px;
-            background-color: $lightest;
-            margin: 0 10px 7px 10px; 
-          }
+
+
+    .hero_subtitle {
+      display: inline;
+      font-weight: 700;
+      animation-delay: 1.9s;
+      &.hero_subtitle_1 {
+        &:after {
+          content: "";
+          display: inline-block;
+          width: 100px;
+          height: 1px;
+          background-color: $lightest;
+          margin: 0 10px 7px 10px; 
         }
-      }
-      .hero_button {
-        margin-top: 50px;
       }
     }
+    .hero_button {
+      margin-top: 50px;
+    }
+
 	}
   .scroll_hint{
     @include general-ui($lightest);
@@ -119,14 +77,5 @@
       display: inline-block;
       padding-bottom: 20px;
     }
-  }
-}
-
-.title_animate{
-  span {
-    transform: skew(0deg);
-    display: inline-block;
-    float: left;
-    position: relative;
   }
 }

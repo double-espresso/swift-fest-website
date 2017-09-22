@@ -6,6 +6,7 @@ header {
   z-index: $zi5;
   @include transition(.3s);
   background-color: $primary;
+  transform: translateY(-80px);
   height: 80px;
   // small
   @media screen and (max-width: 39.938em) {
