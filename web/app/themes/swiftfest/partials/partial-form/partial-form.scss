@@ -1,6 +1,6 @@
 .form {
 	position: relative;
-	padding: 300px 0 200px 0;
+	padding: 300px 0 0 0;
 	background-color: $lightest;
 	// medium
   @media screen and (max-width: 63.938em) {
@@ -24,7 +24,7 @@
 		}
 	}
 	.form_info {
-		margin-top: 300px;
+		margin-top: 250px;
 		// medium
   	@media screen and (max-width: 63.938em) {
 			margin-top: 20px;

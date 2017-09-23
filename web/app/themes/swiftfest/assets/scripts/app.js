@@ -11,12 +11,16 @@ $(window).load(function() {
   // Animate loader off screen
   function showloader(){
     $("#body_homepage").addClass("page-loaded");
+    $(".hero .animated_text").addClass("go");
+    $("header").addClass("header_animation");
   }
   function showloaderSiri(){
     $("#body_siri").addClass("page-loaded");
   }
   function showloaderNormal(){
     $("#body_normal").addClass("page-loaded");
+    $(".hero .animated_text").addClass("go");
+    $("header").addClass("header_animation");
   }
 
   window.setTimeout( showloader, 1200 ); // 5 seconds
@@ -78,16 +82,14 @@ $(document).ready(function() {
      else {
       $('.scroll_hint').removeClass('hide');
      }
+
   });
 
-
-  // Hero title animation
-  $(".title_animate").lettering();
-  window.setTimeout( animation, 2600 );
 
 
   //Block Reveal on scroll
   var controller = new ScrollMagic.Controller();
+
 
   var scene1 = new ScrollMagic.Scene({
     triggerElement: '#animation_1',
@@ -104,6 +106,7 @@ $(document).ready(function() {
         onCover: function(contentEl, revealerEl) {
           contentEl.style.opacity = 1;
           $(".animation_1_container").addClass("show");
+          $(".animation_1_container .animated_text").addClass("go");
         }
       }
     }); 
@@ -128,6 +131,7 @@ $(document).ready(function() {
         onCover: function(contentEl, revealerEl) {
           contentEl.style.opacity = 1;
           $(".animation_2_container").addClass("show");
+          $(".animation_2_container .animated_text").addClass("go");
         }
       }
     }); 
@@ -228,13 +232,6 @@ document.addEventListener('DOMContentLoaded', app.init);
 
 /*------------------*/
 
-
-function animation() {
-  var title1 = new TimelineMax();
-  title1.staggerFromTo(".title_animate span", 1, 
-  {ease: Back.easeOut.config(1), opacity: 0, bottom: -50},
-  {ease: Back.easeOut.config(0), opacity: 1, bottom: 0}, 0.05);
-}
 
 
 /*------------------*/
