@@ -48,7 +48,7 @@
   <section class="keynote_speaker_talk">
     <div class="row">
       <div class="small-12 columns">
-        <div class="general-ui about_suptitle">conference</div>
+        <div class="general-ui about_suptitle">talk</div>
         <div class=" title about_title"><?php echo(get_field('talk_title')); ?></div>
       </div>
     </div>
@@ -57,7 +57,7 @@
       </div>
       <div class="medium-8 columns">
         <div class="talk_text">
-          <?php the_content(); ?>
+          <?php echo(get_field('talk_description')); ?>
         </div>
       </div>
     </div>

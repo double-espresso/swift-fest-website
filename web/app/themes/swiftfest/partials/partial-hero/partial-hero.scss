@@ -107,6 +107,10 @@
     bottom: 0px;
     margin-left: 10px;
     @include transition(.4s);
+    // small
+    @media screen and (max-width: 39.938em) {
+      display: none;
+    }
     &:after {
       content: "";
       display: block;
