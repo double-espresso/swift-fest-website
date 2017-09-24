@@ -1,0 +1,90 @@
+.speaker {
+	padding-top: 100px;
+	&.right {
+		text-align: right;
+		.featured_image{
+			margin-top: 200px;
+			// medium
+			@media screen and (max-width: 63.938em) {
+				margin-top: 0;
+			}
+		}
+		.speaker_preview_info {
+			padding-right: 30px;
+			// small
+			@media screen and (max-width: 39.938em) {
+				padding: 0;
+			}
+			.speaker_title {
+				width: 100%;
+				@include translate(80px, 0);
+				text-align: right;
+				&:after {
+					@include translate(-80px, 0);
+					position: absolute;
+					right: 0;
+				}
+				// small
+				@media screen and (max-width: 39.938em) {
+					@include translate(0, 0);
+					&:after {
+						@include translate(0, 0);
+					}
+				}
+			}
+			.speaker_description {
+				margin-top: 80px;
+			}
+		}
+	}
+	.featured_image {
+		object-fit: cover;
+		@include super_width(380px);
+		margin-top: 150px;
+		box-shadow: 0 30px 60px 0 rgba(0,0,0,0.10);
+		// medium
+		@media screen and (max-width: 63.938em) {
+			margin-top: 0;
+			@include super_width(100%);
+		}
+	}
+	.speaker_preview_info {
+		padding-left: 30px;
+		position: relative;
+		z-index: 9999;
+		// small
+		@media screen and (max-width: 39.938em) {
+			padding: 0;
+		}
+	  .speaker_suptitle {
+	    @include general-ui($lightest);
+	    font-size: $fs3;
+	    text-transform: uppercase;
+	  }
+		.speaker_title{
+			margin-top: 20px;
+			width: 200px;
+			color: $lightest;
+			@include translate(-80px, 0);
+			&:after {
+				content: "";
+				width: 100px;
+				height: 5px;
+				@include translate(80px, 0);
+				background-color: $lightest;
+				margin: 40px 0;
+				display: block;
+			}
+			// small
+			@media screen and (max-width: 39.938em) {
+				@include translate(0, 0);
+				&:after {
+					@include translate(0, 0);
+				}
+			}
+		}
+		.speaker_description {
+			margin-bottom: 50px;
+		}
+	}
+}

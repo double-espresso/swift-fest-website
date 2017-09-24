@@ -125,7 +125,7 @@
           'id' => '',
         ),
         'return_format' => 'url',
-        'preview_size' => 'full',
+        'preview_size' => 'thumbnail',
         'library' => 'all',
         'min_width' => '',
         'min_height' => '',

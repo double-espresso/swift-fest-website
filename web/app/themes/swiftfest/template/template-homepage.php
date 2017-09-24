@@ -23,6 +23,9 @@
           case 'supporters':
             include __DIR__ . "/../partials/partial-supporters/partial-supporters.php";
             break;
+          case 'speaker':
+            include __DIR__ . "/../partials/partial-speaker/partial-speaker.php";
+            break;
         }
       $sectionCounter++;
       endwhile;

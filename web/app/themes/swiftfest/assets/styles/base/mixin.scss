@@ -178,3 +178,7 @@
   max-height: $height;
   min-height: $height;
 }
+
+@mixin translate($x, $y){
+transform: translate($x, $y);
+}
