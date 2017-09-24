@@ -63,9 +63,13 @@ $(document).ready(function() {
     $(".container-nav-mobile").removeClass("open");
   });
 
-  $('.radio-select label').click(function() {
-    $('.radio-select label').removeClass('selected');
-    $(this).addClass('selected');
+  // Speaker Toggle
+  $(".show_talk_content").click(function(){
+    $(this).parents('.single_speaker').toggleClass('show');
+  });
+
+  $(".hide_talk_content").click(function(){
+    $(this).parents('.single_speaker').toggleClass('show');
   });
 
   // Social Nav
