@@ -1,8 +1,8 @@
 .speaker {
-	padding-top: 200px;
+	padding-top: 100px;
 	// small
 	@media screen and (max-width: 39.938em) {
-		padding-bottom: 100px;
+		padding-top: 0;
 	}
 	&.right {
 		text-align: right;
@@ -66,7 +66,10 @@
 			.featured_image {
 				object-fit: cover;
 				@include super_width(380px);
+				opacity: 1;
+				@include transition(.2s);
 				margin-top: 150px;
+				margin-left: 0;
 				box-shadow: 0 30px 60px 0 rgba(0,0,0,0.10);
 				// medium
 				@media screen and (max-width: 63.938em) {
@@ -80,6 +83,7 @@
 			}
 			.switch_content {
 				cursor: pointer;
+				border-bottom: 2px solid transparent;
 				user-select: none;
 				@include general-ui($lightest);
 				text-transform: uppercase;
@@ -95,6 +99,7 @@
 				}
 				&.hide_talk_content {
 					display: none;
+					@include transition(1s);
 				}
 			}
 		}
@@ -159,8 +164,20 @@
 		}
 		&.show {
 			.image_container {
+				.featured_image {
+					opacity: 0.4;
+					margin-left: 10px;
+					@include transition(.2s);
+					// small
+					@media screen and (max-width: 39.938em) {
+						margin-top: 10px;
+						margin-left: 0;
+					}
+				}
 				.hide_talk_content {
 					display: block;
+					border-bottom: 2px solid $lightest;
+					@include transition(1s);
 				}
 				.show_talk_content {
 					display: none;

@@ -14,11 +14,14 @@
 		<?php if($info_type === 'right_image'): ?>
 			<div class="large-10 columns" id="<?php echo $info_animationid; ?>">
 				<div class="info_container info_with_image <?php echo $info_animationid; ?>_container">
+					<?php if(!empty($info_suptitle)): ?>
+						<div class="general-ui info_suptitle animated_text"><?php echo $info_suptitle; ?></div>	
+					<?php endif; ?>
 					<?php if(!empty($info_title)): ?>
 						<h2 class="title info_title animated_text"><?php echo $info_title; ?></h2>	
 					<?php endif; ?>
 					<?php if(!empty($info_content)): ?>
-						<div class="current_text info_content">
+						<div class="current_text info_content animated_text">
 							<p><?php echo $info_content; ?></p>
 						</div>
 					<?php endif; ?>
@@ -33,11 +36,14 @@
 		<?php elseif($info_type === 'left_text' || 'right_text'): ?>		
 			<div class="large-9 <?php echo ($info_type == 'right_text') ? 'large-offset-3' : ''; ?> columns" id="<?php echo $info_animationid; ?>">
 				<div class="info_container info_text_only <?php echo ($info_type == 'right_text') ? 'right_position' : ''; ?> <?php echo $info_animationid; ?>_container">
+					<?php if(!empty($info_suptitle)): ?>
+						<div class="title info_suptitle animated_text"><?php echo $info_suptitle; ?></div>	
+					<?php endif; ?>
 					<?php if(!empty($info_title)): ?>
 						<h2 class="title info_title animated_text"><?php echo $info_title; ?></h2>	
 					<?php endif; ?>
 					<?php if(!empty($info_content)): ?>
-						<div class="current_text info_content">
+						<div class="current_text info_content animated_text">
 							<p><?php echo $info_content; ?></p>
 						</div>
 					<?php endif; ?>
