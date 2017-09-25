@@ -3,6 +3,8 @@
   include __DIR__ . "/section/section-hero.php";
   // Info
   include __DIR__ . "/section/section-info.php";
+  // Intro
+  include __DIR__ . "/section/section-intro.php";
   // Form
   include __DIR__ . "/section/section-form.php";
   // Supporters
@@ -37,6 +39,8 @@
           $sectionHero,
           // Info
           $sectionInfo,
+          // Intro
+          $sectionIntro,
           // Form
           $sectionForm,
           // Supporters

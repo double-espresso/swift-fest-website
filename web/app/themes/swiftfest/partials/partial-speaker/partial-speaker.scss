@@ -1,15 +1,15 @@
 .speaker {
-	padding-top: 100px;
+  margin: 300px 0;
 	// small
 	@media screen and (max-width: 39.938em) {
 		padding-top: 0;
+		margin: 100px 0 300px 0;
 	}
 	&.right {
 		text-align: right;
 		.single_speaker{
 			.image_container {		
 				.featured_image{
-					margin-top: 200px;
 					// medium
 					@media screen and (max-width: 63.938em) {
 						margin-top: 0;
@@ -68,7 +68,6 @@
 				@include super_width(380px);
 				opacity: 1;
 				@include transition(.2s);
-				margin-top: 150px;
 				margin-left: 0;
 				box-shadow: 0 30px 60px 0 rgba(0,0,0,0.10);
 				// medium
@@ -119,6 +118,9 @@
 				@include transition(.2s);
 			}
 			&.talk_preview_info {
+		    user-select: none;
+		    pointer-events: none;
+		    height: 0;
 				top: -409px;
 				opacity: 0;
 				right: -100px;
@@ -129,6 +131,7 @@
 				}
 				.speaker_title {
 					width: 100%;
+					font-size: 40px;
 				}
 			}
 		  .speaker_suptitle {

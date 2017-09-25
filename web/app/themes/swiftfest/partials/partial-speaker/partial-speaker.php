@@ -2,9 +2,10 @@
 	$speaker_position = wave_get_post_meta($sectionMeta, "position", $sectionCounter, TRUE);
 	$speaker_list = get_sub_field('speaker_list');
 	$speaker_image = get_sub_field('featured_image');
+  $speaker_padding = wave_get_post_meta($sectionMeta, "padding_bottom", $sectionCounter, TRUE);
 ?>
 
-<section class="speaker <?php echo $speaker_position; ?>">
+<section class="speaker <?php echo $speaker_position; ?> <?php echo $speaker_padding; ?>">
   <?php if($speaker_list): ?>
     <div class="speaker_relation">
       <?php foreach ($speaker_list as $post): ?>
@@ -15,7 +16,7 @@
   	        <div class="row">
   	        	<div class="medium-4 medium-offset-1 columns">
                 <div class="image_container">              
-    	        		<img src="<?php echo $speaker_image; ?>" alt="<?php the_title(); ?>" class="featured_image parallax" data-rellax-speed="1">
+    	        		<img src="<?php echo $speaker_image; ?>" alt="<?php the_title(); ?>" class="featured_image parallax" data-rellax-speed="0.5">
                   <div class="switch_content show_talk_content">Show talk details</div>
                   <div class="switch_content hide_talk_content">Hide talk details</div>
                 </div>
@@ -40,7 +41,7 @@
   	        <div class="row">
   	        	<div class="medium-4 medium-push-7 columns end">
                 <div class="image_container">              
-                  <img src="<?php echo $speaker_image; ?>" alt="<?php the_title(); ?>" class="featured_image parallax" data-rellax-speed="1">
+                  <img src="<?php echo $speaker_image; ?>" alt="<?php the_title(); ?>" class="featured_image parallax" data-rellax-speed="0.5">
                   <div class="switch_content show_talk_content">Show talk details</div>
                   <div class="switch_content hide_talk_content">Hide talk details</div>
                 </div>

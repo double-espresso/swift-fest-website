@@ -17,6 +17,9 @@
           case 'info':
             include __DIR__ . "/../partials/partial-info/partial-info.php";
             break;
+          case 'intro':
+            include __DIR__ . "/../partials/partial-intro/partial-intro.php";
+            break;
           case 'form':
             include __DIR__ . "/../partials/partial-form/partial-form.php";
             break;

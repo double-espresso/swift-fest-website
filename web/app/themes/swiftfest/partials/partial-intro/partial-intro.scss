@@ -1,0 +1,16 @@
+.intro {
+  margin-top: 200px;
+  text-align: center;
+  // small
+  @media screen and (max-width: 39.938em) {
+    margin-top: 100px;
+  }
+  .intro_suptitle {
+    font-size: $fs3;
+    margin-bottom: 20px;
+  }
+  .intro_title {
+    color: $lightest;
+    margin-bottom: 40px;
+  }
+}
