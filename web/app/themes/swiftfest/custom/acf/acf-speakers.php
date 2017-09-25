@@ -141,7 +141,7 @@
         'maxlength' => '',
       ),
       array (
-        'key' => 'field_59b90e9ef6a18',
+        'key' => 'field_59940e9ef6a18',
         'label' => 'Talk Short Description',
         'name' => 'talk_short_description',
         'type' => 'wysiwyg',

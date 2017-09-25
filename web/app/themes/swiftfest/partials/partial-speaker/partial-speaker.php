@@ -33,7 +33,7 @@
                 <div class="talk_preview_info">
                   <div class="speaker_suptitle"><?php echo(get_field('type')); ?></div>
                   <div class="title speaker_title"><?php echo(get_field('talk_title')); ?></div>
-                  <div class="current-text speaker_description"><?php the_field('talk_short_descriprion'); ?></div>
+                  <div class="current-text speaker_description"><?php the_field('talk_short_description'); ?></div>
                   <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="squared-button white">
                     More Details
                   </a>
@@ -65,7 +65,7 @@
                 <div class="talk_preview_info">
                   <div class="speaker_suptitle"><?php echo(get_field('type')); ?></div>
                   <div class="title speaker_title"><?php echo(get_field('talk_title')); ?></div>
-                  <div class="current-text speaker_description"><?php the_field('talk_short_descriprion'); ?></div>
+                  <div class="current-text speaker_description"><?php the_field('talk_short_description'); ?></div>
                   <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="squared-button white">
                     More Details
                   </a>
