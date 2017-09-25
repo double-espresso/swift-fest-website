@@ -10,8 +10,8 @@
       <?php foreach ($speaker_list as $post): ?>
         <?php setup_postdata($post); ?>
         <?php $url_image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'info' ); ?>
-        <?php if($speaker_position === 'left'): ?>
-          <div class="single_speaker">          
+        <div class="single_speaker">
+          <?php if($speaker_position === 'left'): ?>       
   	        <div class="row">
   	        	<div class="medium-4 medium-offset-1 columns">
                 <div class="image_container">              
@@ -21,7 +21,7 @@
                 </div>
   	        	</div>
   	        	<div class="medium-5 columns end">
-  	        		<div class="speaker_preview_info">
+  	        		<div class="info_container speaker_preview_info">
   		        		<div class="speaker_suptitle"><?php echo(get_field('type')); ?></div>
   		        		<div class="title speaker_title"><?php the_title(); ?></div>
   		        		<div class="current-text speaker_description"><?php the_field('short_descriprion'); ?></div>
@@ -29,20 +29,14 @@
   				          More Details
   				        </a>
   	        		</div>
-
-                <div class="talk_preview_info">
-                  <div class="speaker_suptitle"><?php echo(get_field('type')); ?></div>
+                <div class="info_container talk_preview_info">
+                  <div class="speaker_suptitle"><?php the_title(); ?></div>
                   <div class="title speaker_title"><?php echo(get_field('talk_title')); ?></div>
                   <div class="current-text speaker_description"><?php the_field('talk_short_description'); ?></div>
-                  <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="squared-button white">
-                    More Details
-                  </a>
                 </div>
   	        	</div>
   	        </div>
-          </div>
-	      <?php else: ?>
-          <div class="single_speaker">          
+  	      <?php else: ?>
   	        <div class="row">
   	        	<div class="medium-4 medium-push-7 columns end">
                 <div class="image_container">              
@@ -52,8 +46,7 @@
                 </div>
   	        	</div>
               <div class="medium-5 medium-pull-5 columns">
-
-                <div class="speaker_preview_info">
+                <div class="info_container speaker_preview_info">
                   <div class="speaker_suptitle"><?php echo(get_field('type')); ?></div>
                   <div class="title speaker_title"><?php the_title(); ?></div>
                   <div class="current-text speaker_description"><?php the_field('short_descriprion'); ?></div>
@@ -61,20 +54,15 @@
                     More Details
                   </a>
                 </div>
-
-                <div class="talk_preview_info">
-                  <div class="speaker_suptitle"><?php echo(get_field('type')); ?></div>
+                <div class="info_container talk_preview_info">
+                  <div class="speaker_suptitle"><?php the_title(); ?></div>
                   <div class="title speaker_title"><?php echo(get_field('talk_title')); ?></div>
                   <div class="current-text speaker_description"><?php the_field('talk_short_description'); ?></div>
-                  <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="squared-button white">
-                    More Details
-                  </a>
                 </div>
-
               </div>
   	        </div>
-          </div>
-        <?php endif; ?>
+          <?php endif; ?>
+        </div>
       <?php endforeach; ?>
       <?php wp_reset_postdata(); ?>
     </div>
