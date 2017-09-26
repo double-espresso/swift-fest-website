@@ -176,6 +176,30 @@
         'toolbar' => 'full',
         'media_upload' => 1,
       ),
+      array (
+        'key' => 'field_50947llk8d509',
+        'label' => 'Siri Intro',
+        'name' => 'siri_intro',
+        'type' => 'radio',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array (
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ),
+        'choices' => array (
+          'no' => 'No',
+          'yes' => 'Yes',
+        ),
+        'allow_null' => 0,
+        'other_choice' => 0,
+        'save_other_choice' => 0,
+        'default_value' => '',
+        'layout' => 'horizontal',
+        'return_format' => 'value',
+      ),
     ),
     'location' => array (
       array (
