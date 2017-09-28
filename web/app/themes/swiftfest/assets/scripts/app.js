@@ -28,6 +28,7 @@ $(window).load(function() {
 
   $(".skip").click(function(){
     $("#body_siri").addClass("page-loaded");
+    $("#body_transformation").addClass("page-loaded");
     audio.pause(); // Stop playing
     audio.currentTime = 0; // Reset time
   });
@@ -58,7 +59,8 @@ $(document).ready(function() {
     $("header").toggleClass("fixed");
   });
 
-  $(".container-nav-mobile nav.mobile ul li a").click(function(){
+  $(".container-nav-mobile .mobile ul li a").click(function(){
+    console.log("clicked");
     $(".button-nav").removeClass("open");
     $(".container-nav-mobile").removeClass("open");
   });

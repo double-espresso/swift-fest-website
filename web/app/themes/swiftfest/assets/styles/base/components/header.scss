@@ -168,11 +168,11 @@ header.mobile {
 .container-nav-mobile {
   position: fixed;
   overflow-y: scroll;
-  background-color: $light;
-  width: 80%;
-  left: -100%;
+  background-color: $primary;
+  width: 100%;
+  left: 0;
   bottom: 0;
-  top: 60px;
+  top: -100%;
   height: auto;
   z-index: 999999;
   //bottom: 80px;
@@ -200,13 +200,15 @@ header.mobile {
   }
 
   .mobile {
-    padding-top: 0px;
+    padding-top: 50px;
     ul {
       margin: 0;
       padding: 0;
+      text-align: center;
       li {
         list-style: none;
         background-color: transparent;
+        margin-bottom: 10px;
         @include transition(0.2s);
         &:hover {
           background-color: $primary;
@@ -217,7 +219,11 @@ header.mobile {
           }
         }
         a {
-          @include general-ui($darkest);
+          @include title-small($lightest);
+          text-transform: uppercase;
+          font-weight: $fw3;
+          letter-spacing: 5px;
+          font-size: 20px;
           height: 50px;
           padding-left: 20px;
           text-decoration: none;
@@ -226,24 +232,10 @@ header.mobile {
           width: 100%;
           position: relative;
           @include transition(0.2s);
-          &:before {
-            content:"";
-            display: block;
-            position: absolute;
-            width: 5px;
-            height: 50px;
-            background-color: $dark;
-            opacity: 0;
-            left: 0;
-            @include transition(0.2s);
-          }
+
         }
         &.current-menu-item {
           a {
-            color: $dark;
-            &:before {
-              opacity: 1;
-            }
           }
         }
         &.menu-item-has-children {
@@ -296,7 +288,7 @@ header.mobile {
     }
   }
   &.open {
-    left: 0px;
+    top: 60px;
     opacity: 1;
     visibility: visible;
   }
