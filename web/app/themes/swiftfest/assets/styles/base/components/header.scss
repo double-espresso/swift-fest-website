@@ -3,7 +3,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 99999999999999;
+  z-index: 9999999;
   @include transition(.3s);
   background-color: $primary;
   transform: translateY(-80px);

@@ -1,8 +1,10 @@
 
-<?php $intro_siri = get_field('siri_intro'); ?>
-<?php if ( $intro_siri == "yes" ): ?>
+<?php $intro = get_field('intro'); ?>
+<?php if ( $intro == "siri" ): ?>
   <?php get_header('siri'); ?>
-<?php else: ?>
+<?php elseif ( $intro == "transformation" ): ?>
+  <?php get_header('cynthia'); ?>
+<?php elseif ( $intro == "no" ): ?>
   <?php get_header(); ?>
 <?php endif; ?>
 <?php wp_reset_postdata(); ?>
@@ -18,8 +20,7 @@
       </div>
     </div>
   </section>
-
-  <?php if ( $intro_siri == "yes" ): ?>
+  <?php if ( $intro == "siri" || $intro == "transformation" ): ?>
   <section class="keynote_speaker_about">
     <div class="row">
       <div class="small-12 columns">
@@ -65,7 +66,6 @@
     </div>
   </section>
   <?php endif; ?>
-
   <section class="main_media">
     <div class="row">
       <div class="mall-12 columns">
@@ -73,8 +73,7 @@
       </div>
     </div>
   </section>
-
-  <?php if ( $intro_siri == "yes" ): ?>
+  <?php if ( $intro == "siri" || $intro == "transformation" ): ?>
   <section class="keynote_speaker_talk">
     <div class="row">
       <div class="small-12 columns">
@@ -120,14 +119,13 @@
     </div>
   </section>
   <?php endif; ?>
-
   <section class="ticket_CTA">
     <div class="row">
       <div class="small-12 columns">
         <div class="cta_info">        
           <div class="title CTA_title">swiftfest 2017</div>
           <div class="title-small CTA_subtitle">Boston 29 - 30 November</div>
-          <a href="https://www.eventbrite.com/e/swiftfest-2017-tickets-37370599469" title="Buy Tickets" class="squared-button white hero_button">
+          <a href="https://www.eventbrite.com/e/swiftfest-2017-tickets-37370599469" title="Buy Tickets" target="_blank" class="squared-button white hero_button">
           buy tickets
           </a>
         </div>

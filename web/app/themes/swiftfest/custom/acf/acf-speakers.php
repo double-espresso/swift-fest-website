@@ -178,8 +178,8 @@
       ),
       array (
         'key' => 'field_50947llk8d509',
-        'label' => 'Siri Intro',
-        'name' => 'siri_intro',
+        'label' => 'Intro',
+        'name' => 'intro',
         'type' => 'radio',
         'instructions' => '',
         'required' => 0,
@@ -190,8 +190,9 @@
           'id' => '',
         ),
         'choices' => array (
-          'no' => 'No',
-          'yes' => 'Yes',
+          'no' => 'Normal',
+          'siri' => 'Siri',
+          'transformation' => 'Transformation',
         ),
         'allow_null' => 0,
         'other_choice' => 0,
