@@ -8,7 +8,7 @@
 	$info_image = get_sub_field('image');
 ?>
 
-<section class="info <?php echo $info_position; ?> parallax" id="info_section">
+<section class="info <?php echo $info_position; ?> parallax" id="info_section" data-rellax-speed="2" data-rellax-percentage="0.5">
 	<div class="row">
 
 		<?php if($info_type === 'right_image'): ?>
@@ -28,7 +28,7 @@
 				</div>
 			</div>
 			<div class="large-6 columns">
-				<div class="info_img parallax" data-rellax-speed="1">
+				<div class="info_img parallax" data-rellax-speed="2" data-rellax-percentage="0.5">
 					<img src="<?php echo $info_image; ?>" alt="<?php echo $info_title; ?>">
 				</div>
 			</div>

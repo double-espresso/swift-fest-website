@@ -16,7 +16,7 @@
   	        <div class="row">
   	        	<div class="medium-4 medium-offset-1 columns">
                 <div class="image_container">              
-    	        		<img src="<?php echo $speaker_image; ?>" alt="<?php the_title(); ?>" class="featured_image parallax" data-rellax-speed="0.4">
+    	        		<img src="<?php echo $speaker_image; ?>" alt="<?php the_title(); ?>" class="featured_image parallax" data-rellax-speed="1" data-rellax-percentage="0.5">
                   <div class="switch_content show_talk_content">Show talk details</div>
                   <div class="switch_content hide_talk_content">Hide talk details</div>
                 </div>
@@ -41,7 +41,7 @@
   	        <div class="row">
   	        	<div class="medium-4 medium-push-7 columns end">
                 <div class="image_container">              
-                  <img src="<?php echo $speaker_image; ?>" alt="<?php the_title(); ?>" class="featured_image parallax" data-rellax-speed="0.4">
+                  <img src="<?php echo $speaker_image; ?>" alt="<?php the_title(); ?>" class="featured_image parallax" data-rellax-speed="1" data-rellax-percentage="0.5">
                   <div class="switch_content show_talk_content">Show talk details</div>
                   <div class="switch_content hide_talk_content">Hide talk details</div>
                 </div>

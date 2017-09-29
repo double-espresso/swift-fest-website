@@ -82,11 +82,13 @@ $(document).ready(function() {
 
   // Hide and show scroll hint
   $(window).scroll(function(){
-    if ($(window).scrollTop() >= 100) {
+    if ($(window).scrollTop() >= 20) {
       $('.scroll_hint').addClass('hide');
+      $('header').addClass('scrolled');
      }
      else {
       $('.scroll_hint').removeClass('hide');
+      $('header').removeClass('scrolled');
      }
 
   });
