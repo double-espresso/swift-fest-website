@@ -60,7 +60,6 @@ $(document).ready(function() {
   });
 
   $(".container-nav-mobile .mobile ul li a").click(function(){
-    console.log("clicked");
     $(".button-nav").removeClass("open");
     $(".container-nav-mobile").removeClass("open");
   });
@@ -148,11 +147,40 @@ $(document).ready(function() {
   if ( $( "#animation_2" ).length ) {
     scene2.addTo(controller);
   }
+  
 
   //Parallax
   if ( $( ".parallax" ).length ) {
     var parallax = new Rellax('.parallax');
   }
+
+/*
+  var animation_reveal = new RevealFx(document.querySelector('.animation_reveal'), {
+    revealSettings : {
+      bgcolor: '#2F2F2F',
+      delay: 50,
+      onCover: function(contentEl, revealerEl) {
+        contentEl.style.opacity = 1;
+      }
+    }
+  }); 
+
+
+$('.animation_reveal').each(function() {
+var inview = new Waypoint.Inview({
+    element: this,
+    entered: function(direction) {
+      animation_reveal.reveal();
+      $(this).children(".animated_text").addClass("go");
+      $(this).children(".animation_container").addClass("show");
+    },
+    exited: function(direction) {
+      inview.destroy();
+    },
+    offset: 100 // ADDED, NOTHING CHANGED
+  });
+});
+*/
 
 });
 
@@ -242,7 +270,6 @@ if ((screenSize>768)) {
 
 
 /*------------------*/
-
 
 
 /*------------------*/
