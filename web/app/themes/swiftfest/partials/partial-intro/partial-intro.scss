@@ -1,9 +1,11 @@
 .intro {
   margin-top: 200px;
   text-align: center;
+  margin-bottom: -100px;
   // small
   @media screen and (max-width: 39.938em) {
     margin-top: 100px;
+    margin-bottom: 0;
   }
   .intro_suptitle {
     font-size: $fs3;
