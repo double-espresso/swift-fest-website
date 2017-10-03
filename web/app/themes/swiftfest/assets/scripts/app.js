@@ -1,21 +1,10 @@
 $(window).load(function() {
-  var templateUrl = object_name.templateUrl;
-  console.log(templateUrl);
-
-  var audio = new Audio(templateUrl + '/dist/audio/siri.mp3');
-
-  audio.addEventListener('canplaythrough', function() { 
-    $('.inner').addClass('inner_show');
-  }, false);
 
   // Animate loader off screen
   function showloader(){
     $("#body_homepage").addClass("page-loaded");
     $(".hero .animated_text").addClass("go");
     $("header").addClass("header_animation");
-  }
-  function showloaderSiri(){
-    $("#body_siri").addClass("page-loaded");
   }
   function showloaderNormal(){
     $("#body_normal").addClass("page-loaded");
@@ -27,18 +16,7 @@ $(window).load(function() {
   window.setTimeout( showloaderNormal, 1200 ); // 5 seconds
 
   $(".skip").click(function(){
-    $("#body_siri").addClass("page-loaded");
     $("#body_transformation").addClass("page-loaded");
-    audio.pause(); // Stop playing
-    audio.currentTime = 0; // Reset time
-  });
-
-  $(".headphone_hint").click(function(){
-    $(this).addClass("hide");
-    $(".intro_text").addClass("animation");
-    $("#siri_wave").addClass("siri_animation");
-    audio.play();
-    window.setTimeout( showloaderSiri, 20000 ); // 5 seconds
   });
 
 });

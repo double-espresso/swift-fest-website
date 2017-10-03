@@ -37,7 +37,8 @@
                   <div class="intro_text first_text">"What can i help you with?"</div>
                   <div class="intro_text second_text">Do you know who is this?</div>
                   <div id="siri_wave"></div>
-                  <div class="skip squared-button white hero_button">Go to the content</div>
+                  <div class="play_animation squared-button white hero_button">Play</div>
+                  <div class="skip">Go to the content</div>
                 </div>
             </div>
         </div>

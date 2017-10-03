@@ -13,7 +13,7 @@
 		  pointer-events: none;
 		  cursor: default;
 			// small
-			@media screen and (max-width: 39.938em) {
+			@media screen and (max-width: 63.938em) {
 				opacity: 1 !important;
 				pointer-events: auto;
 			}
@@ -32,9 +32,10 @@
 			.headphone_hint {
 				background-image: url("../images/headphone_hint.svg");
 				cursor: pointer;
-				width: 292px;
-				height: 185px;
-				@include contain;
+				width: 100px;
+				height: 100px;
+				background-repeat: no-repeat;
+				background-position: center;
 				position: absolute;
 				left: 50%;
 				top: 50%;
@@ -93,14 +94,38 @@
 				position: fixed;
 				bottom: 30px;
 				left: 50%;
+				display: inline-block;
 				transform: translate(-50%, 0%);
 				cursor: pointer;
+				@include general-ui($lightest);
+				text-transform: uppercase;
+				border-bottom: 2px solid transparent;
+				@include transition(.2s);
+				&:hover{
+					border-bottom: 2px solid $lightest;
+					@include transition(.2s);
+				}
 				// small
 				@media screen and (max-width: 39.938em) {
 					transform: translate(0%, 0%);
 					left: 20px;
 					right: 20px;
 				}
+			}
+			.play_animation {
+				display: none;
+				position: fixed;
+				width: auto;
+				cursor: pointer;
+				bottom: 90px;
+				left: 50%;
+				z-index: 9999999999;
+				transform: translate(-50%, 0%);
+				// medium
+				@media screen and (max-width: 63.938em) {
+					display: inline-block;
+				}
+
 			}
 		}
 	}

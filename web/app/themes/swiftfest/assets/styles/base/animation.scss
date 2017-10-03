@@ -91,3 +91,58 @@
   -ms-animation-fill-mode:forwards; /*IE 10+*/
   animation-fill-mode:forwards; /*when the spec is finished*/
 }
+
+
+/* Preloader pulse */
+
+@-webkit-keyframes preloader-pulse {
+    from {
+        height: 100%;
+        opacity: .9;
+        visibility: visible;
+        width: 100%
+    }
+    to {
+        height: 200%;
+        opacity: 0;
+        width: 200%
+    }
+}
+
+
+
+.headphone_hint::after,
+.headphone_hint::before {
+    -webkit-animation: preloader-pulse 2s ease-out 0s infinite;
+    animation: preloader-pulse 2s ease-out 0s infinite;
+    border-radius: 200px;
+    border: 1px solid #fff;
+    content: '';
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    visibility: hidden;
+    width: 100%
+}
+
+.headphone_hint::after {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s
+}
+
+@keyframes preloader-pulse {
+    from {
+        height: 100%;
+        opacity: .9;
+        visibility: visible;
+        width: 100%
+    }
+    to {
+        height: 200%;
+        opacity: 0;
+        width: 200%
+    }
+}
