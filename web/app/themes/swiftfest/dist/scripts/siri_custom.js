@@ -1,4 +1,5 @@
 $(window).load(function() {
+
   var SW = new SiriWave({
     style: 'ios9',
     speed: 0.08,
@@ -9,12 +10,13 @@ $(window).load(function() {
 
 	var screenSize = $( window ).width();
   var templateUrl = object_name.templateUrl;
-  var audio = new Audio(templateUrl + '/dist/audio/siri.mp3');
+  var audio = new Audio(templateUrl + '/dist/audio/sii.mp3');
 
 	//console.log(templateUrl); 
 
   audio.addEventListener('canplaythrough', function() { 
     $('.inner').addClass('inner_show');
+    $('#loading').addClass('hide');
 
 		if ((screenSize>1023)) {
 	    setTimeout(function(){

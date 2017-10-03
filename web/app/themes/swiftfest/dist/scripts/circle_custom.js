@@ -1,5 +1,5 @@
 $(window).load(function(){ 
-
+  $('.inner').addClass('inner_show');
   for (var i = 0; i < 50; i++) {
     var names = ['x1','x2','y1','y2'],
         name = names[Math.floor(Math.random() * names.length)];

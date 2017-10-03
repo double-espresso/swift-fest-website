@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.8.x - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-09-06 17:29:02+0000\n"
+"PO-Revision-Date: 2017-09-07 12:08:05+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -5120,11 +5120,11 @@ msgstr "Hai cercato di accedere alla bacheca \"%1$s\", ma al momento non disponi
 
 #: wp-admin/includes/ms.php:690
 msgid "If you reached this screen by accident and meant to visit one of your own sites, here are some shortcuts to help you find your way."
-msgstr "Se si è arrivati a questa schermata per caso e lo scopo era di visitare uno dei propri siti, qui ci sono alcune scorciatoie per trovare la strada corretta."
+msgstr "Se sei arrivato a questa schermata per caso e vuoi andare in uno dei tuoi siti, qui ci sono alcune scorciatoie per trovare la strada corretta."
 
 #: wp-admin/includes/ms.php:692
 msgid "Your Sites"
-msgstr "I vostri siti"
+msgstr "I tuoi siti"
 
 #: wp-admin/includes/ms.php:698
 msgid "Visit Dashboard"

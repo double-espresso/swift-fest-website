@@ -32,13 +32,22 @@
         <div class="loader-inner">
             <div class="bg-2"></div>
             <div class="middle-div">
+                <div id="loading">
+                  <div>G</div>
+                  <div>N</div>
+                  <div>I</div>
+                  <div>D</div>
+                  <div>A</div>
+                  <div>O</div>
+                  <div>L</div>
+                </div>
+                <div class="skip">Go to the content</div>
                 <div class="inner">
                   <div class="headphone_hint"></div>
                   <div class="intro_text first_text">"What can i help you with?"</div>
                   <div class="intro_text second_text">Do you know who is this?</div>
                   <div id="siri_wave"></div>
-                  <div class="play_animation squared-button white hero_button">Play</div>
-                  <div class="skip">Go to the content</div>
+                  <div class="play_animation squared-button white hero_button">Tap to Play</div>
                 </div>
             </div>
         </div>

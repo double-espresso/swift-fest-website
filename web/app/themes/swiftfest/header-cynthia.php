@@ -38,7 +38,7 @@
                     <div class="circles"></div>
                   </div>
                   <div class="intro_text first_text">Get ready for your digital transformation</div>
-                  <div class="skip squared-button white hero_button">Go to the content</div>
+                  <div class="skip">Go to the content</div>
                 </div>
             </div>
         </div>
