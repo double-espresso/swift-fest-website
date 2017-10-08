@@ -10,7 +10,7 @@ $(window).load(function() {
 
 	var screenSize = $( window ).width();
   var templateUrl = object_name.templateUrl;
-  var audio = new Audio(templateUrl + '/dist/audio/sii.mp3');
+  var audio = new Audio(templateUrl + '/dist/audio/siri.mp3');
 
 	//console.log(templateUrl); 
 
