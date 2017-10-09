@@ -11,6 +11,8 @@
   include __DIR__ . "/section/section-supporters.php";
   // Speaker
   include __DIR__ . "/section/section-speaker.php";
+  // Team
+  include __DIR__ . "/section/section-team.php";
 
 
   // SECTION
@@ -47,6 +49,8 @@
           $sectionSupporters,
           // Speaker
           $sectionSpeaker,
+          // Team
+          $sectionTeam,
         ),
       ),
     ),

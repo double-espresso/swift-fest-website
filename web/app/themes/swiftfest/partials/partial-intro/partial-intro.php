@@ -7,7 +7,7 @@
 
 <section class="intro">
   <div class="row">
-    <div class="medium-12 columns">
+    <div class="medium-8 columns end">
       <?php if($intro_suptitle): ?>
         <h4 class="general-ui intro_suptitle"><?php echo $intro_suptitle; ?></h4>
       <?php endif; ?>
