@@ -128,6 +128,9 @@
           <a href="https://www.eventbrite.com/e/swiftfest-2017-tickets-37370599469" title="Buy Tickets" target="_blank" class="squared-button white hero_button">
           buy tickets
           </a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSffougjfUt4bjecHeKWMgvhbiUBryAN-sU9irHQ-Ytdyih0Og/viewform" title="Call for Paper" target="_blank" class="squared-button white hero_button">
+          call for paper
+          </a>
         </div>
       </div>
     </div>

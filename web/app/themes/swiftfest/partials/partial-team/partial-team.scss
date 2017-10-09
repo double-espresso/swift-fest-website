@@ -102,6 +102,12 @@ section.team {
                 &[href*="vimeo"]:before {
                   content: "\eaa0";
                 }
+                &[href*="dribbble"]:before {
+                  content: "\eaa7";
+                }
+                &[href*="behance"]:before {
+                  content: "\eaa8";
+                }
                 &:hover {
                   &:before {
                     color: $darkest;
