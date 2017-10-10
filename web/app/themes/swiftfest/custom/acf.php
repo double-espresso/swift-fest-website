@@ -17,4 +17,7 @@ if( function_exists('acf_add_local_field_group') ):
   // OPTIONS
   include __DIR__ . "/acf/acf-options.php";
 
+  // SPONSORS
+  include __DIR__ . "/acf/acf-sponsors.php";
+
 endif;

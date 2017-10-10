@@ -1,0 +1,71 @@
+section.sponsors {
+  margin: 200px 0;
+  // small
+  @media screen and (max-width: 39.938em) {
+    margin: 100px 0;
+  }
+  .sponsor_container {
+    background-color: $lightest;
+    box-shadow: 0 30px 70px 0 rgba(0,0,0,0.10);
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    padding: 100px 50px;
+    margin-top: -10px;
+    // medium
+    @media screen and (max-width: 63.938em) {
+      padding: 80px;
+    }
+    // small
+    @media screen and (max-width: 39.938em) {
+      padding: 80px 20px;
+    }
+    .sponsor_info {
+      // large
+      @media screen and (min-width: 63.938em) {
+        @include vertical_align_absolute;
+      }
+      // medium
+      @media screen and (max-width: 63.938em) {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .sponsor_suptitle {
+        color: $primary;
+      }
+    }
+    .sponsor_logos {
+      text-align: left;
+      width: 100%;
+      // medium
+      @media screen and (max-width: 63.938em) {
+        text-align: center;
+      }
+      .single_logo {
+        display: inline-block;
+        border-bottom: 5px solid #EEEEEE;
+        @include contain;
+        &.platinum {
+          height: 300px;
+          width: 300px;
+        }
+        &.gold {
+          width: 250px;
+          height: 250px;
+        }
+        &.silver {
+          width: 200px;
+          height: 200px;
+        }
+        &.bronze {
+          width: 150px;
+          height: 150px;
+        }
+        &.startup {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+  }
+}
