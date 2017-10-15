@@ -1,17 +1,17 @@
 section.sponsors {
-  margin: 200px 0;
+  margin: 100px 0;
   // small
   @media screen and (max-width: 39.938em) {
     margin: 100px 0;
   }
   .sponsor_container {
-    background-color: $lightest;
-    box-shadow: 0 70px 70px 0 rgba(0,0,0,0.10);
     display: inline-block;
     width: 100%;
     position: relative;
-    padding: 100px 50px;
-    margin-top: -10px;
+    padding: 20px 50px;
+    margin-bottom: 50px;
+    background-color: $lightest;
+    box-shadow: 0 70px 70px 0 rgba(0,0,0,0.10);
     // medium
     @media screen and (max-width: 63.938em) {
       padding: 80px;
@@ -21,10 +21,6 @@ section.sponsors {
       padding: 80px 20px;
     }
     .sponsor_info {
-      // large
-      @media screen and (min-width: 63.938em) {
-        @include vertical_align_absolute;
-      }
       // medium
       @media screen and (max-width: 63.938em) {
         text-align: center;
@@ -33,13 +29,23 @@ section.sponsors {
       .sponsor_suptitle {
         color: $primary;
       }
+      .sponsor_title {
+        color: $primary;
+        font-weight: $fw3;
+        letter-spacing: $ls3;
+        &:before {
+          content: "_";
+          display: block;
+          margin: 10px 0 10px 0;
+        }
+      }
     }
     .sponsor_logos {
-      text-align: left;
+      text-align: center;
       width: 100%;
       // medium
       @media screen and (max-width: 63.938em) {
-        text-align: center;
+
       }
       .single_logo {
         display: inline-block;

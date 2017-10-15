@@ -35,6 +35,9 @@
           case 'sponsors':
             include __DIR__ . "/../partials/partial-sponsors/partial-sponsors.php";
             break;
+          case 'tickets':
+            include __DIR__ . "/../partials/partial-tickets/partial-tickets.php";
+            break;
         }
       $sectionCounter++;
       endwhile;

@@ -47,6 +47,7 @@ $(window).load(function() {
   $(".skip").click(function(){
     $("#body_siri").addClass("page-loaded");
     audio.pause(); // Stop playing
+    audio.stop(); // Stop playing
   });
 
 });

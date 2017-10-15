@@ -10,14 +10,13 @@
       <div class="row">
         <div class="sponsor_container">
 
-          <div class="large-6 columns">
+          <div class="large-3 columns">
             <div class="sponsor_info">
-              <div class="general-ui sponsor_suptitle">sponsor</div>
-              <div class="title sponsor_title"><?php echo ($sponsor_type); ?></div>
+              <div class="title-small sponsor_title"><?php echo ($sponsor_type); ?></div>
             </div>
           </div>
 
-          <div class="large-6 columns">
+          <div class="large-9 columns">
             <div class="row">
               <div class="sponsor_logos">
                 <?php foreach ($sponsor_brands as $post): ?>

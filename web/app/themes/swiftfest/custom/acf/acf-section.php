@@ -15,6 +15,8 @@
   include __DIR__ . "/section/section-team.php";
   // Sponsors
   include __DIR__ . "/section/section-sponsors.php";
+  // Tickets
+  include __DIR__ . "/section/section-tickets.php";
 
 
   // SECTION
@@ -55,6 +57,8 @@
           $sectionTeam,
           // Sponsors
           $sectionSponsors,
+          // Tickets
+          $sectionTikets,
         ),
       ),
     ),

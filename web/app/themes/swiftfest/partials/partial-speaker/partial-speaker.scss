@@ -1,5 +1,5 @@
 .speaker {
-  margin: 300px 0;
+  margin: 250px 0;
 	// small
 	@media screen and (max-width: 39.938em) {
 		padding-top: 0;
@@ -122,7 +122,7 @@
 		    user-select: none;
 		    pointer-events: none;
 		    height: 0;
-				top: -409px;
+				top: -350px;
 				opacity: 0;
 				right: -100px;
 				@include transition(.2s);

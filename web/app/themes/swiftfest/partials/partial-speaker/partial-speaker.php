@@ -16,12 +16,12 @@
   	        <div class="row">
   	        	<div class="medium-4 medium-offset-1 columns">
                 <div class="image_container">              
-    	        		<img src="<?php echo $speaker_image; ?>" alt="<?php the_title(); ?>" class="featured_image parallax" data-rellax-speed="1" data-rellax-percentage="0.5">
+    	        		<img src="<?php echo $speaker_image; ?>" alt="<?php the_title(); ?>" class="featured_image parallax" data-rellax-speed="0.8" data-rellax-percentage="0.5">
                   <div class="switch_content show_talk_content">Show talk details</div>
                   <div class="switch_content hide_talk_content">Hide talk details</div>
                 </div>
   	        	</div>
-  	        	<div class="medium-5 columns end">
+  	        	<div class="medium-7 columns end">
   	        		<div class="info_container speaker_preview_info">
   		        		<div class="speaker_suptitle"><?php echo(get_field('type')); ?></div>
   		        		<div class="title speaker_title"><?php the_title(); ?></div>
@@ -34,6 +34,9 @@
                   <div class="speaker_suptitle"><?php the_title(); ?></div>
                   <div class="title speaker_title"><?php echo(get_field('talk_title')); ?></div>
                   <div class="current-text speaker_description"><?php the_field('talk_short_description'); ?></div>
+                  <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="squared-button white">
+                        More Details
+                      </a>
                 </div>
   	        	</div>
   	        </div>
@@ -41,12 +44,12 @@
   	        <div class="row">
   	        	<div class="medium-4 medium-push-7 columns end">
                 <div class="image_container">              
-                  <img src="<?php echo $speaker_image; ?>" alt="<?php the_title(); ?>" class="featured_image parallax" data-rellax-speed="1" data-rellax-percentage="0.5">
+                  <img src="<?php echo $speaker_image; ?>" alt="<?php the_title(); ?>" class="featured_image parallax" data-rellax-speed="0.8" data-rellax-percentage="0.5">
                   <div class="switch_content show_talk_content">Show talk details</div>
                   <div class="switch_content hide_talk_content">Hide talk details</div>
                 </div>
   	        	</div>
-              <div class="medium-5 medium-pull-5 columns">
+              <div class="medium-7 medium-pull-5 columns">
                 <div class="info_container speaker_preview_info">
                   <div class="speaker_suptitle"><?php echo(get_field('type')); ?></div>
                   <div class="title speaker_title"><?php the_title(); ?></div>
@@ -59,6 +62,9 @@
                   <div class="speaker_suptitle"><?php the_title(); ?></div>
                   <div class="title speaker_title"><?php echo(get_field('talk_title')); ?></div>
                   <div class="current-text speaker_description"><?php the_field('talk_short_description'); ?></div>
+                  <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="squared-button white">
+                        More Details
+                      </a>
                 </div>
               </div>
   	        </div>
