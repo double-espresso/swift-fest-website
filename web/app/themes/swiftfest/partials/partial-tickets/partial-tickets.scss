@@ -1,78 +1,83 @@
 section.tickets {
-  padding: 150px 0 20px 0;
+  padding: 100px 0 20px 0;
   .ticket_container {
-    padding: 50px 0 100px 0;  
-    .ticket_card {
-      background-color: $lightest;
-      box-shadow: 0 70px 70px 0 rgba(0,0,0,0.10);
-      width: 100%;
-      height: 370px;
-      text-align: center;
-      padding: 20px;
-      margin-bottom: 30px;
-      position: relative;
-      @include translate(0,0);
-      @include transition(.2s);
-      &:after {
-        content: "";
+    padding: 50px 0 100px 0; 
+    .tickets {
+      position: relative;  
+      .ticket_card {
+        background-color: $lightest;
+        box-shadow: 0 70px 70px 0 rgba(0,0,0,0.10);
+        width: 100%;
+        @include super_height(390px);
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 30px;
+        @include translate(0,0);
+        @include transition(.2s);
+        &:hover {
+          @include translate(0,10px);
+          @include transition(.2s);
+        }
+        .card_title {
+          margin-bottom: 10px;
+          height: 60px;
+          font-size: 30px;
+        }
+        .card_price {
+          margin: 40px 0 20px 0;
+          color: $primary;
+          &:after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 5px;
+            background-color: $primary;
+            margin: 30px auto 0 auto;
+          }
+        }
+        .card_date {
+          color: $darkest;
+          margin-bottom: 30px;
+        }
+        &.not_available {
+          opacity: 0.4;
+          pointer-events: none;
+        }
+        &.sold_out {
+          pointer-events: none;
+          //background-color: #E51150;
+          .button {
+            //background-color: #E51150;
+            //border: 1px solid #E51150;
+            border: none;
+          }
+          .sold_out_badge {
+            background-image: url(../images/soldout_icon.svg);
+            @include contain;
+            height: 80px;
+            width: 80px;
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        } 
+      }
+      .ticket_stack {
         width: 95%;
         height: 10px;
         position: absolute;
         background-color: #DDC6C6;
         bottom: -10px;
         left: 50%;
-        z-index: -1;
         @include translate(-50%,0);
-        @include transition(.1s);
-      }
-      &:hover {
-        @include translate(0,10px);
         @include transition(.2s);
-        &:after {
-          bottom: 0;
-          background-color: $lightest;
-          @include transition(.1s);
+        &.sold_out {
+          display: none;
+        }
+        &.not_available {
+          opacity: 0.4;
         }
       }
-      .card_title {
-        margin-bottom: 10px;
-        height: 60px;
-      }
-      .card_icon {
-        width: 84px;
-        height: 45px;
-        margin: 20px auto;
-        @include contain;
-      }
-      .card_price {
-        margin: 40px 0 20px 0;
-      }
-      &.not_available {
-        opacity: 0.4;
-        pointer-events: none;
-      }
-      &.sold_out {
-        pointer-events: none;
-        //background-color: #E51150;
-        .card_icon {
-          //-webkit-filter: brightness(0) invert(1);
-          //filter: brightness(0) invert(1);
-        }
-        .button {
-          //background-color: #E51150;
-          //border: 1px solid #E51150;
-          border: none;
-        }
-        .sold_out_badge {
-          background-image: url(../images/soldout_icon.svg);
-          @include contain;
-          height: 80px;
-          width: 80px;
-          position: absolute;
-          top: 0;
-          right: 0;
-        }
-      } 
-    }
+    } 
   }
 }
