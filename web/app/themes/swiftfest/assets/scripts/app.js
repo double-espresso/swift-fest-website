@@ -1,5 +1,17 @@
 $(window).load(function() {
 
+  /*
+  var rev1 = new RevealFx(document.querySelector('.slide_reveal'), {
+    revealSettings : {
+      bgcolor: '#2F2F2F',
+      delay: 50,
+      onCover: function(contentEl, revealerEl) {
+        contentEl.style.opacity = 1;
+      }
+    }
+  });
+  */
+
   // Animate loader off screen
   function showloader(){
     $("#body_homepage").addClass("page-loaded");
@@ -12,8 +24,37 @@ $(window).load(function() {
     $("header").addClass("header_animation");
   }
 
+
+  function setPageLoaded() {
+
+    $('.animated_text').each(function() {
+      new Waypoint.Inview({
+        element: this,
+        entered: function(direction) {
+          $(this.element).addClass('go');
+        }
+      });
+    });
+
+    /*
+    $('.slide_reveal').each(function() {
+      console.log(animationName);
+      new Waypoint.Inview({
+        element: this,
+        enter: function(direction) {
+          $(this.element).parents('.slide_reveal_box').addClass('show');
+          rev.reveal();
+        }
+      });
+    });
+    */
+
+  }
+
+
   window.setTimeout( showloader, 1200 ); // 5 seconds
   window.setTimeout( showloaderNormal, 1200 ); // 5 seconds
+  window.setTimeout( setPageLoaded, 3800 ); // 5 seconds
 
   $(".skip").click(function(){
     $("#body_transformation").addClass("page-loaded");
@@ -69,10 +110,8 @@ $(document).ready(function() {
      }
 
   });
-
-
-
-  //Block Reveal on scroll
+  
+    //Block Reveal on scroll
   var controller = new ScrollMagic.Controller();
 
 
@@ -125,43 +164,14 @@ $(document).ready(function() {
   if ( $( "#animation_2" ).length ) {
     scene2.addTo(controller);
   }
-  
+
 
   //Parallax
   if ( $( ".parallax" ).length ) {
     var parallax = new Rellax('.parallax');
   }
 
-/*
-  var animation_reveal = new RevealFx(document.querySelector('.animation_reveal'), {
-    revealSettings : {
-      bgcolor: '#2F2F2F',
-      delay: 50,
-      onCover: function(contentEl, revealerEl) {
-        contentEl.style.opacity = 1;
-      }
-    }
-  }); 
-
-
-$('.animation_reveal').each(function() {
-var inview = new Waypoint.Inview({
-    element: this,
-    entered: function(direction) {
-      animation_reveal.reveal();
-      $(this).children(".animated_text").addClass("go");
-      $(this).children(".animation_container").addClass("show");
-    },
-    exited: function(direction) {
-      inview.destroy();
-    },
-    offset: 100 // ADDED, NOTHING CHANGED
-  });
 });
-*/
-
-});
-
 
   // Hide Header on on scroll down
   var didScroll;

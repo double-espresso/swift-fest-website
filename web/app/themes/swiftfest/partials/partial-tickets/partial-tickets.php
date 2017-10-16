@@ -1,6 +1,4 @@
 <?php
-  $tickets_title = wave_get_post_meta($sectionMeta, "title", $sectionCounter, TRUE);
-  $tickets_subtitle = wave_get_post_meta($sectionMeta, "subtitle", $sectionCounter, TRUE);
   $tickets_repeater = get_sub_field('ticket');
 ?>
 <section class="tickets" id="tickets_section">
@@ -15,8 +13,8 @@
                 <div class="tickets">              
                   <div class="ticket_stack <?php echo ($tickets_availability == 'no') ? 'not_available' : ''; ?><?php echo ($tickets_availability == 'sold_out') ? 'sold_out' : ''; ?>"></div>
                   <div class="ticket_card <?php echo ($tickets_availability == 'no') ? 'not_available' : ''; ?><?php echo ($tickets_availability == 'sold_out') ? 'sold_out' : ''; ?>">
-                    <div class="title card_price">$<?php the_sub_field('price') ?></div>
-                    <div class="title card_title"><?php the_sub_field('title') ?></div>
+                    <div class="title card_price animated_text">$<?php the_sub_field('price') ?></div>
+                    <div class="title card_title animated_text"><?php the_sub_field('title') ?></div>
                     <div class="current-text card_date"><?php the_sub_field('date_range') ?></div>
                     <?php if(get_sub_field('button_link')): ?>
                       <a href="<?php the_sub_field('button_link'); ?>" target="_blank" title="<?php the_sub_field('button_label'); ?>" class="squared-button orange hero_button">
