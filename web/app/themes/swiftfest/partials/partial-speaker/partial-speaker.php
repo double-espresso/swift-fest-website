@@ -23,9 +23,9 @@
   	        	</div>
   	        	<div class="medium-7 columns end">
   	        		<div class="info_container speaker_preview_info">
-  		        		<div class="speaker_suptitle"><?php echo(get_field('type')); ?></div>
-  		        		<div class="title speaker_title"><?php the_title(); ?></div>
-  		        		<div class="current-text speaker_description"><?php the_field('short_descriprion'); ?></div>
+  		        		<div class="speaker_suptitle animated_text_auto"><?php echo(get_field('type')); ?></div>
+  		        		<div class="title speaker_title animated_text_auto"><?php the_title(); ?></div>
+  		        		<div class="current-text speaker_description animated_text_auto"><?php the_field('short_descriprion'); ?></div>
   				        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="squared-button white">
   				          More Details
   				        </a>
@@ -51,9 +51,9 @@
   	        	</div>
               <div class="medium-7 medium-pull-5 columns">
                 <div class="info_container speaker_preview_info">
-                  <div class="speaker_suptitle"><?php echo(get_field('type')); ?></div>
-                  <div class="title speaker_title"><?php the_title(); ?></div>
-                  <div class="current-text speaker_description"><?php the_field('short_descriprion'); ?></div>
+                  <div class="speaker_suptitle animated_text_auto"><?php echo(get_field('type')); ?></div>
+                  <div class="title speaker_title animated_text_auto"><?php the_title(); ?></div>
+                  <div class="current-text speaker_description animated_text_auto"><?php the_field('short_descriprion'); ?></div>
                   <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="squared-button white">
                     More Details
                   </a>

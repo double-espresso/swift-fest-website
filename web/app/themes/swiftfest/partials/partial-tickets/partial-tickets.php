@@ -13,9 +13,9 @@
                 <div class="tickets">              
                   <div class="ticket_stack <?php echo ($tickets_availability == 'no') ? 'not_available' : ''; ?><?php echo ($tickets_availability == 'sold_out') ? 'sold_out' : ''; ?>"></div>
                   <div class="ticket_card <?php echo ($tickets_availability == 'no') ? 'not_available' : ''; ?><?php echo ($tickets_availability == 'sold_out') ? 'sold_out' : ''; ?>">
-                    <div class="title card_price animated_text">$<?php the_sub_field('price') ?></div>
-                    <div class="title card_title animated_text"><?php the_sub_field('title') ?></div>
-                    <div class="current-text card_date"><?php the_sub_field('date_range') ?></div>
+                    <div class="title card_price animated_text_auto">$<?php the_sub_field('price') ?></div>
+                    <div class="title card_title animated_text_auto"><?php the_sub_field('title') ?></div>
+                    <div class="current-text card_date animated_text_auto"><?php the_sub_field('date_range') ?></div>
                     <?php if(get_sub_field('button_link')): ?>
                       <a href="<?php the_sub_field('button_link'); ?>" target="_blank" title="<?php the_sub_field('button_label'); ?>" class="squared-button orange hero_button">
                         <?php echo ($tickets_availability == 'sold_out') ? 'SOLD OUT' : the_sub_field('button_label'); ?>

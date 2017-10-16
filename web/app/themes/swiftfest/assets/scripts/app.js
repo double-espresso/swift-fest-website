@@ -27,10 +27,10 @@ $(window).load(function() {
 
   function setPageLoaded() {
 
-    $('.animated_text').each(function() {
+    $('.animated_text_auto').each(function() {
       new Waypoint.Inview({
         element: this,
-        entered: function(direction) {
+        enter: function(direction) {
           $(this.element).addClass('go');
         }
       });
@@ -54,7 +54,7 @@ $(window).load(function() {
 
   window.setTimeout( showloader, 1200 ); // 5 seconds
   window.setTimeout( showloaderNormal, 1200 ); // 5 seconds
-  window.setTimeout( setPageLoaded, 3800 ); // 5 seconds
+  window.setTimeout( setPageLoaded, 2800 ); // 5 seconds
 
   $(".skip").click(function(){
     $("#body_transformation").addClass("page-loaded");
