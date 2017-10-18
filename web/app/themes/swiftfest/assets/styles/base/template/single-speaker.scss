@@ -8,17 +8,16 @@
   @media screen and (max-width: 39.938em) {
     background-position: -700px 0; 
   }
-  &:after {
-    content: "";
-    background-image: url("../images/keynote_speaker_hero_symbols.svg");
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    opacity: 0.2;
-    background-repeat: no-repeat;
-    background-position: right;
+  &#symbols_animation {
+    z-index: 99;
+    .animation-container {
+      @include super_height(900px);
+      span {
+        animation-name: move_speakers;
+      }
+    }
   }
+
   .speaker_suptitle {
     @include general-ui($lightest);
     font-size: $fs3;
@@ -33,7 +32,7 @@
 }
 
 .keynote_speaker_about, .keynote_speaker_talk {
-  padding: 80px 0;
+  padding: 40px 0;
   .about_suptitle {
     color: $primary;
     font-size: $fs3;

@@ -26,7 +26,7 @@
 
   </head>
 
-  <body id="body_homepage" <?php body_class(); ?>>
+  <body id="symbols_animation" <?php body_class(); ?>>
 
     <div class="preloader">
         <div class="loader-inner">

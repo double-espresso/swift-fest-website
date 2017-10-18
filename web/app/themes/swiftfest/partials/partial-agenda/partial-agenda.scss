@@ -1,0 +1,159 @@
+section.agenda {
+  margin-top: 100px;
+  .hide {
+    display: none !important;
+  }
+  .show {
+    display: block !important;
+  }
+  .day_tab {
+    margin: 50px 0 0 0;
+    ul {
+      margin: 0 auto;
+      padding: 0;
+      text-align: center;
+      li {
+        width: 50%;
+        list-style: none;
+        display: inline-block;
+        float: left;
+        background-color: transparent;
+        border: 2px solid $lightest;
+        border-bottom: none;
+        padding: 10px 0;
+        color: $lightest;
+        font-weight: bold;
+        margin:0;
+        @include transition(.2s);
+        cursor: pointer;
+        &:hover {
+          @include transition(.2s);
+        }
+        &.selected {
+          background-color: $lightest;
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  .agenda_container {
+    padding: 100px 0;
+    background-color: $lightest;
+    margin:0;
+    .agenda_schedule {
+      .hour {
+        color: $primary;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+        padding-right: 20px;
+        position: relative;
+        left: 20px;
+        &:before {
+          content: "→";
+          position: absolute;
+          left: -20px;
+          top: -2px;
+        }
+        span {
+          text-transform: uppercase;
+          font-size: $fs1;
+          font-weight: $fw3;
+          padding-left: 10px;
+        }
+      }
+      .talk_cell {
+        min-height: 250px;
+        position: relative;
+        // small
+        @media screen and (max-width: 39.938em) {
+          min-height: auto;
+        }
+        .talk_info_container {
+          min-height: 200px;
+          @include vertical_align_absolute;
+          padding: 20px 0;
+          // small
+          @media screen and (max-width: 39.938em) {
+            @include remove-vertical-align;
+          }     
+          a {
+            color: $primary;
+            border-bottom: 2px solid transparent;
+            @include transition(.2s);
+            display: inline-block;
+            &:hover {
+              border-bottom: 2px solid $primary;
+              @include transition(.2s);
+            }
+            .hour {
+              display: inline-block;
+            }
+            .talk_title {
+              display: inline-block;
+              font-size: 30px;
+              line-height: 40px;
+              max-width: 700px;
+            }
+          }
+        }
+      }
+      .other_container{
+        .other_cell {
+          background-color: $primary;
+          text-align: center;
+          position: relative;
+          margin: 20px 0;
+          height: 30px;
+          outline: 20px solid $primary;
+          // small
+          @media screen and (max-width: 39.938em) {
+            height: 100px;
+            text-align: left;
+            margin: 30px 0;
+          }
+          .hour {
+            position: absolute;
+            color: $lightest;
+            @include vertical_align_absolute;
+            // small
+            @media screen and (max-width: 39.938em) {
+              @include remove-vertical-align;
+            }
+          }
+          .text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            text-transform: uppercase;
+            transform: translate(-50%, -50%);
+            @include title-small($lightest);
+            // small
+            @media screen and (max-width: 39.938em) {
+              @include remove-vertical-align;
+              transform: none;
+              left: 0;
+              margin-top: 10px;
+            }
+          }
+          .icon {
+            width: 30px;
+            height: 30px;
+            @include contain;
+            float: left;
+            @include clearfix;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+    .schedule_0 {
+    }
+    .schedule_1 {
+      display: none;
+    }
+  }
+
+} 

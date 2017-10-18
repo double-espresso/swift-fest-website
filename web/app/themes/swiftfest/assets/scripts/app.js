@@ -14,7 +14,7 @@ $(window).load(function() {
 
   // Animate loader off screen
   function showloader(){
-    $("#body_homepage").addClass("page-loaded");
+    $("#symbols_animation").addClass("page-loaded");
     $(".hero .animated_text").addClass("go");
     $("header").addClass("header_animation");
   }
@@ -96,6 +96,24 @@ $(document).ready(function() {
   $(".social_text").click(function(){
     $(this).toggleClass("open");
     $(".social_container").toggleClass("open");
+  });
+
+  // Agenda tab
+  $('.single_day_tab').click(function(){
+    $('.single_day_tab').removeClass("selected");
+    $(this).toggleClass("selected");
+  });
+
+  $('.tab_0').click(function(){
+    $('.schedule_0').addClass("show");
+    $('.schedule_1').addClass("hide");
+    $('.schedule_1').removeClass("show");
+  });
+
+  $('.tab_1').click(function(){
+    $('.schedule_1').addClass("show");
+    $('.schedule_0').addClass("hide");
+    $('.schedule_0').removeClass("show");
   });
 
   // Hide and show scroll hint
@@ -226,8 +244,8 @@ if ((screenSize>768)) {
       app.container = document.createElement('div');
       app.container.className = 'animation-container';
       //document.body.appendChild(app.container);
-      if ( $( "#body_homepage" ).length ) {
-        document.getElementById('body_homepage').appendChild(app.container);
+      if ( $( "#symbols_animation" ).length ) {
+        document.getElementById('symbols_animation').appendChild(app.container);
       }
       window.setInterval(app.add, 90);
     },

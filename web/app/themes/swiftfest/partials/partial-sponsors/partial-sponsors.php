@@ -23,7 +23,7 @@
                   <?php setup_postdata($post); ?>
                   <?php $url_image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'info' ); ?>
                   <div class="<?php echo ($sponsor_type == 'platinum') ? 'medium-12"' : 'medium-6'; ?> columns end">
-                    <a href="<?php the_field("link"); ?>" target="_blank" title="<?php the_title(); ?>" class="single_logo <?php echo ($sponsor_type); ?>" <?php if ($url_image): ?>style="background-image: url(<?php echo $url_image[0] ?>)"<?php endif; ?>></a>
+                    <a href="<?php the_field("link"); ?>" target="_blank" title="<?php the_title(); ?>" class="single_logo animated_text_auto <?php echo ($sponsor_type); ?>" <?php if ($url_image): ?>style="background-image: url(<?php echo $url_image[0] ?>)"<?php endif; ?>></a>
                   </div> 
                 <?php endforeach; ?>
                 <?php wp_reset_postdata(); ?>

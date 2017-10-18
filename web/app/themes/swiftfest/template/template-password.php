@@ -1,8 +1,23 @@
 <?php
 /**
- * Template Name: Homepage
+ * Template Name: Homepage - Password
  */
 ?>
+
+<?php global $post; ?>
+<?php if(post_password_required( $post )): ?>
+  <?php get_header('password'); ?>
+  <section class="password">
+    <div class="row">
+      <div class="medium-6 columns medium-centered">
+        <div class="title">IF YOU WERE TO THROW A WHITE STONE INTO THE RED SEA WHAT WOULD IT BECOME?</div>
+        <div class="password_form">
+          <?php echo get_the_password_form(); ?>
+        </div>
+      </div>
+    </div>
+  </section>
+<?php else: ?>
 <?php
   get_header('homepage');
   wp_reset_postdata();
@@ -47,3 +62,4 @@
     endwhile;
   get_footer();
 ?>
+<?php endif; ?>

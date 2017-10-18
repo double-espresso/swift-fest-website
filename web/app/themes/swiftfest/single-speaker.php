@@ -9,7 +9,7 @@
 <?php endif; ?>
 <?php wp_reset_postdata(); ?>
 <?php while ( have_posts() ): the_post(); ?>
-  <section class="keynote_speaker_hero" <?php if ( has_post_thumbnail() ): ?> style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');" <?php endif; ?> >
+  <section id="symbols_animation" class="keynote_speaker_hero" <?php if ( has_post_thumbnail() ): ?> style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');" <?php endif; ?> >
     <div class="row">
       <div class="medium-5 columns">
         <div class="speaker_info">
@@ -127,9 +127,6 @@
           <div class="title-small CTA_subtitle">Boston 29 - 30 November</div>
           <a href="https://www.eventbrite.com/e/swiftfest-2017-tickets-37370599469" title="Buy Tickets" target="_blank" class="squared-button white hero_button">
           buy tickets
-          </a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSffougjfUt4bjecHeKWMgvhbiUBryAN-sU9irHQ-Ytdyih0Og/viewform" title="Call for Paper" target="_blank" class="squared-button white hero_button">
-          call for paper
           </a>
         </div>
       </div>

@@ -17,6 +17,8 @@
   include __DIR__ . "/section/section-sponsors.php";
   // Tickets
   include __DIR__ . "/section/section-tickets.php";
+  // Agenda
+  include __DIR__ . "/section/section-agenda.php";
 
 
   // SECTION
@@ -59,6 +61,8 @@
           $sectionSponsors,
           // Tickets
           $sectionTikets,
+          // Agenda
+          $sectionAgenda,
         ),
       ),
     ),
@@ -75,6 +79,13 @@
           'param' => 'page_template',
           'operator' => '==',
           'value' => 'template/template-homepage.php',
+        ),
+      ),
+      array (
+        array (
+          'param' => 'page_template',
+          'operator' => '==',
+          'value' => 'template/template-password.php',
         ),
       ),
     ),
