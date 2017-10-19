@@ -22,6 +22,10 @@ section.tickets {
           margin-bottom: 10px;
           height: 60px;
           font-size: 30px;
+          // small
+          @media screen and (max-width: 39.938em) {
+            height: auto;
+          }
         }
         .card_price {
           margin: 40px 0 20px 0;

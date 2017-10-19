@@ -27,45 +27,46 @@
                 $other = get_sub_field('other');
               ?>           
               <div class="row">
-
                 <?php if($type == 'talk'): ?>
-
                   <?php if(have_rows('talk')): ?>
                     <?php while (have_rows('talk')): the_row(); ?>
-                    <?php  
-                      $speaker = get_sub_field('speaker');
-                      $hour = get_sub_field('hour');
-                    ?>
-
-                      <div class="medium-12 columns end">
+                      <?php  
+                        $speaker = get_sub_field('speaker');
+                        $hour = get_sub_field('hour');
+                      ?>
+                      <div class="small-12 columns">
                         <div class="talk_cell">
-                          <div class="talk_info_container">                        
-                            <div class="hour">
-                              <?php echo ($hour); ?>
+                          <div class="row">
+                            <div class="large-2 medium-3 columns">
+                              <div class="hour">
+                                <?php echo ($hour); ?>
+                              </div>
                             </div>
-                            <?php if($speaker): ?>
-                              <?php foreach ($speaker as $post): ?>
-                                <?php setup_postdata($post); ?>
-                                <?php 
-                                  $post_slug=$post->post_name;
-                                  $speach_type = get_field('speach_type');
-                                ?>
-                                <div class="talk_container">
-                                  <a href="<?php the_permalink(); ?>" title="<?php the_field('talk_title'); ?>">
-                                    <h3 class="title talk_title"><?php the_field('talk_title'); ?></h3>
-                                  </a>
-                                  <div class="speaker_name"><?php the_title(); ?></div>
-                                </div>
-                              <?php endforeach; ?>
-                              <?php wp_reset_postdata(); ?>
-                            <?php endif; ?>
-                          </div>
+                            <div class="medium-8 columns end">                            
+                              <?php if($speaker): ?>
+                                <?php foreach ($speaker as $post): ?>
+                                  <?php setup_postdata($post); ?>
+                                  <?php 
+                                    $post_slug=$post->post_name;
+                                    $speach_type = get_field('speach_type');
+                                  ?>
+                                  <div class="talk_container">
+                                    <div class="general-ui talk_type"><?php the_field('type'); ?></div>
+                                    <a href="<?php the_permalink(); ?>" title="<?php the_field('talk_title'); ?>">
+                                      <h3 class="title talk_title"><?php the_field('talk_title'); ?></h3>
+                                    </a>
+                                    <div class="speaker_name"><?php the_title(); ?></div>
+                                    <div class="current_text talk_description"><?php the_field('talk_short_description'); ?></div>
+                                  </div>
+                                <?php endforeach; ?>
+                                <?php wp_reset_postdata(); ?>
+                              <?php endif; ?>
+                            </div>
+                          </div>          
                         </div>
                       </div>
-
                     <?php endwhile; ?>
                   <?php  endif; ?>
-
                 <?php elseif($type == 'other'): ?>
                   <div class="other_container">
                     <?php if(have_rows('other')): ?>
@@ -73,17 +74,20 @@
                         <?php
                           $icon = get_sub_field('icon');
                         ?>
-                      <div class="small-12 columns">
-                        <div class="other_cell">
-                          <div class="hour"><?php the_sub_field('hour'); ?></div>
-                          <div class="text">
-                            <?php if($icon): ?>
-                              <div class="icon" style="background-image: url('<?php the_sub_field('icon'); ?>');"></div>
-                            <?php  endif; ?>
-                            <?php the_sub_field('text'); ?>
+                        <div class="small-12 columns">
+                          <div class="other_cell <?php the_sub_field('color_type'); ?>">
+                            <div class="row">
+                              <div class="large-2 medium-3 columns">
+                                <div class="hour"><?php the_sub_field('hour'); ?></div>
+                              </div>
+                              <div class="medium-8 columns end">
+                                <div class="title">
+                                  <?php the_sub_field('text'); ?>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
                       <?php endwhile; ?>
                     <?php  endif; ?>
                   </div>
