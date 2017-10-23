@@ -78,6 +78,9 @@ section.agenda {
           margin: 50px 0;
           padding: 10px 0;
           outline: 20px solid $primary;
+          @-moz-document url-prefix() {
+            padding: 10px;
+          }
           // small
           @media screen and (max-width: 39.938em) {
             text-align: left;

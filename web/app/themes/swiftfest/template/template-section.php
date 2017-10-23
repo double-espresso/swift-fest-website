@@ -41,6 +41,9 @@
           case 'agenda':
             include __DIR__ . "/../partials/partial-agenda/partial-agenda.php";
             break;
+          case 'workshop':
+            include __DIR__ . "/../partials/partial-workshop/partial-workshop.php";
+            break;
         }
       $sectionCounter++;
       endwhile;

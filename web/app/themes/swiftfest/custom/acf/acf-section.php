@@ -19,6 +19,8 @@
   include __DIR__ . "/section/section-tickets.php";
   // Agenda
   include __DIR__ . "/section/section-agenda.php";
+  // Workshop
+  include __DIR__ . "/section/section-workshop.php";
 
 
   // SECTION
@@ -63,6 +65,8 @@
           $sectionTikets,
           // Agenda
           $sectionAgenda,
+          // Workshop
+          $sectionWorkshop,
         ),
       ),
     ),

@@ -20,4 +20,7 @@ if( function_exists('acf_add_local_field_group') ):
   // SPONSORS
   include __DIR__ . "/acf/acf-sponsors.php";
 
+  // WORKSHOPS
+  include __DIR__ . "/acf/acf-workshops.php";
+
 endif;
